@@ -1,3 +1,5 @@
+import groovy.lang.Closure;
+import org.apache.poi
 pipeline {
     agent any
     tools {
@@ -21,7 +23,18 @@ pipeline {
         }
         stage('Excel erstellen'){
             steps{
-              echo 'New Excel is comming now dritter test'  
+                echo 'New Excel is comming now dritter test'  
+                def workbook = new ExcelBuilder().build {
+                    sheet {
+                        row {
+                            cell {
+                                "test"
+                            }
+                        }
+                    }
+                }
+
+                workbook.write(new FileOutputStream(new File('sample.xlsx')))
 
             }
         }
