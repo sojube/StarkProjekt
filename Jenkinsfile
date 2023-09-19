@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Excel erstellen'){
             steps{
-              echo 'New Excel is comming'  
+              echo 'New Excel is comming now'  
 
             }
         }
