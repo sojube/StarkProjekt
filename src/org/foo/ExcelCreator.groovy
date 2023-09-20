@@ -1,5 +1,6 @@
 package org.foo
 import hudson.model.*
+System.out = getBinding().out;
 
 class ExcelCreator {  
 
