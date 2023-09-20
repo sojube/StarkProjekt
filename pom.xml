@@ -54,7 +54,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
-
+        
+      <!-- below are the dependencies neccessary to use the class Speadsheet builder to create excel-->
         <!-- Excel -->
         <dependency>
             <groupId>builders.dsl</groupId>
@@ -69,6 +70,14 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <version>3.0.1</version>
             <type>pom</type>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.1</version>
+        </dependency>
+
+        <!-- below are the dependencies neccessary to use the class Speadsheet builder to create excel-->
         
 
 </dependencies>
