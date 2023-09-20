@@ -1,12 +1,15 @@
 package org.foo
+def out = getBinding().out;
 
 class ExcelCreator {  
 
-    ExcelCreator(){}
+    ExcelCreator(out){}
 
     def gibText() {
         def text = "ich habe die Klasse gefunden"
-        println ${text}
+        out.println ("Inside class")
     }
    
 }
+out.println("Outside class")
+output = new OutputClass(out)
