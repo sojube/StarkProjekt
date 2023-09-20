@@ -28,7 +28,7 @@ pipeline {
             steps{
 
                 script {
-                 objekt.gibText() 
+                 varriable()
                 }
                
             }

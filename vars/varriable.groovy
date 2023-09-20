@@ -1,3 +1,5 @@
-def info() {
-    echo "hier ist die varriable"
+import org.foo
+def call() {
+    def ExcelC = new ExcelCreator()
+    def val = ExcelC.gibText()
 }
