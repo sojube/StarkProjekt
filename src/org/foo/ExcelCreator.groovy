@@ -7,9 +7,7 @@ class ExcelCreator {
 
     def gibText() {
         def text = "ich habe die Klasse gefunden"
-        out.println ("Inside class")
+        out << "Hello World "
     }
    
 }
-out.println("Outside class")
-output = new OutputClass(out)
