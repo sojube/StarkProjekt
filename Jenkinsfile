@@ -34,10 +34,11 @@ pipeline {
               
                  bat "mvn clean install"
                 
-                 mvn deploy:deploy-file -DpomFile= https://github.com/sojube/StarkProjekt \
+                 mvn deploy:deploy-file -DpomFile= { https://github.com/sojube/StarkProjekt  \
                 -Dfile= https://github.com/sojube/StarkProjekt/tree/main/repo \
                 -DrepositoryId=https://github.com/sojube/StarkProjekt/tree/main/repo \
-                -Durl= https://github.com/sojube/StarkProjekt/tree/main/repo
+                -Durl= https://github.com/sojube/StarkProjekt/tree/main/repo 
+                }
             }
         }
         stage('Test shared Library'){
