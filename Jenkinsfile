@@ -6,7 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-// this import is to write in Excel
+// this import is to write in Excel where 'xssf.usermodel' is for the .xlsx  format  and  'hssf.usermodel' is for the .xls  format
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
