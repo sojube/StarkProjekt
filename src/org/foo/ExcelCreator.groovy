@@ -6,7 +6,7 @@ class ExcelCreator {
 
     def gibText() {
         def text = "ich habe die Klasse gefunden"
-    
+        return text;
     }
    
 }
