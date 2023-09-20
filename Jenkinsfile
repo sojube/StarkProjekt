@@ -33,8 +33,7 @@ pipeline {
             steps {
               
                  bat "mvn clean install"
-                 mvn install:install-file -DgroupId= org.apache.poi -DartifactId=ddd -Dversion=1.0.1 
-                 -Dpackaging=jar -Dfile=https://github.com/sojube/StarkProjekt/tree/main/repo
+                 mvn install:install-file -DgroupId= org.apache.poi -DartifactId=ddd -Dversion=1.0.1 -Dpackaging=jar -Dfile=https://github.com/sojube/StarkProjekt/tree/main/repo
                 
             }
         }
