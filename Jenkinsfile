@@ -24,8 +24,8 @@ pipeline {
         }
         stage('Excel erstellen'){
             steps{
-                
-                ExcelCreator.gibText ()  
+
+                ExcelCreator.gibText()  
                
             }
         }
