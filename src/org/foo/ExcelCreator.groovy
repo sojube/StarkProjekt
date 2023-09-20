@@ -1,5 +1,4 @@
 package org.foo
-def out = getBinding().out;
 
 class ExcelCreator {  
 
