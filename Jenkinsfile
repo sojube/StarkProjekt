@@ -1,6 +1,8 @@
 @Library('StarkProjekt') _ 
 import org.foo.ExcelCreator
 
+ExcelCreator objekt = new ExcelCreator()
+
 pipeline {
     agent any
     tools {
@@ -25,7 +27,7 @@ pipeline {
         stage('Excel erstellen'){
             steps{
 
-                ExcelCreator.gibText()  
+                objekt.gibText() 
                
             }
         }
