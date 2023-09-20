@@ -5,7 +5,8 @@ class ExcelCreator {
     ExcelCreator(){}
 
     def gibText() {
-        echo 'ich habe die Klasse gefunden'
+        //echo 'ich habe die Klasse gefunden'
+        println "ich habe die Klasse gefunden".dump()
     }
    
 }
