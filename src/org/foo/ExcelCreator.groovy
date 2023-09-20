@@ -2,7 +2,7 @@ package org.foo
 
 class ExcelCreator {  
 
-    ExcelCreator(out){}
+    ExcelCreator(){}
 
     def gibText() {
         def text = "ich habe die Klasse gefunden"
