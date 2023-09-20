@@ -27,7 +27,9 @@ pipeline {
         stage('Excel erstellen'){
             steps{
 
-                objekt.gibText() 
+                script {
+                 objekt.gibText() 
+                }
                
             }
         }
