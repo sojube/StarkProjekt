@@ -1,6 +1,6 @@
 @Library('StarkProjekt') _ 
 import org.foo.ExcelCreator
-import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
+//import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
 def objekt = new ExcelCreator()
 
