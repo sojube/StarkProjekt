@@ -1,6 +1,6 @@
 package org.foo
 
-class ExcelCreator implements ExcelBuilder {
+class ExcelCreator {
    
 
     def gibText () {
