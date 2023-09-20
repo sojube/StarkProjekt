@@ -1,5 +1,6 @@
 @Library('StarkProjekt') _ 
 import org.foo.ExcelCreator
+import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
 def objekt = new ExcelCreator()
 
@@ -24,7 +25,17 @@ pipeline {
                 
             }
         }
-        stage('Excel erstellen'){
+        stage('Test shared Library'){
+            steps{
+
+                script {
+                 varriable()
+                }
+               
+            }
+        }
+
+         stage('Excel erstellen'){
             steps{
 
                 script {
