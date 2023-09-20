@@ -1,7 +1,7 @@
 @Library('StarkProjekt') _ 
 import org.foo.ExcelCreator
 
-ExcelCreator objekt = new ExcelCreator(data)
+ExcelCreator objekt = new ExcelCreator()
 
 pipeline {
     agent any
