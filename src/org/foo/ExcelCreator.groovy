@@ -1,4 +1,5 @@
 package org.foo
+import hudson.model.*
 
 class ExcelCreator {  
 
