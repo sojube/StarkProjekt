@@ -2,9 +2,9 @@ package org.foo
 @Grab(group='builders.dsl', module='spreadsheet-builder-poi', version='3.0.1')
 import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
-PoiSpreadsheetBuilder object = new PoiSpreadsheetBuilder();
+File file = new File('spreadsheet.xlsx')
 
-class ExcelCreat extends object {  
+class ExcelCreat {  
 
 
     ExcelCreat(){}
