@@ -1,6 +1,4 @@
 package org.foo
-import org.modelcatalogue.spreadsheet
-
 
 class ExcelCreator {  
 
