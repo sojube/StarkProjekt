@@ -3,13 +3,13 @@ package org.foo
 
 import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
-File file = new File('spreadsheet.xlsx')
+File file = new File('tagesPlan.xlsx')
 
 
-def text = "ich habe die Klasse gefunden"
+def text = "j' étais ici"
 
 PoiSpreadsheetBuilder.create(file).build {                                              
-    sheet('Sample') {                                                                   
+    sheet('nameOfTheSheet') {                                                                   
         row {                                                                           
             cell 'A'                                                                    
             cell 'B'
