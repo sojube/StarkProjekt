@@ -6,8 +6,6 @@ import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 File file = new File('tagesPlan.xlsx')
 
 
-def text = "j' étais ici"
-
 PoiSpreadsheetBuilder.create(file).build {                                              
     sheet('nameOfTheSheet') {                                                                   
         row {                                                                           
@@ -21,4 +19,8 @@ PoiSpreadsheetBuilder.create(file).build {
             cell 3 { value 'Value 23' } 
         }
     }
+}
+
+def call(){
+    return text = "j' étais ici"
 }
