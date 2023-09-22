@@ -92,6 +92,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         </dependency>
 
         <!-- Excel -->
+        <!-- https://mvnrepository.com/artifact/org.modelcatalogue/spreadsheet-builder-poi -->
+        <dependency>
+            <groupId>org.modelcatalogue</groupId>
+            <artifactId>spreadsheet-builder-poi</artifactId>
+            <version>0.4.1</version>
+        </dependency>
+
         <dependency>
             <groupId>builders.dsl</groupId>
             <artifactId>spreadsheet-builder-poi</artifactId>
