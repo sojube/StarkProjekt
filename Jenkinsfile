@@ -7,7 +7,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 
-//def objekt = new ExcelCreator()
 
 pipeline {
     agent any
