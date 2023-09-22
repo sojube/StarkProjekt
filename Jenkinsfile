@@ -43,7 +43,7 @@ pipeline {
             steps{
 
                 script {
-                 echo 'test shared Library'
+                 varriable()
                 }
                
             }
@@ -53,7 +53,7 @@ pipeline {
             steps{
 
                 script {
-                 ExcelCreator()
+                 buildExcel()
                 }
                
             }
