@@ -10,7 +10,23 @@ class ExcelCreat {
     ExcelCreat(){}
 
     def gibText() {
+        
         def text = "ich habe die Klasse gefunden"
+
+        PoiSpreadsheetBuilder.create(file).build {                                              
+            sheet('Sample') {                                                                   
+                row {                                                                           
+                    cell 'A'                                                                    
+                    cell 'B'
+                    cell 'C'
+                }
+                row {
+                    cell 1
+                    cell 2
+                    cell 3
+                }
+            }
+        }
         return text;
     }
    
