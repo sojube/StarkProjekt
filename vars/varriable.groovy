@@ -1,4 +1,4 @@
-import org.foo.ExcelCreator
+
 def call() {
-    echo 'Ich habe die File gesehen'
+    echo 'Ich war in der File varriable'
 }

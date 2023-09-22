@@ -21,8 +21,3 @@ File file = new File('tagesPlan.xlsx')
             }
         }
     }
-    
-def call(){
-
-    return text = "j' étais ici"
-}
