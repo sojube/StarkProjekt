@@ -43,7 +43,7 @@ pipeline {
             steps{
 
                 script {
-                 varriable()
+                 echo 'test shared Library'
                 }
                
             }
