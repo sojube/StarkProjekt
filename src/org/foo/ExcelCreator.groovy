@@ -5,22 +5,22 @@ import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
 File file = new File('tagesPlan.xlsx')
 
+def call(){
 
-PoiSpreadsheetBuilder.create(file).build {                                              
-    sheet('nameOfTheSheet') {                                                                   
-        row {                                                                           
-            cell 'A' { value 'Value 11' }                                                                 
-            cell 'B' { value 'Value 12' } 
-            cell 'C' { value 'Value 13' } 
-        }
-        row {
-            cell 1 { value 'Value 21' } 
-            cell 2 { value 'Value 22' } 
-            cell 3 { value 'Value 23' } 
+    PoiSpreadsheetBuilder.create(file).build {                                              
+        sheet('nameOfTheSheet') {                                                                   
+            row {                                                                           
+                cell 'A' { value 'Value 11' }                                                                 
+                cell 'B' { value 'Value 12' } 
+                cell 'C' { value 'Value 13' } 
+            }
+            row {
+                cell 1 { value 'Value 21' } 
+                cell 2 { value 'Value 22' } 
+                cell 3 { value 'Value 23' } 
+            }
         }
     }
-}
 
-def call(){
     return text = "j' étais ici"
 }
