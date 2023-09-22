@@ -6,11 +6,8 @@ def object = new PoiSpreadsheetBuilder();
 
 class ExcelCreator extends object {  
 
-    def data
 
-    ExcelCreator(String data){
-        this.data =
-    }
+    ExcelCreator(String data){}
 
     def gibText() {
         def text = "ich habe die Klasse gefunden"
