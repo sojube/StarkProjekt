@@ -4,10 +4,10 @@ import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
 def object = new PoiSpreadsheetBuilder();
 
-class ExcelCreator extends object {  
+class ExcelCreat extends object {  
 
 
-    ExcelCreator(){}
+    ExcelCreat(){}
 
     def gibText() {
         def text = "ich habe die Klasse gefunden"
