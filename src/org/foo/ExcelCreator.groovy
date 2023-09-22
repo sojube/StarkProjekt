@@ -1,7 +1,7 @@
 package org.foo
 
 //@Grab(group='org.modelcatalogue', module='spreadsheet-builder-poi', version=' ') 
-@Grab('builder.dsl:spreadsheet-builder-poi-2.2.1') 
+@Grab('builder.dsl:spreadsheet-builder-poi:2.2.1') 
 
 class ExcelCreator {  
 
