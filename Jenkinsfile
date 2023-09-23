@@ -44,6 +44,7 @@ pipeline {
 
                 script {
                  buildExcel()
+                 //varriable()
                 }
                
             }
