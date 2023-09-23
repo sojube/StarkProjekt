@@ -3,6 +3,16 @@ package org.foo
 
 import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
+class ExcelCreator {
+
+    ExcelCreator(){}
+
+    def gibText(){
+        String test = "this is the class ExcelCreator"
+        return text;
+    }
+}
+
 File file = new File('tagesPlan.xlsx')
 
 
