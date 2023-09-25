@@ -3,7 +3,7 @@ package org.foo
 
 import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
-def object = new PoiSpreadsheetBuilder();
+//def object = new PoiSpreadsheetBuilder();
 
 def call() {
 
