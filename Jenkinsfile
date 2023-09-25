@@ -42,8 +42,8 @@ pipeline {
             steps{
 
                 script {
-                 //buildExcel()
-                 varriable()
+                 buildExcel()
+                 //varriable()
                 }
                
             }
