@@ -5,7 +5,7 @@ import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
 //def object = new PoiSpreadsheetBuilder();
 
-def call() {
+
 
     File file = new File('tagesPlan.xlsx')
     PoiSpreadsheetBuilder.INSTANCE.build {                                                  // <1>
@@ -22,6 +22,8 @@ def call() {
             }
         }
     } writeTo file
+
+def call() {    
 
     echo 'Ich war in der File buildExcel'
 
