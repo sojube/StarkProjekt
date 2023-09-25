@@ -8,6 +8,7 @@ def object = new PoiSpreadsheetBuilder();
 def call() {
 
     File file = new File('tagesPlan.xlsx')
+    echo 'Ich war in der File buildExcel'
 
 }
 
