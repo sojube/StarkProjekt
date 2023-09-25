@@ -5,6 +5,7 @@ import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
 //def object = new PoiSpreadsheetBuilder();
 
+@NonCPS
 def call() { 
 
       echo 'Ich war in der File buildExcel neue '
@@ -24,11 +25,4 @@ def call() {
             }
         }
     } writeTo file
-
-   
-
-  
-
 }
-
-  
