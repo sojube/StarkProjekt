@@ -8,10 +8,10 @@ import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
 
     File file = new File('tagesPlan.xlsx')
-    PoiSpreadsheetBuilder.INSTANCE.build {                                                  // <1>
-        sheet('Sample') {                                                                   // <2>
-            row {                                                                           // <3>
-                cell 'A'                                                                    // <4>
+    PoiSpreadsheetBuilder.create(file).build {                                              
+        sheet('Sample') {                                                                   
+            row {                                                                           
+                cell 'A'                                                                    
                 cell 'B'
                 cell 'C'
             }
