@@ -10,6 +10,8 @@ Workbook workbook = new XSSFWorkbook()
 // Erstelle ein neues Arbeitsblatt (Sheet)
 Sheet sheet = workbook.createSheet("Tabelle1")
 
+def call{
+    
 // Erstelle eine Kopfzeile
 Row headerRow = sheet.createRow(0)
 headerRow.createCell(0).setCellValue("Name")
@@ -28,8 +30,12 @@ dataRow2.createCell(1).setCellValue(28)
 dataRow2.createCell(2).setCellValue("Lehrer") 
 
 // Speichere die Arbeitsmappe in einer Datei
-FileOutputStream fileOut = new FileOutputStream("Beispiel.xlsx")
+FileOutputStream fileOut = new FileOutputStream("JulesBeispiel.xlsx")
 workbook.write(fileOut)
 fileOut.close()
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
+
+}
+
+return this
