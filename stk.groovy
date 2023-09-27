@@ -10,8 +10,7 @@ Workbook workbook = new XSSFWorkbook()
 // Erstelle ein neues Arbeitsblatt (Sheet)
 Sheet sheet = workbook.createSheet("Tabelle1")
 
-def call{
-    
+
 // Erstelle eine Kopfzeile
 Row headerRow = sheet.createRow(0)
 headerRow.createCell(0).setCellValue("Name")
@@ -35,7 +34,3 @@ workbook.write(fileOut)
 fileOut.close()
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
-
-}
-
-return this
