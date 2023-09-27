@@ -46,7 +46,7 @@ pipeline {
                     varriable()
 
                     // readfile content
-                    def result = load 'path/to/stk.groovy'
+                    def result = load './stk.groovy'
                     echo "Result: ${result}"
                 }
                
