@@ -10,8 +10,11 @@ Workbook workbook = new XSSFWorkbook()
 // Erstelle ein neues Arbeitsblatt (Sheet)
 Sheet sheet = workbook.createSheet("Tabelle1")
 
+//set row height to 35
+sheet.setRowHeightsForced(1, 3, 35)
 
 // Erstelle eine Kopfzeile
+
 Row headerRow = sheet.createRow(0)
 headerRow.createCell(0).setCellValue("Name")
 headerRow.createCell(1).setCellValue("Alter")
