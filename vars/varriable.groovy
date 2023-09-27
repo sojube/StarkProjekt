@@ -10,10 +10,10 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.util.CellReference;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 
-
+@NonCPS
 def call() {
 
-        echo "ich war in deer File variable"
+        echo "ich war in der File variable"
         // create a new file
         //FileOutputStream file = new FileOutputStream("workbook.xls");
         File file = new File('spreadsheet.xlsx')
