@@ -40,8 +40,11 @@ pipeline {
          stage('Excel erstellen'){
             steps{
 
-                script {  
-                excelFileCreator()
+                script {
+
+                   
+                 buildExcel()
+                 //varriable()
                 }
                
             }
