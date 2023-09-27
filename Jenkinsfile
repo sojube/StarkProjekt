@@ -42,10 +42,12 @@ pipeline {
             steps{
 
                 script {                   
-                 //buildExcel()
-                 varriable()
-                 def runFile = readProperties file: 'stk.groovy'
-                 echo "${runFile['deploy.type']}"
+                    //buildExcel()
+                    varriable()
+
+                    // readfile content
+                    def result = load 'path/to/stk.groovy'
+                    echo "Result: ${result}"
                 }
                
             }
