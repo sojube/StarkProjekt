@@ -2,8 +2,7 @@ package org.foo
 @Grab(group='builders.dsl', module='spreadsheet-builder-poi', version='3.0.1')
 
 
-import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
-import junit.framework.Assert;
+import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
