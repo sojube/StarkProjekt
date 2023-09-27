@@ -17,10 +17,6 @@ def call() {
         // create a new file
         //FileOutputStream file = new FileOutputStream("workbook.xls");
         File file = new File('spreadsheet.xlsx')
-        // create a new workbook
-        SXSSFWorkbook wb = new SXSSFWorkbook();
-        // create a new sheet
-        Sheet sheet = wb.createSheet();
         PoiSpreadsheetBuilder.create(file).build {                                              
             sheet('Sample') {                                                                   
                 row {                                                                           
