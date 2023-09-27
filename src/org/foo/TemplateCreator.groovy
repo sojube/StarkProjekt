@@ -28,8 +28,7 @@ public class GFG {
  
         // An output stream accepts output bytes and
         // sends them to sink
-        OutputStream fileOut
-            = new FileOutputStream("tagesPlan.xlsx");
+        OutputStream fileOut = new FileOutputStream("tagesPlan.xlsx");
  
         // Now creating Sheets using sheet object
         Sheet sheet1 = wb.createSheet("Array");
