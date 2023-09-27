@@ -31,8 +31,7 @@ pipeline {
             steps{
 
                 script {
-                    def externalMethod = load("stk.groovy")
-                    //externalMethod.firstTest()
+                    
                     varriable()
                 }
                
