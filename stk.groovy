@@ -30,7 +30,7 @@ dataRow2.createCell(1).setCellValue(28)
 dataRow2.createCell(2).setCellValue("Lehrer") 
 
 //set row height to 35 pixels
-sheet.setRowHeightsForced(0, 2, 35)
+
 
 // Speichere die Arbeitsmappe in einer Datei
 FileOutputStream fileOut = new FileOutputStream("JulesBeispiel.xlsx")

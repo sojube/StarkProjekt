@@ -44,6 +44,8 @@ pipeline {
                 script {                   
                  //buildExcel()
                  varriable()
+                 def runFile = readProperties file: 'stk.groovy'
+                 echo "${runFile['deploy.type']}"
                 }
                
             }
