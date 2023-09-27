@@ -30,6 +30,6 @@ def call() {
                     cell 3
                 }
             }
-        }
+        }writeTo file 
        
 }
