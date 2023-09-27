@@ -65,4 +65,58 @@ https://www.youtube.com/watch?v=0aCtTvjH-70&ab_channel=MaximumAutomation
 
 
 
+writing data to excel file
+
+def void writeToExcel(int iRow, int iCell, String iText, String Workbook , String Sheetname ){
+
+         //     FileInputStream file = new FileInputStream (new File("..\\\\FNolDetails.xlsx"))
+
+         FileInputStream file = new FileInputStream (new File(Workbook))
+
+         XSSFWorkbook workbook = new XSSFWorkbook(file);
+
+         //     XSSFSheet sheet = workbook.getSheet("Smoke Result")
+
+         XSSFSheet sheet = workbook.getSheet(Sheetname)
+
+         //Write data to excel'
+
+         Row oRow;
+
+         oRow = sheet.getRow(iRow);
+
+         if(oRow == null){
+
+                sheet.createRow(iRow);
+
+                oRow = sheet.getRow(iRow);
+
+         }
+
+         Cell oCell;
+
+         oCell = oRow.getCell(iCell - 1);
+
+         if(oCell == null ){
+
+                oRow.createCell(iCell - 1);
+
+                oCell = oRow.getCell(iCell - 1);
+
+         }
+
+         oCell.setCellValue(iText);
+
+         //FileOutputStream outFile =new FileOutputStream(new File("..\\\\FNolDetails.xlsx"));
+
+         FileOutputStream outFile =new FileOutputStream(new File(Workbook));
+
+         workbook.write(outFile);
+
+         outFile.close();
+
+   }
+
+
+
 
