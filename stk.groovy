@@ -10,8 +10,6 @@ Workbook workbook = new XSSFWorkbook()
 // Erstelle ein neues Arbeitsblatt (Sheet)
 Sheet sheet = workbook.createSheet("Tabelle1")
 
-//set row height to 35
-sheet.setRowHeightsForced(0, 2, 35)
 
 // Erstelle eine Kopfzeile
 
@@ -30,6 +28,9 @@ Row dataRow2 = sheet.createRow(2)
 dataRow2.createCell(0).setCellValue("Erika Musterfrau")
 dataRow2.createCell(1).setCellValue(28)
 dataRow2.createCell(2).setCellValue("Lehrer") 
+
+//set row height to 35 pixels
+sheet.setRowHeightsForced(0, 2, 35)
 
 // Speichere die Arbeitsmappe in einer Datei
 FileOutputStream fileOut = new FileOutputStream("JulesBeispiel.xlsx")
