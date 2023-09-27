@@ -11,7 +11,7 @@ Workbook workbook = new XSSFWorkbook()
 Sheet sheet = workbook.createSheet("Tabelle1")
 
 //set row height to 35
-sheet.setRowHeightsForced(1, 3, 35)
+sheet.setRowHeightsForced(0, 2, 35)
 
 // Erstelle eine Kopfzeile
 
