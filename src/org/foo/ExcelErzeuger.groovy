@@ -1,10 +1,11 @@
-@Grab(group='org.apache.poi', module='poi', version='5.0.0')
-@Grab(group='org.apache.poi', module='poi-ooxml', version='5.0.0')
+@Library('StarkProjekt') _ 
+//@Grab(group='org.apache.poi', module='poi', version='5.0.0')
+//@Grab(group='org.apache.poi', module='poi-ooxml', version='5.0.0')
 
 import org.apache.poi.ss.usermodel.*
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
-class ExcelErzeuger{
+class ExcelErzeugerH{
 
 
     // Erstelle eine neue Arbeitsmappe (Workbook)
