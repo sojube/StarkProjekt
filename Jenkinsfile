@@ -18,7 +18,7 @@ pipeline {
         stage('Build') {
             steps {
 
-                bat 'java -jar libs/poi-ooxml-5.2.3.jar'
+                bat 'java -jar libs/poi-ooxml-3.5-FINAL.jar'
                 
                 echo 'test 19.09.2023'
                 
