@@ -37,7 +37,7 @@ pipeline {
                 script {
 
 
-                    myCustomStep()
+                    //myCustomStep()
                     varriable()
                 }
                
