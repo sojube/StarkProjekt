@@ -45,7 +45,7 @@ pipeline {
                     //buildExcel()
                     varriable()
 
-                    // readfile content
+                    // readfile contente
                     def result = load './excelBuilder.groovy'
                     echo "Result: ${result}"
                 }
