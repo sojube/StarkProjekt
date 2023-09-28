@@ -46,7 +46,7 @@ pipeline {
                     varriable()
 
                     // readfile content
-                    def result = load './stk.groovy'
+                    def result = load './excelBuilder.groovy'
                     echo "Result: ${result}"
                 }
                
