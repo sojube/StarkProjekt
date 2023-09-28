@@ -17,6 +17,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                
+                myCustomStep()
                 echo 'test 19.09.2023'
             }
         }
