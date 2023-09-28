@@ -33,7 +33,7 @@ pipeline {
         }
 
         // adding external Jar dependencies to the pipeline. place the jar in the libs and write thid code
-       stage('Add Jars to Pipeline Classpath') {
+       stage('Add Jars dependencies to Pipeline Classpath') {
             steps {
                 script {
                     // Replace with the actual path to your Apache POI .jar files
