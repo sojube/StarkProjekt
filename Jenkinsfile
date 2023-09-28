@@ -18,10 +18,13 @@ pipeline {
         stage('Build') {
             steps {
 
+                script { 
+
                 def result = load './myCustomStep.groovy'
                     echo "Result: ${result}"
                 
                 echo 'test 19.09.2023'
+                }
             }
         }
         stage('test') {
