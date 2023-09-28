@@ -35,7 +35,9 @@ pipeline {
             steps{
 
                 script {
+
                     
+                    myCustomStep()
                     varriable()
                 }
                
