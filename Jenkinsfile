@@ -18,13 +18,10 @@ pipeline {
         stage('Build') {
             steps {
 
-                script { 
-
-                def result = load './myCustomStep.groovy'
-                    echo "Result: ${result}"
+                bat 'java -jar libs/poi-ooxml-5.2.3.jar'
                 
                 echo 'test 19.09.2023'
-                }
+                
             }
         }
         stage('test') {
