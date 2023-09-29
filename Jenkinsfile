@@ -53,7 +53,7 @@ pipeline {
                     def apachePoiPath = '/libs' // Replace with the actual path
                     def classLoader = getClass().getClassLoader()
                     classLoader.addURL(new URL("file://${apachePoiPath}/poi-5.2.3.jar"))
-                    classLoader.addURL(new URL("file://${apachePoiPath}/poi-ooxml-5.2.3.jar"))
+                    classLoader.addURL(new URL("file://${apachePoiPath}/poi-ooxml-3.5-FINAL.jar"))
                     // Add more JAR files if needed
 
                     // Now you should be able to use XSSFWorkbook
