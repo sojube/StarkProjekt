@@ -51,7 +51,7 @@ pipeline {
             steps {
                script {
 
-                    libraryResource 'StarkProjekt\libs'
+                    prependToFile content: 'test', file: 'tagesPlan.xlsx'
                     
                 }
             }
