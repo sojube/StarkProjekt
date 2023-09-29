@@ -41,7 +41,7 @@ pipeline {
                     def extLibDir = './libs'
                     def extJarFiles = findFiles(glob: "${extLibDir}/*.jar")
                     extJarFiles.each { jarFile ->
-                        currentBuild.classpath.add("${extLibDir}/${jarFile.name}")
+                        currentBuild.classpath.add("${extLibDir}/${poi-ooxml-5.2.3.jar}")
                     }
                 }
             }
