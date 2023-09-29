@@ -70,7 +70,7 @@ pipeline {
                 script {
                     // Define the source and destination paths
                     def sourcePath = '/libs/*.jar'
-                    def destinationPath = "${env.WORKSPACE}/lib" // You can change this path
+                    def destinationPath = "${env.WORKSPACE}/libs" // You can change this path
 
                     // Create the destination directory if it doesn't exist
                     bat "mkdir -p ${destinationPath}"
