@@ -65,7 +65,7 @@ pipeline {
             }
         }
 
-        stage('Copy JAR Files') {
+       /* stage('Copy JAR Files') {
             steps {
                 script {
                     // Define the source and destination paths
@@ -80,6 +80,7 @@ pipeline {
                 }
             }
         }
+        */
        
         stage('Excel erstellen'){
             steps{
