@@ -50,9 +50,17 @@ pipeline {
         stage('2 Add Jars dependencies to Pipeline2') {
             steps {
                script {
+                    def apachePoiPath = '/libs' // Replace with the actual path
+                    def classLoader = getClass().getClassLoader()
+                    classLoader.addURL(new URL("file://${apachePoiPath}/poi-5.2.3.jar"))
+                    classLoader.addURL(new URL("file://${apachePoiPath}/poi-ooxml-5.2.3.jar"))
+                    // Add more JAR files if needed
 
-                    prependToFile content: 'test txt', file: 'tagesPlan.txt'
-                    
+                    // Now you should be able to use XSSFWorkbook
+                    import org.apache.poi.xssf.usermodel.XSSFWorkbook
+
+                    def excel = new XSSFWorkbook()
+                    // Perform Excel-related operations here
                 }
             }
         }
