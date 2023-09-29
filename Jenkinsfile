@@ -64,6 +64,22 @@ pipeline {
                 }
             }
         }
+
+        stage('Copy JAR Files') {
+            steps {
+                script {
+                    // Define the source and destination paths
+                    def sourcePath = '/libs/*.jar'
+                    def destinationPath = "${env.WORKSPACE}/lib" // You can change this path
+
+                    // Create the destination directory if it doesn't exist
+                    bat "mkdir -p ${destinationPath}"
+                    
+                    // Copy the JAR files to the destination directory
+                    bat "cp ${sourcePath} ${destinationPath}/"
+                }
+            }
+        }
        
         stage('Excel erstellen'){
             steps{
