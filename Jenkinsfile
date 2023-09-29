@@ -50,8 +50,9 @@ pipeline {
         stage('2 Add Jars dependencies to Pipeline2') {
             steps {
                script {
-                
-                    libraryResource '/libs'
+
+                    //libraryResource 'E:\StarkkraftLearning\StarkProjekt\libs'
+                    libraryResource 'E:\\StarkkraftLearning\\StarkProjekt\\libs'
                 }
             }
         }
