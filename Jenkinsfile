@@ -51,7 +51,7 @@ pipeline {
             steps {
                script {
 
-                    prependToFile content: 'test', file: 'tagesPlan.xlsx'
+                    prependToFile content: 'test txt', file: 'tagesPlan.txt'
                     
                 }
             }
