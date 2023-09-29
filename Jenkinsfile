@@ -51,8 +51,8 @@ pipeline {
             steps {
                script {
 
-                    //libraryResource 'E:\StarkkraftLearning\StarkProjekt\libs'
-                    libraryResource 'E:\\StarkkraftLearning\\StarkProjekt\\libs'
+                    libraryResource 'StarkProjekt\libs'
+                    
                 }
             }
         }
