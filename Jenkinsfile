@@ -65,22 +65,24 @@ pipeline {
             }
         }
 
-       /* stage('Copy JAR Files') {
+        stage('Copy JAR Files') {
             steps {
-                script {
-                    // Define the source and destination paths
-                    def sourcePath = '/libs/*.jar'
-                    def destinationPath = "${env.WORKSPACE}/libs" // You can change this path
+               script {
+                    // Set the classpath to include the JAR files and dependencies
+                    def classpath = "${env.APACHE_POI_LIB_DIR}/*"
+                    currentBuild.buildEnvVars.CLASSPATH = classpath
 
-                    // Create the destination directory if it doesn't exist
-                    bat "mkdir -p ${destinationPath}"
-                    
-                    // Copy the JAR files to the destination directory
-                    bat "cp ${sourcePath} ${destinationPath}/"
+                    // Import XSSFWorkbook and use it
+                    //import org.apache.poi.xssf.usermodel.XSSFWorkbook
+
+                    // Create an XSSFWorkbook instance
+                    //def workbook = new XSSFWorkbook()
+
+                    // Perform Excel-related operations here
                 }
             }
         }
-        */
+        
        
         stage('Excel erstellen'){
             steps{
