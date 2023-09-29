@@ -1,5 +1,4 @@
 @Library('StarkProjekt') _ 
-package poi-ooxml-5.2.3
 //@Grab(group='org.apache.poi', module='poi', version='5.0.0')
 //@Grab(group='org.apache.poi', module='poi-ooxml', version='5.0.0')
 
