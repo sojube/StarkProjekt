@@ -59,31 +59,10 @@ pipeline {
                     // Now you should be able to use XSSFWorkbook
                     //import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
-                    //def excel = new XSSFWorkbook()
-                    // Perform Excel-related operations here
                 }
             }
         }
-
-        stage('Copy JAR Files') {
-            steps {
-               script {
-                    // Set the classpath to include the JAR files and dependencies
-                    def classpath = "${env.APACHE_POI_LIB_DIR}/*"
-                    currentBuild.buildEnvVars.CLASSPATH = classpath
-
-                    // Import XSSFWorkbook and use it
-                    //import org.apache.poi.xssf.usermodel.XSSFWorkbook
-
-                    // Create an XSSFWorkbook instance
-                    //def workbook = new XSSFWorkbook()
-
-                    // Perform Excel-related operations here
-                }
-            }
-        }
-        
-       
+          
         stage('Excel erstellen'){
             steps{
 
