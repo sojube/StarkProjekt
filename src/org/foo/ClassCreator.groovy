@@ -23,17 +23,3 @@ class ClassCreator extends XSSFWorkbook{
     
 
 }
-
-class SpreadsheetCreator extends PoiSpreadsheetBuilder{
-
-  public SpreadsheetCreator(){}
-
-  def createrSpreadsheet(){
-
-    PoiSpreadsheetBuilder poiSpreadsheet = new PoiSpreadsheetBuilder()
-    return poiSpreadsheet;
-
-  }
-    
-
-}

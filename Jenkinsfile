@@ -87,8 +87,8 @@ pipeline {
 
                 script {   
 
-                    echo 'Ende'
-                    
+                    // readfile contentehhggh
+                    def result = load './genarateExcel.groovy'
                 }
                
             }
