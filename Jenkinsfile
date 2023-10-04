@@ -81,6 +81,22 @@ pipeline {
                
             }
         }
+
+         stage('Test File in Workspace'){
+            steps{
+
+                script {   
+
+                    def workspace = "${WORKSPACE}"
+                    echo workspace
+                    def newFile = new File("${WORKSPACE}/test.txt")
+                    newFile.createNewFile() 
+                    bat 'ls -lrt'
+                    
+                }
+               
+            }
+        }
     }
 }
 
