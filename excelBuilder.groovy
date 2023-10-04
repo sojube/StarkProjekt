@@ -14,7 +14,7 @@ import java.io.*;
 
 // Specify the file path relative to the workspace
 ////def filePath = "${WORKSPACE}/JulesBeispiel.xlsx"
-def filePath = "JulesBeispiel.xlsx"
+def filePath = "/JulesBeispiel.xlsx"
 
 
 File file = new File(filePath)
