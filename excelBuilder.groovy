@@ -7,7 +7,8 @@ import org.apache.poi.ss.usermodel.*
 
 // Erstelle eine neue Arbeitsmappe (Workbook)
 //Workbook workbook = new XSSFWorkbook()
-
+ ClassCreator x = new ClassCreator()
+ def workbook = x.createrWorkbook;
 // Erstelle ein neues Arbeitsblatt (Sheet)
 Sheet sheet = workbook.createSheet("Tabelle1")
 

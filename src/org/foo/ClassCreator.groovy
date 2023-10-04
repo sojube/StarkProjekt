@@ -4,6 +4,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
 class ClassCreator {
 
+  def createrWorkbook(){
+
     XSSFWorkbook workbook = new XSSFWorkbook()
+    return workbook;
+
+  }
+    
 
 }
