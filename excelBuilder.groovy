@@ -12,7 +12,6 @@ Workbook workbook = new ClassCreator()
 Sheet sheet = workbook.createSheet("Tabelle1")
 
 // Erstelle eine Kopfzeile
-
 Row headerRow = sheet.createRow(0)
 headerRow.createCell(0).setCellValue("Name")
 headerRow.createCell(1).setCellValue("Alter")
@@ -31,24 +30,14 @@ dataRow2.createCell(2).setCellValue("Lehrer")
 
 
 // Specify the file path relative to the workspace
-def filePath = "${WORKSPACE}/JulesBeispiel2.xlsx"
+def filePath = "${WORKSPACE}/JulesBeispiel3.xlsx"
 
 
 // Speichere die Arbeitsmappe in einer Datei
-//FileOutputStream fileOut = new FileOutputStream("filePath")
 def file = new File(filePath)
 file.createNewFile()
 FileOutputStream fileOut = new FileOutputStream(file);
 workbook.write(fileOut)
 fileOut.close()
-
-//def newFile = new File(filePath)
-def filePathe = "${WORKSPACE}/testJules9.txt"
-def newFile = new File(filePathe)
-newFile.createNewFile() 
-FileOutputStream fileOute = new FileOutputStream(newFile);
-workbook.write(fileOute)
-fileOute.close()
-
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
