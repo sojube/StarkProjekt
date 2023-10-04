@@ -31,7 +31,7 @@ dataRow2.createCell(2).setCellValue("Lehrer")
 
 
 // Specify the file path relative to the workspace
-def filePath = "${WORKSPACE}/JulesBeispiel.xlsx"
+def filePath = "${WORKSPACE}/JulesBeispiel2.xlsx"
 
 
 // Speichere die Arbeitsmappe in einer Datei
