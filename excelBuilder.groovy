@@ -19,7 +19,7 @@ import java.io.*;
 
 File file = new File('JulesBeispiel.xlsx')
 
-SpreadsheetCreator.create(file).build {                                              
+PoiSpreadsheetBuilder.create(file).build {                                              
     sheet('Sample') {                                                                   
         row {                                                                           
             cell 'A'                                                                    
