@@ -85,10 +85,12 @@ pipeline {
          stage('Test File in Workspace'){
             steps{
 
-                script {   
+                script {  
+
+                    varriable() 
 
                     // readfile contentehhggh
-                    def result = load './genarateExcel.groovy'
+                    //def result = load './genarateExcel.groovy'
                 }
                
             }
