@@ -23,6 +23,7 @@ headerRow.createCell(6).setCellValue("Sonstige")
 
 // Füge Datenzeilen hinzu
 Row dataRow1 = sheet.createRow(1)
+dataRow1.setHeightInPoints(35)
 dataRow1.createCell(0).setCellValue("Max Mustermann")
 dataRow1.createCell(1).setCellValue("dreißig")
 dataRow1.createCell(2).setCellValue("Ingenieur")
