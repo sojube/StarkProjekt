@@ -129,12 +129,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <version>2.20.0</version>
         </dependency>
 
-        <!-- this is for excelBuilder-->
-        <dependency>
-            <groupId>maxmoto1702</groupId>
-            <artifactId>excel-builder</artifactId>
-            <version>1.1.0</version>
-        </dependency>
+        <!-- this is to log excel to the cosole-->
         
 
 </dependencies>
