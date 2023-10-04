@@ -1,13 +1,12 @@
-@Library('StarkProjekt') _ 
+@Grab(group='org.apache.poi', module='poi', version='5.0.0')
+@Grab(group='org.apache.poi', module='poi-ooxml', version='5.0.0')
 
-import org.foo.ClassCreator
 import org.apache.poi.ss.usermodel.*
-import java.io.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
-def call() {
 // Erstelle eine neue Arbeitsmappe (Workbook)
-Workbook workbook = new ClassCreator()
- 
+Workbook workbook = new XSSFWorkbook()
+
 // Erstelle ein neues Arbeitsblatt (Sheet)
 Sheet sheet = workbook.createSheet("Tabelle1")
 
@@ -29,9 +28,8 @@ dataRow2.createCell(1).setCellValue(28)
 dataRow2.createCell(2).setCellValue("Lehrer") 
 
 // Speichere die Arbeitsmappe in einer Datei
-FileOutputStream fileOut = new FileOutputStream("JulesBeispielCall.xlsx")
+FileOutputStream fileOut = new FileOutputStream("JulesBeispiel.xlsx")
 workbook.write(fileOut)
 fileOut.close()
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
-}
