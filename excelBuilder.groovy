@@ -3,7 +3,7 @@
 //@Grab(group='org.apache.poi', module='poi-ooxml', version='5.0.0')
 import org.foo.ClassCreator
 import org.apache.poi.ss.usermodel.*
-import org.apache.poi.xssf.usermodel.XSSFWorkbook
+//import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
 // Erstelle eine neue Arbeitsmappe (Workbook)
 //Workbook workbook = new XSSFWorkbook()
