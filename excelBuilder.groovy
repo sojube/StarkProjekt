@@ -1,6 +1,7 @@
 @Library('StarkProjekt') _ 
 
 import org.foo.ClassCreator
+import org.foo.SpreadsheetCreator
 import org.apache.poi.ss.usermodel.*
 import java.io.*;
 
@@ -15,14 +16,19 @@ Sheet sheet = workbook.createSheet("Tabelle1")
 def filePath = "${WORKSPACE}/JulesBeispiel.xlsx"
 
 
-def workbook = new ExcelBuilder().build {
-    sheet {
+File file = new File(filePath)
+
+SpreadsheetCreator.create(file).build {                                              
+    sheet('Sample') {                                                                   
+        row {                                                                           
+            cell 'A'                                                                    
+            cell 'B'
+            cell 'C'
+        }
         row {
-            cell {
-                "test"
-            }
+            cell 1
+            cell 2
+            cell 3
         }
     }
 }
-
-workbook.write(new FileOutputStream(new File(filePath)))
