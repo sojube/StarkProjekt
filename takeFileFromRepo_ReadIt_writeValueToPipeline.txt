@@ -182,3 +182,11 @@ newFile.createNewFile()
 println("Die Excel-Datei wurde erfolgreich erstellt.")
 
 
+---------------------------------------
+//def newFile = new File(filePath)
+def filePathe = "${WORKSPACE}/testJules9.txt"
+def newFile = new File(filePathe)
+newFile.createNewFile() 
+FileOutputStream fileOute = new FileOutputStream(newFile);
+workbook.write(fileOute)
+fileOute.close()
