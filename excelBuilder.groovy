@@ -37,5 +37,6 @@ dataRow2.createCell(2).setCellValue("Lehrer")
 FileOutputStream fileOut = new FileOutputStream("JulesBeispiel.xlsx")
 workbook.write(fileOut)
 fileOut.close()
+archiveArtifacts artifacts: 'JulesBeispiel.xlsx'
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
