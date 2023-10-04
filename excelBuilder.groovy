@@ -4,6 +4,7 @@ import org.foo.ClassCreator
 import org.apache.poi.ss.usermodel.*
 import java.io.*;
 
+
 // Erstelle eine neue Arbeitsmappe (Workbook)
 Workbook workbook = new ClassCreator()
  
@@ -36,6 +37,5 @@ dataRow2.createCell(2).setCellValue("Lehrer")
 FileOutputStream fileOut = new FileOutputStream("JulesBeispiel.xlsx")
 workbook.write(fileOut)
 fileOut.close()
-archiveArtifacts artifacts: 'JulesBeispiel.xlsx'
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
