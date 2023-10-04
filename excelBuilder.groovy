@@ -47,6 +47,7 @@ def newFile = new File("${WORKSPACE}/testJules6.txt")
 newFile.createNewFile() 
 FileOutputStream fileOute = new FileOutputStream(newFile);
 workbook.write(fileOute)
+fileOute.close()
 
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
