@@ -3,7 +3,7 @@ package org.foo
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
-class ClassCreator {
+class ClassCreator extends XSSFWorkbook{
 
   def createrWorkbook(){
 
