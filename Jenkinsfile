@@ -75,7 +75,7 @@ pipeline {
 
                     // readfile contentehhggh
                     def result = load './excelBuilder.groovy'
-                    echo "Result: ${result}"
+                    
                     
                 }
                
@@ -87,10 +87,7 @@ pipeline {
 
                 script {   
 
-                    def workspace = "${WORKSPACE}"
-                    echo workspace
-                    def newFile = new File("${WORKSPACE}/testJules.txt")
-                    newFile.createNewFile() 
+                    echo 'Ende'
                     
                 }
                
