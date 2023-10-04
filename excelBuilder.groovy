@@ -30,13 +30,15 @@ dataRow2.createCell(0).setCellValue("Erika Musterfrau")
 dataRow2.createCell(1).setCellValue("28")
 dataRow2.createCell(2).setCellValue("Lehrer") 
 
-//set row height to 35 pixels
 
+// Specify the file path relative to the workspace
+def filePath = "${WORKSPACE}/JulesBeispiel.xlsx"
 
 // Speichere die Arbeitsmappe in einer Datei
-FileOutputStream fileOut = new FileOutputStream("JulesBeispiel.xlsx")
+FileOutputStream fileOut = new FileOutputStream("filePath")
 workbook.write(fileOut)
 fileOut.close()
 //archiveArtifacts artifacts: 'JulesBeispiel.xlsx'
+
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
