@@ -23,12 +23,12 @@ headerRow.createCell(2).setCellValue("Beruf")
 // Füge Datenzeilen hinzu
 Row dataRow1 = sheet.createRow(1)
 dataRow1.createCell(0).setCellValue("Max Mustermann")
-dataRow1.createCell(1).setCellValue(30)
+dataRow1.createCell(1).setCellValue(30.0)
 dataRow1.createCell(2).setCellValue("Ingenieur")
 
 Row dataRow2 = sheet.createRow(2)
 dataRow2.createCell(0).setCellValue("Erika Musterfrau")
-dataRow2.createCell(1).setCellValue(28)
+dataRow2.createCell(1).setCellValue(28,0)
 dataRow2.createCell(2).setCellValue("Lehrer") 
 
 //set row height to 35 pixels
