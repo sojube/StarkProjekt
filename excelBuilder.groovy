@@ -34,14 +34,18 @@ dataRow2.createCell(2).setCellValue("Lehrer")
 // Specify the file path relative to the workspace
 //def filePath = "${WORKSPACE}/JulesBeispiel.xlsx"
 
-def filePath = "/excelOutput/JulesBeispiel.xlsx"
+def filePath = "${WORKSPACE}/JulesBeispiel.xlsx"
 
 
 // Speichere die Arbeitsmappe in einer Datei
-FileOutputStream fileOut = new FileOutputStream("filePath")
+//FileOutputStream fileOut = new FileOutputStream("filePath")
+def fileOut = new File(filePath)
 workbook.write(fileOut)
 fileOut.close()
-//archiveArtifacts artifacts: 'JulesBeispiel.xlsx'
+
+def newFile = new File(filePath)
+def newFile = new File("${WORKSPACE}/testJules2.txt")
+newFile.createNewFile() 
 
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
