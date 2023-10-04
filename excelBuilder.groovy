@@ -6,7 +6,7 @@ import org.apache.poi.ss.usermodel.*
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
 // Erstelle eine neue Arbeitsmappe (Workbook)
-Workbook workbook = new XSSFWorkbook()
+//Workbook workbook = new XSSFWorkbook()
 
 // Erstelle ein neues Arbeitsblatt (Sheet)
 Sheet sheet = workbook.createSheet("Tabelle1")
