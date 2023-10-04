@@ -38,7 +38,7 @@ def filePath = "${WORKSPACE}/JulesBeispiel2.xlsx"
 //FileOutputStream fileOut = new FileOutputStream("filePath")
 def file = new File("filePath")
 file.createNewFile()
-FileOutputStream fileOut = new FileOutputStream("file");
+FileOutputStream fileOut = new FileOutputStream(file);
 workbook.write(fileOut)
 fileOut.close()
 
