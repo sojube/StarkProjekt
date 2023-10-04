@@ -89,9 +89,8 @@ pipeline {
 
                     def workspace = "${WORKSPACE}"
                     echo workspace
-                    def newFile = new File("${WORKSPACE}/test.txt")
+                    def newFile = new File("${WORKSPACE}/testJules.txt")
                     newFile.createNewFile() 
-                    bat 'ls -lrt'
                     
                 }
                
