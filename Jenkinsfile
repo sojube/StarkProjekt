@@ -45,7 +45,14 @@ pipeline {
                     def extJarFiles = findFiles(glob: "${extLibDir}/*.jar")
                     extJarFiles.each { jarFile ->
                         currentBuild.classpath.add("${extLibDir}/${jarFile.name}")
+    
                     }
+                    if (fileExists('JulesBeispiel.xlsx')) {
+                         new File('JulesBeispiel.xlsx').delete()
+                    } else {
+                         println "JulesBeispiel.xlsx file not found"
+                    }
+
                 }
             }
         }
