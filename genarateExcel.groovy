@@ -1,20 +1,24 @@
 @Library('StarkProjekt') _ 
 
-import org.foo.ClassCreator
+//import org.foo.ClassGenarateExcel
 import org.apache.poi.ss.usermodel.*
+import org.foo.PoiSpreadsheetBuilder
 import java.io.*;
 
 
-// Erstelle eine neue Arbeitsmappe (Workbook)
-Workbook workbook = new ClassCreator()
- 
-// Erstelle ein neues Arbeitsblatt (Sheet)
-Sheet sheet = workbook.createSheet("Tabelle1")
+File file = new File('spreadsheet.xlsx')
 
-
-//def newFile = new File(filePath)
-def newFile = new File("${WORKSPACE}/testJules3.xlsx")
-newFile.createNewFile() 
-
-
-println("Die Excel-Datei wurde erfolgreich erstellt.")
+PoiSpreadsheetBuilder.create(file).build {                                              
+    sheet('Sample') {                                                                   
+        row {                                                                           
+            cell 'A'                                                                    
+            cell 'B'
+            cell 'C'
+        }
+        row {
+            cell 1
+            cell 2
+            cell 3
+        }
+    }
+}
