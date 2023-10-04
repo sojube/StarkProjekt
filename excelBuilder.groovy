@@ -36,7 +36,9 @@ def filePath = "${WORKSPACE}/JulesBeispiel2.xlsx"
 
 // Speichere die Arbeitsmappe in einer Datei
 //FileOutputStream fileOut = new FileOutputStream("filePath")
-FileOutputStream fileOut = new FileOutputStream(new File("filePath"));
+def file = new File("filePath")
+file.createNewFile()
+FileOutputStream fileOut = new FileOutputStream("file");
 workbook.write(fileOut)
 fileOut.close()
 
