@@ -43,7 +43,7 @@ def fileOut = new File(filePath)
 workbook.write(fileOut)
 fileOut.close()
 
-def newFile = new File(filePath)
+//def newFile = new File(filePath)
 def newFile = new File("${WORKSPACE}/testJules2.txt")
 newFile.createNewFile() 
 
