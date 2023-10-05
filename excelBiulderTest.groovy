@@ -36,19 +36,19 @@ sheet.setColumnWidth (6, 25)
 // Create a cell style
 CellStyle style = workbook.createCellStyle();
 
-// Set horizontal alignment to CENTER
-style.setAlignment(HorizontalAlignment.CENTER);
+    // Set horizontal alignment to CENTER
+    //style.setAlignment(HorizontalAlignment.CENTER);
 
-// Set vertical alignment to CENTER
-style.setVerticalAlignment(VerticalAlignment.CENTER);
+    // Set vertical alignment to CENTER
+    //style.setVerticalAlignment(VerticalAlignment.CENTER);
 
 // Erstelle eine Kopfzeile
 XSSFRow headerRow = sheet.createRow(0);
 XSSFCell cell0 = headerRow.createCell(0);
 cell0.setCellValue("Kapitän")
 
-// Apply the style to the cell
-cell.setCellStyle(style);
+    // Apply the style to the cell
+    // cell.setCellStyle(style);
 
 
 // Specify the file path relative to the workspace
