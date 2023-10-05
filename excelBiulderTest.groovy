@@ -102,39 +102,114 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
 XSSFRow dataRow1 = sheet.createRow(1);
 dataRow1.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
     // erste spalte
-    XSSFCell dataCell0 = dataRow1.createCell(0);
-    dataCell0.setCellValue("X");
-    dataCell0.setCellStyle(style);
+    XSSFCell dataRow1Cell0 = dataRow1.createCell(0);
+    dataRow1Cell0.setCellValue("X");
+    dataRow1Cell0.setCellStyle(style);
 
     // zweite spalte
-    XSSFCell dataCell1 = dataRow1.createCell(1);
-    dataCell1.setCellValue("Max Mustermann");
-    dataCell1.setCellStyle(style);
+    XSSFCell dataRow1Cell1 = dataRow1.createCell(1);
+    dataRow1Cell1.setCellValue("Max Mustermann");
+    dataRow1Cell1.setCellStyle(style);
 
     // dritte spalte
-    XSSFCell dataCell2 = dataRow1.createCell(2);
-    dataCell2.setCellValue("05.10.2023");
-    dataCell2.setCellStyle(style);
+    XSSFCell dataRow1Cell2 = dataRow1.createCell(2);
+    dataRow1Cell2.setCellValue("05.10.2023");
+    dataRow1Cell2.setCellStyle(style);
 
     // vierte spalte
-    XSSFCell dataCell3 = dataRow1.createCell(3);
-    dataCell3.setCellValue("Dreißig");
-    dataCell3.setCellStyle(style);
+    XSSFCell dataRow1Cell3 = dataRow1.createCell(3);
+    dataRow1Cell3.setCellValue("Dreißig");
+    dataRow1Cell3.setCellStyle(style);
 
     // fünfte spalte
-    XSSFCell dataCell4 = dataRow1.createCell(4);
-    dataCell4.setCellValue("Intake ÃœbungslÃ¤ufen mit:");
-    dataCell4.setCellStyle(style);
+    XSSFCell dataRow1Cell4 = dataRow1.createCell(4);
+    dataRow1Cell4.setCellValue("Intake ÃœbungslÃ¤ufen mit:");
+    dataRow1Cell4.setCellStyle(style);
 
     // sechste spalte
-    XSSFCell dataCell5 = dataRow1.createCell(5);
-    dataCell5.setCellValue("Ingenieur");
-    dataCell5.setCellStyle(style);
+    XSSFCell dataRow1Cell5 = dataRow1.createCell(5);
+    dataRow1Cell5.setCellValue("Ingenieur");
+    dataRow1Cell5.setCellStyle(style);
 
     // siebte spalte
-    XSSFCell dataCell6 = dataRow1.createCell(6);
-    dataCell6.setCellValue("Aufgabe");
-    dataCell6.setCellStyle(style);    
+    XSSFCell dataRow1Cell6 = dataRow1.createCell(6);
+    dataRow1Cell6.setCellValue("Aufgabe");
+    dataRow1Cell6.setCellStyle(style);  
+
+XSSFRow dataRow2 = sheet.createRow(2);
+dataRow2.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
+    // erste spalte
+    XSSFCell dataRow2Cell0 = dataRow1.createCell(0);
+    dataRow2Cell0.setCellValue("X");
+    dataRow2Cell0.setCellStyle(style);
+
+    // zweite spalte
+    XSSFCell dataRow2Cell1 = dataRow1.createCell(1);
+    dataRow2Cell1.setCellValue("Max Mustermann");
+    dataRow2Cell1.setCellStyle(style);
+
+    // dritte spalte
+    XSSFCell dataRow2Cell2 = dataRow1.createCell(2);
+    dataRow2Cell2.setCellValue("05.10.2023");
+    dataRow2Cell2.setCellStyle(style);
+
+    // vierte spalte
+    XSSFCell dataRow2Cell3 = dataRow1.createCell(3);
+    dataRow2Cell3.setCellValue("Dreißig");
+    dataRow2Cell3.setCellStyle(style);
+
+    // fünfte spalte
+    XSSFCell dataRow2Cell4 = dataRow1.createCell(4);
+    dataRow2Cell4.setCellValue("Intake ÃœbungslÃ¤ufen mit:");
+    dataRow2Cell4.setCellStyle(style);
+
+    // sechste spalte
+    XSSFCell dataRow2Cell5 = dataRow1.createCell(5);
+    dataRow2Cell5.setCellValue("Ingenieur");
+    dataRow2Cell5.setCellStyle(style);
+
+    // siebte spalte
+    XSSFCell dataRow2Cell6 = dataRow1.createCell(6);
+    dataRow2Cell6.setCellValue("Aufgabe");
+    dataRow2Cell6.setCellStyle(style);      
+
+XSSFRow dataRow3 = sheet.createRow(1);
+dataRow3.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
+    // erste spalte
+    XSSFCell dataRow3Cell0 = dataRow1.createCell(0);
+    dataRow3Cell0.setCellValue("X");
+    dataRow3Cell0.setCellStyle(style);
+
+    // zweite spalte
+    XSSFCell dataRow3Cell1 = dataRow1.createCell(1);
+    dataRow3Cell1.setCellValue("Max Mustermann");
+    dataRow3Cell1.setCellStyle(style);
+
+    // dritte spalte
+    XSSFCell dataRow3Cell2 = dataRow1.createCell(2);
+    dataRow3Cell2.setCellValue("05.10.2023");
+    dataRow3Cell2.setCellStyle(style);
+
+    // vierte spalte
+    XSSFCell dataRow3Cell3 = dataRow1.createCell(3);
+    dataRow3Cell3.setCellValue("Dreißig");
+    dataRow3Cell3.setCellStyle(style);
+
+    // fünfte spalte
+    XSSFCell dataRow3Cell4 = dataRow1.createCell(4);
+    dataRow3Cell4.setCellValue("Intake ÃœbungslÃ¤ufen mit:");
+    dataRow3Cell4.setCellStyle(style);
+
+    // sechste spalte
+    XSSFCell dataRow3Cell5 = dataRow1.createCell(5);
+    dataRow3Cell5.setCellValue("Ingenieur");
+    dataRow3Cell5.setCellStyle(style);
+
+    // siebte spalte
+    XSSFCell dataRow3Cell6 = dataRow1.createCell(6);
+    dataRow3Cell6.setCellValue("Aufgabe");
+    dataRow3Cell6.setCellStyle(style);  
+          
 
     
 
