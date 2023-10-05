@@ -146,7 +146,7 @@ dataRow2.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
     // zweite spalte
     XSSFCell dataRow2Cell1 = dataRow1.createCell(1);
     dataRow2Cell1.setCellValue("Max Mustermann");
-    dataRow2Cell1.setCellStyle(style);
+    dataRow2Cell1.setCellStyle(style); 
 
     // dritte spalte
     XSSFCell dataRow2Cell2 = dataRow1.createCell(2);
