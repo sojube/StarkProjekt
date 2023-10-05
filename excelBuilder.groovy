@@ -31,7 +31,6 @@ headerRow.createCell(5).setCellValue("Zerziefizierung und Deadline")
 headerRow.createCell(6).setCellValue("Sonstige")
 
 // Füge Datenzeilen hinzu
-//////XSSFRow headerRow = sheet.createRow(0)
 XSSFRow dataRow1 = sheet.createRow(1)
 //dataRow1.setHeightInPoints(35)
 dataRow1.createCell(0).setCellValue("Max Mustermann")
@@ -42,7 +41,7 @@ dataRow1.createCell(4).setCellValue("dreißig")
 dataRow1.createCell(5).setCellValue("Ingenieur")
 dataRow1.createCell(6).setCellValue("Ingenieur")
 
-/////XSSFRow headerRow = sheet.createRow(0)
+
 XSSFRow dataRow2 = sheet.createRow(2)
 //dataRow2.setHeightInPoints(35)
 dataRow2.createCell(0).setCellValue("Erika Musterfrau")
@@ -61,7 +60,7 @@ dataRow2.createCell(6).setCellValue("Ingenieur")
 
 
 // Specify the file path relative to the workspace
-def filePath = "${WORKSPACE}/JulesBeispielHeute.xlsx"
+def filePath = "${WORKSPACE}/JulesBeispiel5.xlsx"
 
 
 // Speichere die Arbeitsmappe in einer Datei
