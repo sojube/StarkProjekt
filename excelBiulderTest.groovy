@@ -24,14 +24,15 @@ XSSFWorkbook workbook = new XSSFWorkbook()
 // Erstelle ein neues Arbeitsblatt (Sheet)
 XSSFSheet sheet = workbook.createSheet("Tabelle1")
 
+
 // set the columnWidth
-sheet.setColumnWidth (0, 10)
-sheet.setColumnWidth (1, 25)
-sheet.setColumnWidth (2, 25)
-sheet.setColumnWidth (3, 35)
-sheet.setColumnWidth (4, 25)
-sheet.setColumnWidth (5, 35)
-sheet.setColumnWidth (6, 25)
+sheet.setColumnWidth (0, 3000)
+sheet.setColumnWidth (1, 7500)
+sheet.setColumnWidth (2, 7500)
+sheet.setColumnWidth (3, 11000)
+sheet.setColumnWidth (4, 7500)
+sheet.setColumnWidth (5, 11000)
+sheet.setColumnWidth (6, 7500)
 
 // Create a cell style
 CellStyle style = workbook.createCellStyle();
