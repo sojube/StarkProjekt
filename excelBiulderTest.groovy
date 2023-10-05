@@ -37,10 +37,10 @@ sheet.setColumnWidth (6, 25)
 CellStyle style = workbook.createCellStyle();
 
     // Set horizontal alignment to CENTER
-    //style.setAlignment(HorizontalAlignment.CENTER);
+    style.setAlignment(HorizontalAlignment.CENTER);
 
     // Set vertical alignment to CENTER
-    //style.setVerticalAlignment(VerticalAlignment.CENTER);
+    style.setVerticalAlignment(VerticalAlignment.CENTER);
 
 // Erstelle eine Kopfzeile
 XSSFRow headerRow = sheet.createRow(0);
