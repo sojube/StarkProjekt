@@ -14,6 +14,7 @@ import java.io.FileOutputStream
 import org.apache.poi.ss.usermodel.CellBase
 import org.apache.poi.xssf.usermodel.XSSFCell
 import java.io.*;
+import org.apache.poi.ss.usermodel.IndexedColors
 
 
 // Erstelle eine neue Arbeitsmappe (Workbook)
@@ -33,6 +34,12 @@ sheet.setColumnWidth (3, 11000)
 sheet.setColumnWidth (4, 7500)
 sheet.setColumnWidth (5, 11000)
 sheet.setColumnWidth (6, 7500)
+
+
+// Ändere die Hintergrundfarbe der Zelle
+CellStyle colorstyle1 = workbook.createCellStyle()
+colorstyle1.setFillForegroundColor(IndexedColors.YELLOW.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
+colorstyle1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
 
 
 // create Style for the header cells
@@ -105,6 +112,7 @@ dataRow1.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
     XSSFCell dataRow1Cell0 = dataRow1.createCell(0);
     dataRow1Cell0.setCellValue("X");
     dataRow1Cell0.setCellStyle(style);
+    dataRow1Cell0.setCellStyle(colorstyle1);
 
     // zweite spalte
     XSSFCell dataRow1Cell1 = dataRow1.createCell(1);
