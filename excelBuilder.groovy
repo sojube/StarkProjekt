@@ -30,7 +30,7 @@ sheet.setColumnWidth (6, 25)
 
 // Erstelle eine Kopfzeile
 XSSFRow headerRow = sheet.createRow(0)
-headerRow.setHeightInPoints((int) 35)
+//headerRow.setHeightInPoints((int) 35)
 headerRow.createCell(0).setCellValue("Kapitän")
 headerRow.createCell(1).setCellValue("Vorname Nachname")
 headerRow.createCell(2).setCellValue("Stand Up Datum")
@@ -41,7 +41,7 @@ headerRow.createCell(6).setCellValue("Sonstige")
 
 // Füge Datenzeilen hinzu
 XSSFRow dataRow1 = sheet.createRow(1)
-dataRow1.setHeightInPoints((int) 35)
+//dataRow1.setHeightInPoints((int) 35)
 dataRow1.createCell(0).setCellValue("Max Mustermann")
 dataRow1.createCell(1).setCellValue("dreißig")
 dataRow1.createCell(2).setCellValue("Ingenieur")
@@ -52,7 +52,7 @@ dataRow1.createCell(6).setCellValue("Ingenieur")
 
 
 XSSFRow dataRow2 = sheet.createRow(2)
-dataRow2.setHeightInPoints((int) 35)
+//dataRow2.setHeightInPoints((int) 35)
 dataRow2.createCell(0).setCellValue("Erika Musterfrau")
 dataRow2.createCell(1).setCellValue("28")
 dataRow2.createCell(2).setCellValue("Lehrer")
@@ -61,11 +61,6 @@ dataRow2.createCell(4).setCellValue("dreißig")
 dataRow2.createCell(5).setCellValue("Ingenieur")
 dataRow2.createCell(6).setCellValue("Ingenieur") 
 
-// Einstellen der Zeilenhöhe
-//row.setHeightInPoints(30) // Hier kannst du die Höhe in Punkten anpassen
-
-// Einstellen der Spaltenbreite
-//sheet.setColumnWidth(0, 5000) // Hier kannst du die Breite in Einheiten anpassen
 
 
 // Specify the file path relative to the workspace
