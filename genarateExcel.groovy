@@ -22,7 +22,7 @@ public class TypesofCells {
       spreadsheet.setColumnWidth(1, 10000)
       
       XSSFRow row = spreadsheet.createRow((short) 2);
-      row.setHeightInPoints((int) 70)
+      row.setHeightInPoints((int) 200)
       row.createCell(0).setCellValue("Type of Cell");
       row.createCell(1).setCellValue("cell value");
       
