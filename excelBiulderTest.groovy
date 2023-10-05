@@ -38,7 +38,7 @@ sheet.setColumnWidth (6, 7500)
 
 // Ändere die Hintergrundfarbe der Zelle
 CellStyle colorstyle1 = workbook.createCellStyle()
-colorstyle1.setFillForegroundColor(IndexedColors.YELLOW.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
+colorstyle1.setFillForegroundColor(IndexedColors.BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
 colorstyle1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
 
 
@@ -108,11 +108,14 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
 
 XSSFRow dataRow1 = sheet.createRow(1);
 dataRow1.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
+// Apply the color style to all cells in the row
+for (int i = 0; i < 6; i++) {
+    dataRow1.getCell(i).setCellStyle(colorstyle1);
+}
     // erste spalte
     XSSFCell dataRow1Cell0 = dataRow1.createCell(0);
     dataRow1Cell0.setCellValue("X");
     dataRow1Cell0.setCellStyle(style);
-    dataRow1Cell0.setCellStyle(colorstyle1);
 
     // zweite spalte
     XSSFCell dataRow1Cell1 = dataRow1.createCell(1);
