@@ -50,6 +50,16 @@ sheet.setColumnWidth (6, 7500)
     font.setBold(true);
     headerstyle.setFont(font);
 
+// create Style for the datacells
+
+    CellStyle style = workbook.createCellStyle();
+
+    // Set horizontal alignment to CENTER
+    style.setAlignment(HorizontalAlignment.CENTER);
+
+    // Set vertical alignment to CENTER
+    style.setVerticalAlignment(VerticalAlignment.CENTER);    
+
 // Erstelle eine Kopfzeile des excel dokument
 XSSFRow headerRow = sheet.createRow(0);
 headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
@@ -87,6 +97,44 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
     XSSFCell cell6 = headerRow.createCell(6);
     cell6.setCellValue("Sonstige");
     cell6.setCellStyle(headerstyle);
+
+
+XSSFRow dataRow1 = sheet.createRow(1);
+dataRow1.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
+    // erste spalte
+    XSSFCell dataCell0 = dataRow1.createCell(0);
+    dataCell0.setCellValue("X");
+    dataCell0.setCellStyle(style);
+
+    // zweite spalte
+    XSSFCell dataCell1 = dataRow1.createCell(1);
+    dataCell1.setCellValue("Max Mustermann");
+    dataCell1.setCellStyle(style);
+
+    // dritte spalte
+    XSSFCell dataCell2 = dataRow1.createCell(2);
+    dataCell2.setCellValue("05.10.2023");
+    dataCell2.setCellStyle(style);
+
+    // vierte spalte
+    XSSFCell dataCell3 = dataRow1.createCell(3);
+    dataCell3.setCellValue("Dreißig");
+    dataCell3.setCellStyle(style);
+
+    // fünfte spalte
+    XSSFCell dataCell4 = dataRow1.createCell(4);
+    dataCell4.setCellValue("Intake ÃœbungslÃ¤ufen mit:");
+    dataCell4.setCellStyle(style);
+
+    // sechste spalte
+    XSSFCell dataCell5 = dataRow1.createCell(5);
+    dataCell5.setCellValue("Ingenieur");
+    dataCell5.setCellStyle(style);
+
+    // siebte spalte
+    XSSFCell dataCell6 = dataRow1.createCell(6);
+    dataCell6.setCellValue("Aufgabe");
+    dataCell6.setCellStyle(style);    
 
     
 
