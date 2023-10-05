@@ -85,7 +85,7 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
 
     // fünfte spalte
     XSSFCell cell4 = headerRow.createCell(4);
-    cell4.setCellValue("Intake ÃœbungslÃ¤ufen mit:");
+    cell4.setCellValue("Intake üäöülliktztkz mit:");
     cell4.setCellStyle(headerstyle);
 
     // sechste spalte
@@ -123,7 +123,7 @@ dataRow1.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
 
     // fünfte spalte
     XSSFCell dataRow1Cell4 = dataRow1.createCell(4);
-    dataRow1Cell4.setCellValue("Intake ÃœbungslÃ¤ufen mit:");
+    dataRow1Cell4.setCellValue("Intake üöäoälöiöimit:");
     dataRow1Cell4.setCellStyle(style);
 
     // sechste spalte
@@ -160,7 +160,7 @@ dataRow2.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
 
     // fünfte spalte
     XSSFCell dataRow2Cell4 = dataRow2.createCell(4);
-    dataRow2Cell4.setCellValue("Intake ÃœbuhhjngslÃ¤ufen mit:");
+    dataRow2Cell4.setCellValue("Intake uhgäoülljöljö mit:");
     dataRow2Cell4.setCellStyle(style);
 
     // sechste spalte
@@ -197,7 +197,7 @@ dataRow3.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
 
     // fünfte spalte
     XSSFCell dataRow3Cell4 = dataRow3.createCell(4);
-    dataRow3Cell4.setCellValue("Intake ÃœsaretgtbungslÃ¤ufen mit:");
+    dataRow3Cell4.setCellValue("Intake übungsläufe mit:");
     dataRow3Cell4.setCellStyle(style);
 
     // sechste spalte
