@@ -12,8 +12,10 @@ import java.io.*;
 
 
 // Erstelle eine neue Arbeitsmappe (Workbook)
-Workbook workbook = new ClassCreator()
- 
+//Workbook workbook = new ClassCreator()
+
+Workbook workbook = new XSSFWorkbook() 
+
 // Erstelle ein neues Arbeitsblatt (Sheet)
 Sheet sheet = workbook.createSheet("Tabelle1")
 
