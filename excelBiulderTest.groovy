@@ -34,27 +34,30 @@ sheet.setColumnWidth (4, 7500)
 sheet.setColumnWidth (5, 11000)
 sheet.setColumnWidth (6, 7500)
 
-// Create a cell style
-CellStyle style = workbook.createCellStyle();
 
-// Set horizontal alignment to CENTER
-style.setAlignment(HorizontalAlignment.CENTER);
+// create Style for the header cells
 
-// Set vertical alignment to CENTER
-style.setVerticalAlignment(VerticalAlignment.CENTER);
+    CellStyle headerstyle = workbook.createCellStyle();
 
-// Create style with bold font
-Font font = workbook.createFont();
-font.setBold(true);
-style.setFont(font);
+    // Set horizontal alignment to CENTER
+    headerstyle.setAlignment(HorizontalAlignment.CENTER);
+
+    // Set vertical alignment to CENTER
+    headerstyle.setVerticalAlignment(VerticalAlignment.CENTER);
+
+    // Create style with bold font text must be bold
+    Font font = workbook.createFont();
+    font.setBold(true);
+    headerstyle.setFont(font);
 
 // Erstelle eine Kopfzeile
 XSSFRow headerRow = sheet.createRow(0);
+// Legen Sie die gewünschte Zeilenhöhe in Twips (1 Punkt = 20 Twips) fest
+int rowHeightInTwips = 1; // Zum Beispiel 60 Twips (3 Punkte)
+headerRow.setHeight((short) (rowHeightInTwips * 20)); // Setzen Sie die Zeilenhöhe
 XSSFCell cell0 = headerRow.createCell(0);
-cell0.setCellValue("Kapitän")
-
-// Apply the style to the cell
-cell0.setCellStyle(style);
+cell0.setCellValue("Kapitän");
+cell0.setCellStyle(headerstyle);
 
 
 // Specify the file path relative to the workspace
