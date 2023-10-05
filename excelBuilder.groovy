@@ -21,7 +21,7 @@ XSSFSheet sheet = workbook.createSheet("Tabelle1")
 
 // Erstelle eine Kopfzeile
 XSSFRow headerRow = sheet.createRow(0)
-headerRow.setHeightInPoints("35")
+headerRow.setHeightInPoints(35)
 headerRow.createCell(0).setCellValue("Kapitän")
 headerRow.createCell(1).setCellValue("Vorname Nachname")
 headerRow.createCell(2).setCellValue("Stand Up Datum")
