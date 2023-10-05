@@ -43,6 +43,11 @@ style.setAlignment(HorizontalAlignment.CENTER);
 // Set vertical alignment to CENTER
 style.setVerticalAlignment(VerticalAlignment.CENTER);
 
+// Create style with bold font
+Font font = workbook.createFont();
+font.setBold(true);
+style.setFont(font);
+
 // Erstelle eine Kopfzeile
 XSSFRow headerRow = sheet.createRow(0);
 XSSFCell cell0 = headerRow.createCell(0);
