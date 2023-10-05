@@ -13,19 +13,10 @@ import java.io.*;
 // Erstelle eine neue Arbeitsmappe (Workbook)
 //Workbook workbook = new ClassCreator()
 
-XSSFWorkbook workbook = new XSSFWorkbook(); 
+XSSFWorkbook workbook = new XSSFWorkbook() 
 
 // Erstelle ein neues Arbeitsblatt (Sheet)
-XSSFSheet sheet = workbook.createSheet("Centered Text");
-
-// Create a cell style
-CellStyle style = workbook.createCellStyle();
-
-// Set horizontal alignment to CENTER
-style.setAlignment(HorizontalAlignment.CENTER);
-
-// Set vertical alignment to CENTER
-style.setVerticalAlignment(VerticalAlignment.CENTER);
+XSSFSheet sheet = workbook.createSheet("Tabelle1")
 
 // set the columnWidth
 sheet.setColumnWidth (0, 3000)
@@ -37,24 +28,15 @@ sheet.setColumnWidth (5, 11000)
 sheet.setColumnWidth (6, 7500)
 
 // Erstelle eine Kopfzeile
-XSSFRow headerRow = sheet.createRow(0);
-
-    // erste zelle des Kopfzeile
-    cell0 = headerRow.createCell(0);
-    cell0.setCellValue("Kapitän");
-    //cell0.setCellStyle(style);
-    // zweite zelle des Kopfzeile
-    cell1 = headerRow.createCell(1);
-    cell1.setCellValue("Vorname Nachname");
-    //cell1.setCellStyle(style);
-
-   
-    /*headerRow.createCell(2).setCellValue("Stand Up Datum")
-    headerRow.createCell(3).setCellValue("Intakevorbereitung")
-    headerRow.createCell(4).setCellValue("Intake Übungsläufen")
-    headerRow.createCell(5).setCellValue("Zerziefizierung und Deadline")
-    headerRow.createCell(6).setCellValue("Sonstige")
-    */
+XSSFRow headerRow = sheet.createRow(0)
+//headerRow.setHeightInPoints((int) 35)
+headerRow.createCell(0).setCellValue("Kapitän")
+headerRow.createCell(1).setCellValue("Vorname Nachname")
+headerRow.createCell(2).setCellValue("Stand Up Datum")
+headerRow.createCell(3).setCellValue("Intakevorbereitung")
+headerRow.createCell(4).setCellValue("Intake Übungsläufen")
+headerRow.createCell(5).setCellValue("Zerziefizierung und Deadline")
+headerRow.createCell(6).setCellValue("Sonstige")
 
 // Füge Datenzeilen hinzu
 XSSFRow dataRow1 = sheet.createRow(1)
