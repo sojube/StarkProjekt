@@ -1,40 +1,43 @@
-[
-    {
-    "Kapitän": "",
-    "Vorname Nachname": "Valeriya",
-    "Stand Up Datum": "06.09.2023",
-    "Intakevorbereitungen": "N/A",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "ISTQB Mobile App Testing bis 01.10.2023",
-    "Sonnstiges": "Git und GitHub"
-    },
-       
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "Jules",
-    "Stand Up Datum": "06.09.2023",
-    "Intakevorbereitungen": " AWS, CI/CD, Git, GitHub ",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung voraussichtlich bis 31.12.2023",
-    "Sonnstiges": " "
-    },
-      
-    {   
-    "Kapitän": "X",
-    "Vorname Nachname": "Yves",
-    "Stand Up Datum": "06.09.2023",
-    "Intakevorbereitungen": "JavaScript",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "AWS 30-09-2023",
-    "Sonnstiges": "Jenkins"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "Petru Walter",
-    "Stand Up Datum": "06.09.2023",
-    "Intakevorbereitungen": "GitHub Git",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "ISTQB 01.10.23",
-    "Sonnstiges": "Jira, Jenkins"
-    }
-    ]
+{
+ "Employees":
+                [
+                    {
+                    "Kapitän": "",
+                    "Vorname Nachname": "Valeriya", 
+                    "Stand Up Datum": "06.09.2023",
+                    "Intakevorbereitungen": "N/A",
+                    "Intake Übungslaufe mit": "N/A",
+                    "Zerfizierung und Deadline": "ISTQB Mobile App Testing bis 01.10.2023",
+                    "Sonnstiges": "Git und GitHub"
+                    },
+                    
+                    {
+                    "Kapitän": " ",
+                    "Vorname Nachname": "Jules",
+                    "Stand Up Datum": "06.09.2023",
+                    "Intakevorbereitungen": " AWS, CI/CD, Git, GitHub ",
+                    "Intake Übungslaufe mit": "N/A",
+                    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung voraussichtlich bis 31.12.2023",
+                    "Sonnstiges": " "
+                    },
+                    
+                    {   
+                    "Kapitän": "X",
+                    "Vorname Nachname": "Yves",
+                    "Stand Up Datum": "06.09.2023",
+                    "Intakevorbereitungen": "JavaScript",
+                    "Intake Übungslaufe mit": "N/A",
+                    "Zerfizierung und Deadline": "AWS 30-09-2023",
+                    "Sonnstiges": "Jenkins"
+                    },
+                    {
+                    "Kapitän": " ",
+                    "Vorname Nachname": "Petru Walter",
+                    "Stand Up Datum": "06.09.2023",
+                    "Intakevorbereitungen": "GitHub Git",
+                    "Intake Übungslaufe mit": "N/A",
+                    "Zerfizierung und Deadline": "ISTQB 01.10.23",
+                    "Sonnstiges": "Jira, Jenkins"
+                    }
+                    ]
+}
