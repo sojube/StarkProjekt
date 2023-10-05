@@ -1,8 +1,8 @@
 @Library('StarkProjekt') _ 
 
 import org.foo.ClassCreator
-//import org.apache.poi.ss.usermodel.*
-//import org.apache.poi.xssf.usermodel.XSSFWorkbook
+import groovy.json.JsonSlurper
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -57,7 +57,17 @@ pipeline {
             }
         }
 
+        stage('get json file and read datavalues') {
+            steps {
+               script {
+                def inputFile = new File('.//tagesPlan.json')
+                def jsonSlurper = new JsonSlurper()
+                def dataFile = jsonSlurper.parse(inputFile)
         
+                    
+                }
+            }
+        }
           
         stage('Excel erstellen'){
             steps{
