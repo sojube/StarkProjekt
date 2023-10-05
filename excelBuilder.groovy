@@ -26,10 +26,11 @@ sheet.setColumnWidth (3, 11000)
 sheet.setColumnWidth (4, 7500)
 sheet.setColumnWidth (5, 11000)
 sheet.setColumnWidth (6, 7500)
+sheet.setHeightInPoints (35)
 
 // Erstelle eine Kopfzeile
 XSSFRow headerRow = sheet.createRow(0)
-headerRow.setHeightInPoints((int) 35)
+//headerRow.setHeightInPoints((int) 35)
 headerRow.createCell(0).setCellValue("Kapitän")
 headerRow.createCell(1).setCellValue("Vorname Nachname")
 headerRow.createCell(2).setCellValue("Stand Up Datum")
