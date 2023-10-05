@@ -52,9 +52,8 @@ sheet.setColumnWidth (6, 7500)
 
 // Erstelle eine Kopfzeile
 XSSFRow headerRow = sheet.createRow(0);
-// Legen Sie die gewünschte Zeilenhöhe in Twips (1 Punkt = 20 Twips) fest
-int rowHeightInTwips = 19; // Zum Beispiel 60 Twips (3 Punkte)
-headerRow.setHeight((short) (rowHeightInTwips * 20)); // Setzen Sie die Zeilenhöhe
+// Setzen Sie die Zeilenhöhe auf 19
+headerRow.setHeight((short) (19*20)); 
 XSSFCell cell0 = headerRow.createCell(0);
 cell0.setCellValue("Kapitän");
 cell0.setCellStyle(headerstyle);
