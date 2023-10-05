@@ -63,7 +63,7 @@ pipeline {
                 def inputFile = new File('.//tagesPlan.json')
                 def jsonSlurper = new JsonSlurper()
                 def dataFile = jsonSlurper.parse(inputFile)
-        
+                println " ${dataFile['Employees']['Vorname Nachname']}"
                     
                 }
             }
