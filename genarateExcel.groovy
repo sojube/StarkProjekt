@@ -19,6 +19,7 @@ public class TypesofCells {
       XSSFSheet spreadsheet = workbook.createSheet("cell types");
 
       spreadsheet.setColumnWidth(0, 5000)
+      spreadsheet.setColumnWidth(1, 10000)
       
       XSSFRow row = spreadsheet.createRow((short) 2);
       row.setHeightInPoints((int) 35)
