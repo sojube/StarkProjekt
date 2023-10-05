@@ -1,20 +1,23 @@
 package org.foo
-@Grab(group='builders.dsl', module='spreadsheet-builder-poi', version='3.0.1')
-@Grab(group='builders.dsl', module='spreadsheet-builder-api', version='3.0.1')
 @Grab(group='org.apache.poi', module='poi', version='5.0.0')
 @Grab(group='org.apache.poi', module='poi-ooxml', version='5.0.0')
+@Grab(group='builders.dsl', module='spreadsheet-builder-poi', version='3.0.1')
 
-
+import java.io.FileOutputStream;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder
 
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
-public class ClassGenarateExcel extends PoiSpreadsheetBuilder{
+class ClassGenarateExcel extends XSSFWorkbook{
 
-     ClassGenarateExcel() {
-        super();
-    }
+  def createrWorkbook(){
 
- def call(){
-    echo 'iiiiiiiiiiiiiiiiii'
- }
+    XSSFWorkbook workbook = new XSSFWorkbook()
+    return workbook;
+
+   }    
 }
