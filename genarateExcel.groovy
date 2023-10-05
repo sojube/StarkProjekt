@@ -17,8 +17,8 @@ public class TypesofCells {
    public static void main(String[] args)throws Exception {
       XSSFWorkbook workbook = new XSSFWorkbook(); 
       XSSFSheet spreadsheet = workbook.createSheet("cell types");
-      
-      spreadsheet.setColumnWidth(0, 35)
+
+      spreadsheet.setColumnWidth(0, 5000)
       
       XSSFRow row = spreadsheet.createRow((short) 2);
       row.setHeightInPoints((int) 35)
