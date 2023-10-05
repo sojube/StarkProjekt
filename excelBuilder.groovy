@@ -19,8 +19,18 @@ XSSFWorkbook workbook = new XSSFWorkbook()
 // Erstelle ein neues Arbeitsblatt (Sheet)
 XSSFSheet sheet = workbook.createSheet("Tabelle1")
 
+// set the columnWidth
+sheet.setColumnWidth (0, 10)
+sheet.setColumnWidth (1, 25)
+sheet.setColumnWidth (2, 25)
+sheet.setColumnWidth (3, 35)
+sheet.setColumnWidth (4, 25)
+sheet.setColumnWidth (5, 35)
+sheet.setColumnWidth (6, 25)
+
 // Erstelle eine Kopfzeile
 XSSFRow headerRow = sheet.createRow(0)
+headerRow.setHeightInPoints((int) 35)
 headerRow.createCell(0).setCellValue("Kapitän")
 headerRow.createCell(1).setCellValue("Vorname Nachname")
 headerRow.createCell(2).setCellValue("Stand Up Datum")
@@ -31,7 +41,7 @@ headerRow.createCell(6).setCellValue("Sonstige")
 
 // Füge Datenzeilen hinzu
 XSSFRow dataRow1 = sheet.createRow(1)
-//dataRow1.setHeightInPoints(35)
+dataRow1.setHeightInPoints((int) 35)
 dataRow1.createCell(0).setCellValue("Max Mustermann")
 dataRow1.createCell(1).setCellValue("dreißig")
 dataRow1.createCell(2).setCellValue("Ingenieur")
@@ -42,7 +52,7 @@ dataRow1.createCell(6).setCellValue("Ingenieur")
 
 
 XSSFRow dataRow2 = sheet.createRow(2)
-//dataRow2.setHeightInPoints(35)
+dataRow2.setHeightInPoints((int) 35)
 dataRow2.createCell(0).setCellValue("Erika Musterfrau")
 dataRow2.createCell(1).setCellValue("28")
 dataRow2.createCell(2).setCellValue("Lehrer")
