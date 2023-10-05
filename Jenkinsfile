@@ -60,7 +60,7 @@ pipeline {
         stage('get json file and read datavalues') {
             steps {
                script {
-                def inputFile = new File('.//tagesPlan.json')
+                def inputFile = new File('./tagesPlan.json')
                 def jsonSlurper = new JsonSlurper()
                 def dataFile = jsonSlurper.parse(inputFile)
                 println " ${dataFile['Employees']['Vorname Nachname']}"
