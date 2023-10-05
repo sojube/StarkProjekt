@@ -35,8 +35,8 @@ sheet.setColumnWidth (6, 25)
 
 // Erstelle eine Kopfzeile
 XSSFRow headerRow = sheet.createRow(0)
-cell = headerRow.createCell(0);
-cell.setCellValue("Kapitän")
+XSSFCell cell0 = headerRow.createCell(0);
+cell0.setCellValue("Kapitän")
 
 
 // Specify the file path relative to the workspace
