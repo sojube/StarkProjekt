@@ -50,13 +50,45 @@ sheet.setColumnWidth (6, 7500)
     font.setBold(true);
     headerstyle.setFont(font);
 
-// Erstelle eine Kopfzeile
+// Erstelle eine Kopfzeile des excel dokument
 XSSFRow headerRow = sheet.createRow(0);
-// Setzen Sie die Zeilenhöhe auf 19
-headerRow.setHeight((short) (19*20)); 
-XSSFCell cell0 = headerRow.createCell(0);
-cell0.setCellValue("Kapitän");
-cell0.setCellStyle(headerstyle);
+headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
+    // erste spalte
+    XSSFCell cell0 = headerRow.createCell(0);
+    cell0.setCellValue("Kapitän");
+    cell0.setCellStyle(headerstyle);
+
+    // zweite spalte
+    XSSFCell cell1 = headerRow.createCell(1);
+    cell1.setCellValue("Vorname Nachname");
+    cell1.setCellStyle(headerstyle);
+
+    // dritte spalte
+    XSSFCell cell2 = headerRow.createCell(2);
+    cell2.setCellValue("Stand Up Datum");
+    cell2.setCellStyle(headerstyle);
+
+    // vierte spalte
+    XSSFCell cell3 = headerRow.createCell(3);
+    cell3.setCellValue("Intakevorbereitung");
+    cell3.setCellStyle(headerstyle);
+
+    // fünfte spalte
+    XSSFCell cell4 = headerRow.createCell(4);
+    cell4.setCellValue("Intake ÃœbungslÃ¤ufen mit:");
+    cell4.setCellStyle(headerstyle);
+
+    // sechste spalte
+    XSSFCell cell5 = headerRow.createCell(5);
+    cell5.setCellValue("Zerziefizierung und Deadline");
+    cell5.setCellStyle(headerstyle);
+
+    // siebte spalte
+    XSSFCell cell6 = headerRow.createCell(6);
+    cell6.setCellValue("Sonstige");
+    cell6.setCellStyle(headerstyle);
+
+    
 
 
 // Specify the file path relative to the workspace
