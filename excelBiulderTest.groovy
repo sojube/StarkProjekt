@@ -172,7 +172,7 @@ dataRow2.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
     XSSFCell dataRow2Cell6 = dataRow1.createCell(6);
     dataRow2Cell6.setCellValue("Aufgabe");
     dataRow2Cell6.setCellStyle(style);      
-
+/*
 XSSFRow dataRow3 = sheet.createRow(1);
 dataRow3.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
     // erste spalte
@@ -210,7 +210,7 @@ dataRow3.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
     dataRow3Cell6.setCellValue("Aufgabe");
     dataRow3Cell6.setCellStyle(style);  
           
-
+*/
     
 
 
