@@ -19,13 +19,13 @@ XSSFWorkbook workbook = new XSSFWorkbook()
 XSSFSheet sheet = workbook.createSheet("Tabelle1")
 
 // set the columnWidth
-sheet.setColumnWidth (0, 10)
-sheet.setColumnWidth (1, 25)
-sheet.setColumnWidth (2, 25)
-sheet.setColumnWidth (3, 35)
-sheet.setColumnWidth (4, 25)
-sheet.setColumnWidth (5, 35)
-sheet.setColumnWidth (6, 25)
+sheet.setColumnWidth (0, 1000)
+sheet.setColumnWidth (1, 2500)
+sheet.setColumnWidth (2, 2500)
+sheet.setColumnWidth (3, 3500)
+sheet.setColumnWidth (4, 2500)
+sheet.setColumnWidth (5, 3500)
+sheet.setColumnWidth (6, 2500)
 
 // Erstelle eine Kopfzeile
 XSSFRow headerRow = sheet.createRow(0)

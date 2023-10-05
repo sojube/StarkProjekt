@@ -1,4 +1,4 @@
-@Library('StarkProjekt') _ 
+//@Library('StarkProjekt') _ 
 
 @Grab(group='org.apache.poi', module='poi', version='5.0.0')
 @Grab(group='org.apache.poi', module='poi-ooxml', version='5.0.0')
