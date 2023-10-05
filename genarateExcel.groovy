@@ -18,6 +18,8 @@ public class TypesofCells {
       XSSFWorkbook workbook = new XSSFWorkbook(); 
       XSSFSheet spreadsheet = workbook.createSheet("cell types");
       
+      spreadsheet.setColumnWidth(0, 35)
+      
       XSSFRow row = spreadsheet.createRow((short) 2);
       row.setHeightInPoints((int) 35)
       row.createCell(0).setCellValue("Type of Cell");
