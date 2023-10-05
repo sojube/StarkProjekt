@@ -44,8 +44,8 @@ XSSFRow headerRow = sheet.createRow(0);
     cell0.setCellValue("Kapitän");
     //cell0.setCellStyle(style);
     // zweite zelle des Kopfzeile
-    cell0 = headerRow.createCell(1);
-    cell0.setCellValue("Vorname Nachname");
+    cell1 = headerRow.createCell(1);
+    cell1.setCellValue("Vorname Nachname");
     //cell0.setCellStyle(style);
 
    
