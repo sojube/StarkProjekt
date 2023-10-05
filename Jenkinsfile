@@ -62,8 +62,8 @@ pipeline {
                script {
                 def inputFile = readFile(file: './tagesPlan.json')
                 def jsonSlurper = new JsonSlurper()
-                //def dataFile = jsonSlurper.parse(inputFile)
-                println " ${inputFile['Employees']['Vorname Nachname']}"
+                def dataFile = readJSON text: inputFile
+                println " ${dataFile['Employees']['Vorname Nachname']}"
                     
                 }
             }
