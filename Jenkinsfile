@@ -68,11 +68,15 @@ pipeline {
                 
                 dataJson.each{ item ->
                       
-                   def Array = [];
-                    Array.add(item['Vorname Nachname'])
-                    
-                   
-                    listOfEmployees.add(Array);   
+                def Array = [];
+                Array.add(item['kapitän'] )
+                Array.add(item['Vorname Nachname'] )
+                Array.add(item['Stand Up Datum'] )
+                Array.add(item['Intakevorbereitungen'] )
+                Array.add(item['Intake Übungslaufe mit'] )
+                Array.add(item['Zerfizierung und Deadline'] )
+                Array.add(item['Sonnstiges'] )  
+                listOfEmployees.add(Array);   
 
                 }
             
