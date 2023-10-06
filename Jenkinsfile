@@ -65,7 +65,8 @@ pipeline {
                 
                 def listOfEmployees = [];
                 def dataJson = jsonSlurper.parseText(inputFile)
-
+                
+                /*
                 def Array0 = [];
                 Array0.add(" ${dataJson.Employees[0]['kapitän']} ")
                 Array0.add(" ${dataJson.Employees[0]['Vorname Nachname']} ")
@@ -103,7 +104,12 @@ pipeline {
                 println " ${listOfEmployees[0][2]}"
                 println " ${listOfEmployees[1][3]} "
                 println " ${listOfEmployees[2][0]} "
-                    
+                */
+
+
+                println " the size of json ist : ${inputFile.size()}" 
+                println " ${listOfEmployees}" 
+
                 }
             } 
         }
