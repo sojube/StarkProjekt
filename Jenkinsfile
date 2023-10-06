@@ -78,7 +78,9 @@ pipeline {
 
                 println " ${dataJson}"
 
-                println " ${dataJson.Employees[0]['Vorname Nachname']} "
+                def datakey1 = " ${dataJson.Employees[0]['Vorname Nachname']} "
+
+                println " ${datakey1}"
                 println " ${dataJson.Employees[1]['Stand Up Datum']} "
                 println " ${dataJson.Employees[2]['Sonnstiges']} "
                     
