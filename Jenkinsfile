@@ -67,7 +67,7 @@ pipeline {
                 def dataJson = jsonSlurper.parseText(inputFile)
                 
 
-                def keys = dataJson.keySet()
+                def keys = dataJson[0].keySet()
                 println " ${keys}"
                 
                 dataJson.each{ item, index->
