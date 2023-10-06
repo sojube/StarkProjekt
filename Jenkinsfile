@@ -75,12 +75,12 @@ pipeline {
                 println " ${dataFile.Employees[0]['Sonnstiges']}"
                 */
                 def dataJson = jsonSlurper.parseText(inputFile)
-                println " ${dataJson.Employees[0]} "
 
-                def key1Value = dataJson.key3
-                def key2Value = dataJson.key2
-                 println " ${key1Value} "
-                 println " ${key2Value} "
+                println " ${dataJson}"
+
+                println " ${dataJson.Employees[0]['Vorname Nachname']} "
+                println " ${dataJson.Employees[1]['Stand Up Datum']} "
+                println " ${dataJson.Employees[2]['Sonnstiges']} "
                     
                 }
             } 
