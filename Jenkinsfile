@@ -62,27 +62,47 @@ pipeline {
                script {
                 def inputFile = readFile(file: './tagesPlan.json')
                 def jsonSlurper = new JsonSlurper()
-                /*
-                def dataFile = readJSON text: inputFile
                 
-                //println " ${dataFile['Employees']['Vorname Nachname']}"
-                println " ${dataFile.Employees[0]['kapitän']}"
-                //println " ${dataFile.Employees[0]['Vorname Nachname']}"
-                println " ${dataFile.Employees[0]['Stand Up Datum']}"
-                println " ${dataFile.Employees[0]['Intakevorbereitungen']}"
-                println " ${dataFile.Employees[0]['Intake Übungslaufe mit']}"
-                println " ${dataFile.Employees[0]['Zerfizierung und Deadline']}"
-                println " ${dataFile.Employees[0]['Sonnstiges']}"
-                */
+                def listOfEmployees = [];
                 def dataJson = jsonSlurper.parseText(inputFile)
 
-                println " ${dataJson}"
+                def Array0 = [];
+                Array0.add(" ${dataJson.Employees[0]['kapitän']} ")
+                Array0.add(" ${dataJson.Employees[0]['Vorname Nachname']} ")
+                Array0.add(" ${dataJson.Employees[0]['Stand Up Datum']} ")
+                Array0.add(" ${dataJson.Employees[0]['Intakevorbereitungen']} ")
+                Array0.add(" ${dataJson.Employees[0]['Intake Übungslaufe mit']} ")
+                Array0.add(" ${dataJson.Employees[0]['Zerfizierung und Deadline']} ")
+                Array0.add(" ${dataJson.Employees[0]['Sonnstiges']} ")
 
-                def datakey1 = " ${dataJson.Employees[0]['Vorname Nachname']} "
+                def Array1 = [];
+                Array1.add(" ${dataJson.Employees[1]['kapitän']} ")
+                Array1.add(" ${dataJson.Employees[1]['Vorname Nachname']} ")
+                Array1.add(" ${dataJson.Employees[1]['Stand Up Datum']} ")
+                Array1.add(" ${dataJson.Employees[1]['Intakevorbereitungen']} ")
+                Array1.add(" ${dataJson.Employees[1]['Intake Übungslaufe mit']} ")
+                Array1.add(" ${dataJson.Employees[1]['Zerfizierung und Deadline']} ")
+                Array1.add(" ${dataJson.Employees[1]['Sonnstiges']} ")
 
-                println " ${datakey1}"
-                println " ${dataJson.Employees[1]['Stand Up Datum']} "
-                println " ${dataJson.Employees[2]['Sonnstiges']} "
+                def Array2 = [];
+                Array2.add(" ${dataJson.Employees[2]['kapitän']} ")
+                Array2.add(" ${dataJson.Employees[2]['Vorname Nachname']} ")
+                Array2.add(" ${dataJson.Employees[2]['Stand Up Datum']} ")
+                Array2.add(" ${dataJson.Employees[2]['Intakevorbereitungen']} ")
+                Array2.add(" ${dataJson.Employees[2]['Intake Übungslaufe mit']} ")
+                Array2.add(" ${dataJson.Employees[2]['Zerfizierung und Deadline']} ")
+                Array2.add(" ${dataJson.Employees[2]['Sonnstiges']} ")
+
+
+                listOfEmployees.add(Array0);
+                listOfEmployees.add(Array1);
+                listOfEmployees.add(Array2);
+
+                println " ${listOfEmployees}"
+
+                println " ${listOfEmployees[0][2]}"
+                println " ${listOfEmployees[1][3]} "
+                println " ${listOfEmployees[2][0]} "
                     
                 }
             } 
