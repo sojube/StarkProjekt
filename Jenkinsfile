@@ -66,12 +66,8 @@ pipeline {
                 def listOfEmployees = [];
                 def dataJson = jsonSlurper.parseText(inputFile)
                 
-                 println "${inputFile[0]}"
                 
-                dataJson.each{ item, index->
-
-                //def ArrayKopfZeile = []; 
-                //arraKopfZeile.add(item.get);     
+                dataJson.each{ item, index-> 
 
                 def Array = [];
                 Array.add(item['kapitän'] )
@@ -84,9 +80,7 @@ pipeline {
                 listOfEmployees.add(Array);   
 
                 }
-            
-                 
-                //println " ${ArrayKopfZeile}"
+
 
                 println " ${listOfEmployees[0][2]}"
                 println " ${listOfEmployees[1][3]} "
@@ -96,6 +90,12 @@ pipeline {
                 println " Die anzahl der Element für eine Person ist: ${dataJson[0].size()}" 
                 println " the size of json ist : ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
                 //println " ${listOfEmployees}"  // gibt die List der Employees
+
+                inputFile.each{ item->
+
+                   println " ${item} "
+
+                }
 
                 }
             } 
