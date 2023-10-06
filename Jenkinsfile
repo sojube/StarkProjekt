@@ -91,7 +91,7 @@ pipeline {
                 println " the size of json ist : ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
                 //println " ${listOfEmployees}"  // gibt die List der Employees
 
-                def jsonObject = readJSON text: inputFile
+                //def jsonObject = readJSON text: inputFile
                 /*
                 def unsortedList = []
 
@@ -103,7 +103,7 @@ pipeline {
 
                 println "unsorted list ${unsortedList}" 
                 */
-                println "${jsonObject}"
+                //println "${jsonObject}"
 
                 }
             } 
