@@ -76,6 +76,9 @@ pipeline {
                 */
                 def dataJson = jsonSlurper.parseText(inputFile)
                 println " ${dataJson} "
+
+                def key1Value = dataJson.key1
+                def key2Value = dataJson.key2
                     
                 }
             } 
