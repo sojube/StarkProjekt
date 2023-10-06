@@ -67,9 +67,10 @@ pipeline {
 
                 println "${ArrayOfKey}"
 
-                /*
                 
-                jsonObject.each{ item, index-> 
+                def listOfEmployees = [];
+
+                jsonObject.each{ item -> 
 
                 def Array = [];
                 Array.add(item['kapitän'] )
@@ -92,7 +93,7 @@ pipeline {
                 println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
                 println " the size of json ist : ${jsonObject.size()}"  // die anzahl der Personnen in dem JSON
                 //println " ${listOfEmployees}"  // gibt die List der Employees
-                */
+                
 
                 
 
