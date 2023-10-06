@@ -65,11 +65,14 @@ pipeline {
                 
                 def listOfEmployees = [];
                 def dataJson = jsonSlurper.parseText(inputFile)
-                println " ${dataJson[0]}"
+                
+
+                def keys = dataJson.keySet()
+                println " ${keys}"
                 
                 dataJson.each{ item, index->
 
-                def ArrayKopfZeile = []; 
+                //def ArrayKopfZeile = []; 
                 //arraKopfZeile.add(item.get);     
 
                 def Array = [];
@@ -85,7 +88,7 @@ pipeline {
                 }
             
                  
-                println " ${ArrayKopfZeile}"
+                //println " ${ArrayKopfZeile}"
 
                 println " ${listOfEmployees[0][2]}"
                 println " ${listOfEmployees[1][3]} "
