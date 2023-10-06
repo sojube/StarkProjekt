@@ -65,39 +65,22 @@ pipeline {
                 
                 def listOfEmployees = [];
                 def dataJson = jsonSlurper.parseText(inputFile)
+                println " Die anzahl der Element für eine Person ist: ${dataJson[0].size()}" 
+                println "  ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
                 
-            
-                def Array0 = [];
-                Array0.add(" ${dataJson[0]['kapitän']} ")
-                Array0.add(" ${dataJson[0]['Vorname Nachname']} ")
-                Array0.add(" ${dataJson[0]['Stand Up Datum']} ")
-                Array0.add(" ${dataJson[0]['Intakevorbereitungen']} ")
-                Array0.add(" ${dataJson[0]['Intake Übungslaufe mit']} ")
-                Array0.add(" ${dataJson[0]['Zerfizierung und Deadline']} ")
-                Array0.add(" ${dataJson[0]['Sonnstiges']} ")
+                for (int j = 0; j< ${dataJson.size()}; j++ ){
 
-                def Array1 = [];
-                Array1.add(" ${dataJson[1]['kapitän']} ")
-                Array1.add(" ${dataJson[1]['Vorname Nachname']} ")
-                Array1.add(" ${dataJson[1]['Stand Up Datum']} ")
-                Array1.add(" ${dataJson[1]['Intakevorbereitungen']} ")
-                Array1.add(" ${dataJson[1]['Intake Übungslaufe mit']} ")
-                Array1.add(" ${dataJson[1]['Zerfizierung und Deadline']} ")
-                Array1.add(" ${dataJson[1]['Sonnstiges']} ")
+                    def Array(j) = [];
+                    Array(j).add(" ${dataJson[j]['kapitän']} ")
+                    Array(j).add(" ${dataJson[j]['Vorname Nachname']} ")
+                    Array(j).add(" ${dataJson[j]['Stand Up Datum']} ")
+                    Array(j).add(" ${dataJson[j]['Intakevorbereitungen']} ")
+                    Array(j).add(" ${dataJson[j]['Intake Übungslaufe mit']} ")
+                    Array(j).add(" ${dataJson[j]['Zerfizierung und Deadline']} ")
+                    Array(j).add(" ${dataJson[j]['Sonnstiges']} ")
+                    listOfEmployees.add(Array(j)); 
 
-                def Array2 = [];
-                Array2.add(" ${dataJson[2]['kapitän']} ")
-                Array2.add(" ${dataJson[2]['Vorname Nachname']} ")
-                Array2.add(" ${dataJson[2]['Stand Up Datum']} ")
-                Array2.add(" ${dataJson[2]['Intakevorbereitungen']} ")
-                Array2.add(" ${dataJson[2]['Intake Übungslaufe mit']} ")
-                Array2.add(" ${dataJson[2]['Zerfizierung und Deadline']} ")
-                Array2.add(" ${dataJson[2]['Sonnstiges']} ")
-
-
-                listOfEmployees.add(Array0);
-                listOfEmployees.add(Array1);
-                listOfEmployees.add(Array2);
+                }
 
                 println " ${listOfEmployees}"
 
@@ -106,8 +89,7 @@ pipeline {
                 println " ${listOfEmployees[2][0]} "
             
 
-                println " Die anzahl der Element für eine Person ist: ${dataJson[0].size()}" 
-                println " the size of json ist : ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
+                
                 //println " ${listOfEmployees}"  // gibt die List der Employees
 
                 }
