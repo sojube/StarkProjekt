@@ -66,7 +66,7 @@ pipeline {
                 def listOfEmployees = [];
                 def dataJson = jsonSlurper.parseText(inputFile)
                 
-                 println " ${dataJson}"
+                 println " ${inputFile}"
                 def keys = dataJson[0].keySet()
                 def ArrayOfKey = [];
                 println " ${keys}"
