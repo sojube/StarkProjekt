@@ -73,7 +73,7 @@ pipeline {
                 println " ${dataFile.Employees[0]['Sonnstiges']}"
                     
                 }
-              
+            } 
         }
           
         stage('Excel erstellen'){
