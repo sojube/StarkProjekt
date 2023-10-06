@@ -65,7 +65,7 @@ pipeline {
                 def dataFile = readJSON text: inputFile
                 println " ${dataFile['Employees']['Vorname Nachname']}"
                 println " ${dataFile.Employees[0]['Vorname Nachname']}"
-                println " ${dataFile.Employees[0]}"
+                println " ${dataFile.Employees[0][0]}"
                 println " ${dataFile.Employees[1]}"
                 println " ${dataFile.Employees[2]}"
                     
