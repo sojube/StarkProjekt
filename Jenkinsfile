@@ -78,7 +78,7 @@ pipeline {
 
 
                 
-                 Array.add(item.get('${elem}') )
+                 Array.add(item.get(${elem}) )
 
                  /*
                 //Array.add(item['kapitana'] )
