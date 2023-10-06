@@ -72,20 +72,27 @@ pipeline {
 
                 jsonObject.each{ item -> 
 
+                   arrayOfKey.each{ elem ->
+
+
                 def Array = [];
-                 Array.add(item.get('kapitana') )
+                 Array.add(item.get(elem) )
+
+                 /*
                 //Array.add(item['kapitana'] )
                 Array.add(item['Vorname Nachname'] )
                 Array.add(item['Stand Up Datum'] )
                 Array.add(item['Intakevorbereitungen'] )
                 Array.add(item['Intake Übungslaufe mit'] )
                 Array.add(item['Zerfizierung und Deadline'] )
-                Array.add(item['Sonnstiges'] )  
-                listOfEmployees.add(Array);   
+                Array.add(item['Sonnstiges'] ) 
+                */ 
+                listOfEmployees.add(Array);  
+                   } 
 
                 }
 
-
+                println " ${listOfEmployees}"
                 println " ${listOfEmployees[0][2]}"
                 println " ${listOfEmployees[1][3]} "
                 println " ${listOfEmployees[2][0]} "
