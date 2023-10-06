@@ -73,7 +73,8 @@ pipeline {
                 jsonObject.each{ item -> 
 
                 def Array = [];
-                Array.add(item['kapitän'] )
+                 Array.add(item.get(kapitana) )
+                Array.add(item['kapitana'] )
                 Array.add(item['Vorname Nachname'] )
                 Array.add(item['Stand Up Datum'] )
                 Array.add(item['Intakevorbereitungen'] )
