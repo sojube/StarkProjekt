@@ -71,12 +71,11 @@ pipeline {
                 println " ${dataFile.Employees[0]['Intake Übungslaufe mit']}"
                 println " ${dataFile.Employees[0]['Zerfizierung und Deadline']}"
                 println " ${dataFile.Employees[0]['Sonnstiges']}"
+                    
+                }
 
                 def gib(){
                    return " ${dataFile.Employees[0]['Vorname Nachname']}"
-                }
-               
-                    
                 }
             }
         }
