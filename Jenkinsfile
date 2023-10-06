@@ -76,7 +76,7 @@ pipeline {
 
 
                 def Array = [];
-                 Array.add(item.get(elem) )
+                 Array.add(item.get("$elem") )
 
                  /*
                 //Array.add(item['kapitana'] )
