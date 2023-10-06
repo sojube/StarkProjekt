@@ -79,6 +79,8 @@ pipeline {
 
                 def key1Value = dataJson.key1
                 def key2Value = dataJson.key2
+                 println " ${key1Value} "
+                 println " ${key2Value} "
                     
                 }
             } 
