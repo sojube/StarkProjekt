@@ -106,10 +106,9 @@ pipeline {
                 println " ${listOfEmployees[2][0]} "
             
 
-                println " ${dataJson}" 
-                println " ${dataJson[0]}"
+                println " Die anzahl der Element für eine Person ist: ${dataJson[0].size()}" 
                 println " the size of json ist : ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
-                println " ${listOfEmployees}" 
+                //println " ${listOfEmployees}"  // gibt die List der Employees
 
                 }
             } 
