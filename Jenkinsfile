@@ -75,7 +75,7 @@ pipeline {
                 println " ${dataFile.Employees[0]['Sonnstiges']}"
                 */
                 def dataJson = jsonSlurper.parseText(inputFile)
-                println " dataJson "
+                println " ${dataJson} "
                     
                 }
             } 
