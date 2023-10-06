@@ -72,10 +72,12 @@ pipeline {
 
                 jsonObject.each{ item -> 
 
+                def Array = [];
+
                    arrayOfKey.each{ elem ->
 
 
-                def Array = [];
+                
                  Array.add(item.get("$elem") )
 
                  /*
@@ -87,8 +89,9 @@ pipeline {
                 Array.add(item['Zerfizierung und Deadline'] )
                 Array.add(item['Sonnstiges'] ) 
                 */ 
-                listOfEmployees.add(Array);  
+                  
                    } 
+                   listOfEmployees.add(Array);
 
                 }
 
