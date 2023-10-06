@@ -63,6 +63,10 @@ pipeline {
                 def inputFile = readFile(file: './tagesPlan.json')
                 def jsonObject = readJSON text: inputFile
 
+                def ArrayOfKey = "${jsonObject[0].keySet()}"
+
+                println "${ArrayOfKey}"
+
                 /*
                 
                 jsonObject.each{ item, index-> 
@@ -90,7 +94,7 @@ pipeline {
                 //println " ${listOfEmployees}"  // gibt die List der Employees
                 */
 
-                println "${jsonObject[0].keySet()}"
+                
 
                 }
             } 
