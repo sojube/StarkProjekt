@@ -64,13 +64,17 @@ pipeline {
                 //def jsonSlurper = new JsonSlurper()ghfhhhfhgh
                 def dataFile = readJSON text: inputFile
                 //println " ${dataFile['Employees']['Vorname Nachname']}"
-                def employeesIstKapitän = dataFile.Employees[0]['kapitän']
-                println " ${dataFile.Employees[0]['Vorname Nachname']}"
+                println " ${dataFile.Employees[0]['kapitän']}"
+                //println " ${dataFile.Employees[0]['Vorname Nachname']}"
                 println " ${dataFile.Employees[0]['Stand Up Datum']}"
                 println " ${dataFile.Employees[0]['Intakevorbereitungen']}"
                 println " ${dataFile.Employees[0]['Intake Übungslaufe mit']}"
                 println " ${dataFile.Employees[0]['Zerfizierung und Deadline']}"
                 println " ${dataFile.Employees[0]['Sonnstiges']}"
+
+                def gib(){
+                   return " ${dataFile.Employees[0]['Vorname Nachname']}"
+                }
                
                     
                 }
