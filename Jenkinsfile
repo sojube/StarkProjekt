@@ -64,7 +64,7 @@ pipeline {
                 //def jsonSlurper = new JsonSlurper()ghfhhhfhgh
                 def dataFile = readJSON text: inputFile
                 //println " ${dataFile['Employees']['Vorname Nachname']}"
-                def employeesIstKapitän = "${dataFile.Employees[0]['kapitän']}"
+                def employeesIstKapitän = ${dataFile}.Employees[0]['kapitän']
                 println " ${dataFile.Employees[0]['Vorname Nachname']}"
                 println " ${dataFile.Employees[0]['Stand Up Datum']}"
                 println " ${dataFile.Employees[0]['Intakevorbereitungen']}"
