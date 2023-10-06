@@ -63,14 +63,9 @@ pipeline {
                 def inputFile = readFile(file: './tagesPlan.json')
                 def jsonObject = readJSON text: inputFile
 
-                /*
-                def jsonSlurper = new JsonSlurper()
-                
-                def listOfEmployees = [];
-                def dataJson = jsonSlurper.parseText(inputFile)
                 
                 
-                dataJson.each{ item, index-> 
+                jsonObject.each{ item, index-> 
 
                 def Array = [];
                 Array.add(item['kapitän'] )
@@ -90,24 +85,12 @@ pipeline {
                 println " ${listOfEmployees[2][0]} "
             
 
-                println " Die anzahl der Element für eine Person ist: ${dataJson[0].size()}" 
-                println " the size of json ist : ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
+                println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
+                println " the size of json ist : ${jsonObject.size()}"  // die anzahl der Personnen in dem JSON
                 //println " ${listOfEmployees}"  // gibt die List der Employees
-                */
+            
 
-                
-                /*
-                def unsortedList = []
-
-                // Iterate through the JSON object and add key-value pairs to the list
-                jsonObject.each { key, value ->
-                def keyValueString = "${key}: ${value}"
-                unsortedList.add(keyValueString)
-                }
-
-                println "unsorted list ${unsortedList}" 
-                */
-                println "${jsonObject[0]}"
+                println "${jsonObject[0].keySet()}"
 
                 }
             } 
