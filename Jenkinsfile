@@ -66,7 +66,6 @@ pipeline {
                 def listOfEmployees = [];
                 def dataJson = jsonSlurper.parseText(inputFile)
                 
-                println " ${inputFile[0]} "
                 
                 dataJson.each{ item, index-> 
 
@@ -93,7 +92,7 @@ pipeline {
                 //println " ${listOfEmployees}"  // gibt die List der Employees
 
                 def jsonObject = readJSON text: inputFile
-
+                /*
                 def unsortedList = []
 
                 // Iterate through the JSON object and add key-value pairs to the list
@@ -103,6 +102,8 @@ pipeline {
                 }
 
                 println "unsorted list ${unsortedList}" 
+                */
+                println "${jsonObject}"
 
                 }
             } 
