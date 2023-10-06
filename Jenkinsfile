@@ -92,6 +92,15 @@ pipeline {
                 println " the size of json ist : ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
                 //println " ${listOfEmployees}"  // gibt die List der Employees
 
+                def values = []
+                    
+                // Iterate through the JSON object and collect values
+                inputFile.each { key, value ->
+                    values.add(value)
+                }
+
+                println " ${values} "
+
                 }
             } 
         }
