@@ -106,7 +106,7 @@ pipeline {
                 println " ${listOfEmployees[2][0]} "
                 */
 
-
+                println " ${dataJson}" 
                 println " the size of json ist : ${dataJson.size()}" 
                 println " ${listOfEmployees}" 
 
