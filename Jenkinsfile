@@ -65,23 +65,18 @@ pipeline {
                 
                 def listOfEmployees = [];
                 def dataJson = jsonSlurper.parseText(inputFile)
-                println " Die anzahl der Element für eine Person ist: ${dataJson[0].size()}" 
-                println "  ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
                 
-                for (int j = 0; j< ${dataJson.size()}; j++ ){
-
-                    def Array = [];
-                    Array.add(" ${dataJson[${j}]['kapitän']} ")
-                    Array.add(" ${dataJson[${j}]['Vorname Nachname']} ")
-                    Array.add(" ${dataJson[${j}]['Stand Up Datum']} ")
-                    Array.add(" ${dataJson[${j}]['Intakevorbereitungen']} ")
-                    Array.add(" ${dataJson[${j}]['Intake Übungslaufe mit']} ")
-                    Array.add(" ${dataJson[${j}]['Zerfizierung und Deadline']} ")
-                    Array.add(" ${dataJson[${j}]['Sonnstiges']} ")
-                    listOfEmployees.add(Array); 
+                dataJson.each{ item ->
+                      
+                   def Array = [];
+                    Array.add(${item}['Vorname Nachname'])
+                    
+                   
+                    listOfEmployees.add(Array);   
 
                 }
-
+            
+               
                 println " ${listOfEmployees}"
 
                 println " ${listOfEmployees[0][2]}"
@@ -89,7 +84,8 @@ pipeline {
                 println " ${listOfEmployees[2][0]} "
             
 
-                
+                println " Die anzahl der Element für eine Person ist: ${dataJson[0].size()}" 
+                println " the size of json ist : ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
                 //println " ${listOfEmployees}"  // gibt die List der Employees
 
                 }
