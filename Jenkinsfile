@@ -70,15 +70,15 @@ pipeline {
                 
                 for (int j = 0; j< ${dataJson.size()}; j++ ){
 
-                    def Array(j) = [];
-                    Array(j).add(" ${dataJson[j]['kapitän']} ")
-                    Array(j).add(" ${dataJson[j]['Vorname Nachname']} ")
-                    Array(j).add(" ${dataJson[j]['Stand Up Datum']} ")
-                    Array(j).add(" ${dataJson[j]['Intakevorbereitungen']} ")
-                    Array(j).add(" ${dataJson[j]['Intake Übungslaufe mit']} ")
-                    Array(j).add(" ${dataJson[j]['Zerfizierung und Deadline']} ")
-                    Array(j).add(" ${dataJson[j]['Sonnstiges']} ")
-                    listOfEmployees.add(Array(j)); 
+                    def Array = [];
+                    Array.add(" ${dataJson[j]['kapitän']} ")
+                    Array.add(" ${dataJson[j]['Vorname Nachname']} ")
+                    Array.add(" ${dataJson[j]['Stand Up Datum']} ")
+                    Array.add(" ${dataJson[j]['Intakevorbereitungen']} ")
+                    Array.add(" ${dataJson[j]['Intake Übungslaufe mit']} ")
+                    Array.add(" ${dataJson[j]['Zerfizierung und Deadline']} ")
+                    Array.add(" ${dataJson[j]['Sonnstiges']} ")
+                    listOfEmployees.add(Array); 
 
                 }
 
