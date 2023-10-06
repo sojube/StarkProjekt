@@ -92,14 +92,17 @@ pipeline {
                 println " the size of json ist : ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
                 //println " ${listOfEmployees}"  // gibt die List der Employees
 
-                def values = []
-                    
-                // Iterate through the JSON object and collect values
-                dataJson.each { key, value ->
-                    values.add(key)
+                def jsonObject = readJSON text: inputFile
+
+                def unsortedList = []
+
+                // Iterate through the JSON object and add key-value pairs to the list
+                jsonObject.each { key, value ->
+                def keyValueString = "${key}: ${value}"
+                unsortedList.add(keyValueString)
                 }
 
-                println " ${values} "
+                println "unsorted list ${unsortedList}" 
 
                 }
             } 
