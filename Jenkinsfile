@@ -107,7 +107,7 @@ pipeline {
                 */
 
 
-                println " the size of json ist : ${inputFile.size()}" 
+                println " the size of json ist : ${inputFile.length()}" 
                 println " ${listOfEmployees}" 
 
                 }
