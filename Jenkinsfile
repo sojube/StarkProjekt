@@ -73,11 +73,7 @@ pipeline {
                 println " ${dataFile.Employees[0]['Sonnstiges']}"
                     
                 }
-
-                def gib(){
-                   return " ${dataFile.Employees[0]['Vorname Nachname']}"
-                }
-            }
+              
         }
           
         stage('Excel erstellen'){
