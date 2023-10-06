@@ -69,7 +69,7 @@ pipeline {
                 
                 dataJson.each{ item, index->
 
-                def arraKopfZeile = []; 
+                def ArrayKopfZeile = []; 
                 //arraKopfZeile.add(item.get);     
 
                 def Array = [];
@@ -85,7 +85,7 @@ pipeline {
                 }
             
                  
-                println " ${arraKopfZeile}"
+                println " ${ArrayKopfZeile}"
 
                 println " ${listOfEmployees[0][2]}"
                 println " ${listOfEmployees[1][3]} "
