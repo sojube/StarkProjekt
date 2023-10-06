@@ -69,7 +69,7 @@ pipeline {
                 dataJson.each{ item ->
                       
                    def Array = [];
-                    Array.add(${item}['Vorname Nachname'])
+                    Array.add(item['Vorname Nachname'])
                     
                    
                     listOfEmployees.add(Array);   
