@@ -65,11 +65,12 @@ pipeline {
                 
                 def listOfEmployees = [];
                 def dataJson = jsonSlurper.parseText(inputFile)
+                println " ${dataJson}"
                 
                 dataJson.each{ item, index->
 
                 def arraKopfZeile = []; 
-                arraKopfZeile.add(index);     
+                //arraKopfZeile.add(item.get);     
 
                 def Array = [];
                 Array.add(item['kapitän'] )
