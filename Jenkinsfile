@@ -96,7 +96,7 @@ pipeline {
                     
                 // Iterate through the JSON object and collect values
                 inputFile.each { key, value ->
-                    values.add(value)
+                    values.add(key)
                 }
 
                 println " ${values} "
