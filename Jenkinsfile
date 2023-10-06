@@ -95,7 +95,7 @@ pipeline {
                 def values = []
                     
                 // Iterate through the JSON object and collect values
-                inputFile.each { key, value ->
+                dataJson.each { key, value ->
                     values.add(key)
                 }
 
