@@ -61,6 +61,8 @@ pipeline {
             steps {
                script {
                 def inputFile = readFile(file: './tagesPlan.json')
+
+                /*
                 def jsonSlurper = new JsonSlurper()
                 
                 def listOfEmployees = [];
@@ -90,8 +92,9 @@ pipeline {
                 println " Die anzahl der Element für eine Person ist: ${dataJson[0].size()}" 
                 println " the size of json ist : ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
                 //println " ${listOfEmployees}"  // gibt die List der Employees
+                */
 
-                //def jsonObject = readJSON text: inputFile
+                def jsonObject = readJSON text: inputFile
                 /*
                 def unsortedList = []
 
@@ -103,7 +106,7 @@ pipeline {
 
                 println "unsorted list ${unsortedList}" 
                 */
-                //println "${jsonObject}"
+                println "${jsonObject}"
 
                 }
             } 
