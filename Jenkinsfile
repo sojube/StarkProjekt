@@ -90,6 +90,12 @@ pipeline {
                 script {  
 
                     varriable() 
+                    println (rowColors[0])
+                    println (rowColors[1])
+                    println (rowColors[2])
+                    println (rowColors[3])
+                    println (rowColors[4])
+                    println (rowColors[5])
 
                 }
                
