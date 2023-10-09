@@ -92,7 +92,7 @@ String[][] data = [
                 dataRow.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
 
                 for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
-                    Cell cell = row.createCell(colNum);
+                    Cell cell = dataRow.createCell(colNum);
                     cell.setCellValue(data[rowNum][colNum]);
                     cell.setCellStyle(style);
                 }
