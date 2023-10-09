@@ -39,9 +39,6 @@ sheet.setColumnWidth (7, 7500)
 
 
 
-
-
-
 // create Style for the header cells
 
     CellStyle headerstyle = workbook.createCellStyle();
@@ -57,15 +54,19 @@ sheet.setColumnWidth (7, 7500)
     font.setBold(true);
     headerstyle.setFont(font);
 
-    // zellen Rahmen
+    // backgroungcolor of HeaderCell
+    headerstyle.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
+    headerstyle.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
+
+    // zellen Rahmen für HeaderCell
     headerstyle.setBorderBottom(BorderStyle.THIN);
-    headerstyle.setBottomBorderColor(IndexedColors.WHITE.getIndex());
+    headerstyle.setBottomBorderColor(IndexedColors.BLACK.getIndex());
     headerstyle.setBorderTop(BorderStyle.THIN);
-    headerstyle.setTopBorderColor(IndexedColors.WHITE.getIndex());
+    headerstyle.setTopBorderColor(IndexedColors.BLACK.getIndex());
     headerstyle.setBorderLeft(BorderStyle.THIN);
-    headerstyle.setLeftBorderColor(IndexedColors.WHITE.getIndex());
+    headerstyle.setLeftBorderColor(IndexedColors.BLACK.getIndex());
     headerstyle.setBorderRight(BorderStyle.THIN);
-    headerstyle.setRightBorderColor(IndexedColors.WHITE.getIndex());
+    headerstyle.setRightBorderColor(IndexedColors.BLACK.getIndex());
 
 // Erstelle eine Kopfzeile des excel dokument
 XSSFRow headerRow = sheet.createRow(0);
@@ -96,13 +97,13 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
 
     // zellen Rahmen
     style.setBorderBottom(BorderStyle.THIN);
-    style.setBottomBorderColor(IndexedColors.WHITE.getIndex());
+    style.setBottomBorderColor(IndexedColors.BLACK.getIndex());
     style.setBorderTop(BorderStyle.THIN);
-    style.setTopBorderColor(IndexedColors.WHITE.getIndex());
+    style.setTopBorderColor(IndexedColors.BLACK.getIndex());
     style.setBorderLeft(BorderStyle.THIN);
-    style.setLeftBorderColor(IndexedColors.WHITE.getIndex());
+    style.setLeftBorderColor(IndexedColors.BLACK.getIndex());
     style.setBorderRight(BorderStyle.THIN);
-    style.setRightBorderColor(IndexedColors.WHITE.getIndex());
+    style.setRightBorderColor(IndexedColors.BLACK.getIndex());
 
     // Ändere die Hintergrundfarbe der Zelle
     style.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
