@@ -59,7 +59,7 @@ pipeline {
             steps {
                script {
 
-                def readData = load './jsonReader.groovy'
+                def readData = load './dataPreparer.groovy'
                     
                 }    
 
