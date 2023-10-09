@@ -9,16 +9,26 @@ def jsonObject = readJSON text: inputFile
 def data = [];
 def headerData = [];
 
-for(item in jsonObject[0].keySet()){
+for(key in jsonObject[0].keySet()){
 
-    headerData.add(item);
+    headerData.add(key);
 }
 
-String[] test = headerData;
-println(test);
-println(test[6]);
-println(test[1]);
-println(test[5]);
+for(int i =0; i<jsonObject[0].size(); i++){
+    def headersHeadline = [];
+    for(value in jsonObject[i].values()){
+        headersHeadline.add(value)
+    }
+    
+    data.add(headersHeadline);
+
+}
+
+println(data);
+println(data[0][0]);
+println(data[1][2]);
+println(data[2][3]);
+println(data[0][1]);
 
 /*
 def headersHeadline = ["Data", "Vorname Nachname", "Zeit und Datum", "Intakevorbereitung", "Intake  mit:", "Zerziefizierung und Deadline", "Sonstige" ];
