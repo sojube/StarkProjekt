@@ -14,17 +14,6 @@ for(key in jsonObject[0].keySet()){
     headerData.add(key);
 }
 
-/*
-for(int i = 0; i < jsonObject[0].size(); i++){
-    def headersHeadline = [];
-    for(value in jsonObject[0].values()){
-        headersHeadline.add(value)
-    }
-    
-    data.add(headersHeadline);
-
-}
-*/
 
 for(item in jsonObject){
 
@@ -41,8 +30,4 @@ println(data);
 println(data[0][0]);
 println(data[1][2]);
 println(data[0][1]);
-
-
-println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
-println " the size of json ist : ${jsonObject.size()}"  // die anzahl der Personnen in dem JSON
-//println " ${listOfEmployees}"  // gibt die List der Employees   
+ 
