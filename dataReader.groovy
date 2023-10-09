@@ -7,7 +7,7 @@ def arrayOfKey = "${jsonObject[0].keySet()}"
 println "${arrayOfKey}"
 
 
-String[][] listOfEmployees;
+def listOfEmployees = [];
 
 for(item in jsonObject){
     
