@@ -14,6 +14,7 @@ for(key in jsonObject[0].keySet()){
     headerData.add(key);
 }
 
+/*
 for(int i = 0; i < jsonObject[0].size(); i++){
     def headersHeadline = [];
     for(value in jsonObject[0].values()){
@@ -23,35 +24,23 @@ for(int i = 0; i < jsonObject[0].size(); i++){
     data.add(headersHeadline);
 
 }
-
-println(data);
-println(data[0][0]);
-println(data[1][2]);
-println(data[0][1]);
-
-/*
-def headersHeadline = ["Data", "Vorname Nachname", "Zeit und Datum", "Intakevorbereitung", "Intake  mit:", "Zerziefizierung und Deadline", "Sonstige" ];
-def headersHeadline1 = ["Data1", "Vorname Nachname1", "Zeit und Datum1", "Intakevorbereitung1", "Intake  mit1:", "Zerziefizierung und Deadline1", "Sonstige1" ];
-def headersHeadline2 = ["Data2", "Vorname Nachname2", "Zeit und Datum2", "Intakevorbereitung2", "Intake  mit2:", "Zerziefizierung und Deadline2", "Sonstige2" ];
-data.add(headersHeadline);
-data.add(headersHeadline1);
-data.add(headersHeadline2);
-
-
-
-println(data);
-println(data[0][0]);
-println(data[1][2]);
-println(data[2][3]);
-println(data[0][1]);
 */
 
 for(item in jsonObject){
-    
-    def arrayOfValue = "${item.values()}"
-    println "${arrayOfValue}"
+
+    def dataOfAnEmployee = [];
+    for(value in item.values()){
+        dataOfAnEmployee.add(value)
+    }
+    println(dataOfAnEmployee)
+    data.add(dataOfAnEmployee);
    
 }
+
+println(data);
+println(data[0][0]);
+println(data[1][2]);
+println(data[0][1]);
 
 
 println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
