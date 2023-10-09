@@ -2,46 +2,51 @@
     {
     "Kapitän": "X ",
     "Vorname Nachname": "Jules",
-    "Stand Up Datum": "09.10.2023",
+    "Datum": "09.10.2023",
     "Intakevorbereitungen": " Gespräche mit Partner ",
     "Intake Übungslaufe mit": "N/A",
     "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung voraussichtlich bis 31.12.2023",
-    "Sonnstiges": " CI/CD, Git, GitHub"
+    "Sonnstiges": " CI/CD, Git, GitHub",
+    "Krank": "Nein"
     },
     {
     "Kapitän": "",
     "Vorname Nachname": "Yves",
-    "Stand Up Datum": "09.10.2023",
+    "Datum": "09.10.2023",
     "Intakevorbereitungen": "JavaScript",
     "Intake Übungslaufe mit": "N/A",
     "Zerfizierung und Deadline": "AWS bis 30.10.2023",
-    "Sonnstiges": "Cypress"
+    "Sonnstiges": "Cypress",
+    "Krank": "Nein"
     },
     {
     "Kapitän": " ",
     "Vorname Nachname": "Petru Walter",
-    "Stand Up Datum": "09.10.2023",
+    "Datum": "09.10.2023",
     "Intakevorbereitungen": "Playwright, Jenkins",
     "Intake Übungslaufe mit": "N/A",
     "Zerfizierung und Deadline": "N/A",
-    "Sonnstiges": "Jira, SoupUI"
+    "Sonnstiges": "Jira, SoupUI",
+    "Krank": "Nein"
     },
     {
     "Kapitän": "",
     "Vorname Nachname": "Yves2",
-    "Stand Up Datum": "09.10.2023",
+    "Datum": "09.10.2023",
     "Intakevorbereitungen": "JavaScript",
     "Intake Übungslaufe mit": "N/A",
     "Zerfizierung und Deadline": "AWS bis 30.10.2023",
-    "Sonnstiges": "Cypress"
+    "Sonnstiges": "Cypress",
+    "Krank": "Nein"
     },
     {
     "Kapitän": " ",
     "Vorname Nachname": "Petru Walter2",
-    "Stand Up Datum": "09.10.2023",
+    "Datum": "09.10.2023",
     "Intakevorbereitungen": "Playwright, Jenkins",
     "Intake Übungslaufe mit": "N/A",
     "Zerfizierung und Deadline": "N/A",
-    "Sonnstiges": "Jira, SoupUI"
+    "Sonnstiges": "Jira, SoupUI",
+    "Krank": "Nein"
     }
     ]
