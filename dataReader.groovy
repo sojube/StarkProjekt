@@ -14,9 +14,9 @@ for(key in jsonObject[0].keySet()){
     headerData.add(key);
 }
 
-for(int i =0; i<jsonObject[0].size(); i++){
+for(int i = 0; i < jsonObject[0].size(); i++){
     def headersHeadline = [];
-    for(value in jsonObject[i].values()){
+    for(value in jsonObject[0].values()){
         headersHeadline.add(value)
     }
     
