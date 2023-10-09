@@ -5,16 +5,19 @@ import java.util.Collection;
 
 def inputFile = readFile(file: './tagesPlan.json')
 def jsonObject = readJSON text: inputFile
+String[][] data = [
+                ["John", "30", "New York", "John1", "301", "New York1", "John2"],
+                ["Alice", "25", "Los Angeles", "Alice1", "251", "Los Angeles1", "Alice2"],
+                ["Bob", "35", "Chicago", "Bob1", "351", "Chicago1", "Bob2"]
+            ];
 
 // get all Headline i the json file and write it into a map
 def arrayOfKey = "${jsonObject[0].keySet()}"
 
-println "${arrayOfKey}"
-println "${arrayOfKey.get(0)}"
-println "${arrayOfKey.get(1)}"
-String[] data = arrayOfKey;
-println "${data[0]}"
-println "${data[1]}"
+println "${data[0][2]}"
+println "${data[1][3]}"
+println "${data[2][0]}"
+println "${data[1][0]}"
 
 
 def listOfEmployees = [];
