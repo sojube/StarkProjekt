@@ -110,7 +110,7 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
 
 String[][] data = dataOfEmployees;
 
-colorIndex = IndexedColors.BLUE.getIndex();
+colorIndex = IndexedColors.LIGHT_BLUE.getIndex();
 
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
 
@@ -127,7 +127,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
         cell.setCellStyle(style);
     }
 
-    if(colorIndex == IndexedColors.BLUE.getIndex() ){
+    if(colorIndex == IndexedColors.LIGHT_BLUE.getIndex() ){
 
         b = IndexedColors.GREY_25_PERCENT.getIndex()
         colorIndex = b;
