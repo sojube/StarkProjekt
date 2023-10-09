@@ -1,41 +1,29 @@
-
 [
-{
-"Kapitana": "",
-"Vorname Nachname": "testVAAAA", 
-"Stand Up Datum": "06.09.2023",
-"Intakevorbereitungen": "N/A",
-"Intake Übungslaufe mit": "N/A",
-"Zerfizierung und Deadline": "ISTQB Mobile App Testing bis 01.10.2023",
-"Sonnstiges": "Git und GitHub"
-},
-
-{
-"Kapitana": " ",
-"Vorname Nachname": "HDHGDHGDGDH",
-"Stand Up Datum": "06.09.2023",
-"Intakevorbereitungen": " AWS, CI/CD, Git, GitHub ",
-"Intake Übungslaufe mit": "N/A",
-"Zerfizierung und Deadline": "Automotive Softwaretest Prüfung voraussichtlich bis 31.12.2023",
-"Sonnstiges": " "
-},
-
-{   
-"Kapitana": "X",
-"Vorname Nachname": "SFKFKGK",
-"Stand Up Datum": "06.09.2023",
-"Intakevorbereitungen": "JavaScript",
-"Intake Übungslaufe mit": "N/A",
-"Zerfizierung und Deadline": "AWS 30-09-2023",
-"Sonnstiges": "Jenkins"
-},
-{
-"Kapitana": " ",
-"Vorname Nachname": "Petru Walter",
-"Stand Up Datum": "06.09.2023",
-"Intakevorbereitungen": "GitHub Git",
-"Intake Übungslaufe mit": "N/A",
-"Zerfizierung und Deadline": "ISTQB 01.10.23",
-"Sonnstiges": "Jira, Jenkins"
-}
-]
+    {
+    "Kapitän": "X ",
+    "Vorname Nachname": "Jules",
+    "Stand Up Datum": "09.10.2023",
+    "Intakevorbereitungen": " Gespräche mit Partner ",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung voraussichtlich bis 31.12.2023",
+    "Sonnstiges": " CI/CD, Git, GitHub"
+    },
+    {
+    "Kapitän": "",
+    "Vorname Nachname": "Yves",
+    "Stand Up Datum": "09.10.2023",
+    "Intakevorbereitungen": "JavaScript",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "AWS bis 30.10.2023",
+    "Sonnstiges": "Cypress"
+    },
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "Petru Walter",
+    "Stand Up Datum": "09.10.2023",
+    "Intakevorbereitungen": "Playwright, Jenkins",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "N/A",
+    "Sonnstiges": "Jira, SoupUI"
+    }
+    ]
