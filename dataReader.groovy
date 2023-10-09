@@ -15,7 +15,7 @@ for(item in jsonObject){
     listOfEmployees.add("${arrayOfValue}")
 }
 
-println "${listOfEmployees}"
+println "${listOfEmployees[2][1]}"
 
 println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
 println " the size of json ist : ${jsonObject.size()}"  // die anzahl der Personnen in dem JSON
