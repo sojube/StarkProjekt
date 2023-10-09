@@ -110,12 +110,24 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
 
 String[][] data = dataOfEmployees;
 
-colorIndex = IndexedColors.LIGHT_BLUE.getIndex();
+
 
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
 
     XSSFRow dataRow = sheet.createRow(rowNum + 1);
     dataRow.setHeight((short) (45*20));  // Setzen Sie die Zeilenhöhe auf 35
+
+    a = IndexedColors.LIGHT_BLUE.getIndex();
+    b = IndexedColors.GREY_25_PERCENT.getIndex();
+
+    if(colorIndex == IndexedColors.LIGHT_BLUE.getIndex() ){
+
+        colorIndex = b;
+
+    }else{
+
+        colorIndex = a;
+    }
 
     // Ändere die Hintergrundfarbe der Zelle
     style.setFillForegroundColor(colorIndex) // Hier kannst du die gewünschte Farbe auswählen
@@ -125,17 +137,6 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
         Cell cell = dataRow.createCell(colNum);
         cell.setCellValue(data[rowNum][colNum]);
         cell.setCellStyle(style);
-    }
-
-    if(colorIndex == IndexedColors.LIGHT_BLUE.getIndex() ){
-
-        b = IndexedColors.GREY_25_PERCENT.getIndex()
-        colorIndex = b;
-
-    }else{
-
-        b = IndexedColors.BLUE.getIndex()
-        colorIndex = b;
     }
     
 }
