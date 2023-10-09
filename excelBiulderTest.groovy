@@ -15,6 +15,7 @@ import org.apache.poi.ss.usermodel.CellBase
 import org.apache.poi.xssf.usermodel.XSSFCell
 import java.io.*;
 import org.apache.poi.ss.usermodel.IndexedColors
+import org.apache.poi.xssf.usermodel.*;
 
 
 // Erstelle eine neue Arbeitsmappe (Workbook)
@@ -34,6 +35,16 @@ sheet.setColumnWidth (3, 11000)
 sheet.setColumnWidth (4, 7500)
 sheet.setColumnWidth (5, 11000)
 sheet.setColumnWidth (6, 7500)
+
+// zellen Rahmen
+style.setBorderBottom(BorderStyle.THIN);
+style.setBottomBorderColor(IndexedColors.WHITE.getIndex());
+style.setBorderTop(BorderStyle.THIN);
+style.setTopBorderColor(IndexedColors.WHITE.getIndex());
+style.setBorderLeft(BorderStyle.THIN);
+style.setLeftBorderColor(IndexedColors.WHITE.getIndex());
+style.setBorderRight(BorderStyle.THIN);
+style.setRightBorderColor(IndexedColors.WHITE.getIndex());
 
 
 // Ändere die Hintergrundfarbe der Zelle

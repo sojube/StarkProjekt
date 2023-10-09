@@ -14,7 +14,8 @@ import java.io.FileOutputStream
 import org.apache.poi.ss.usermodel.CellBase
 import org.apache.poi.xssf.usermodel.XSSFCell
 import java.io.*;
-import org.apache.poi.ss.usermodel.IndexedColors
+import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.xssf.usermodel.*;
 
 
 // Erstelle eine neue Arbeitsmappe (Workbook)
@@ -82,6 +83,16 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
     
     // Zeilen Umbruch
     style.setWrapText(true);
+
+    // zellen Rahmen
+    style.setBorderBottom(BorderStyle.THIN);
+    style.setBottomBorderColor(IndexedColors.WHITE.getIndex());
+    style.setBorderTop(BorderStyle.THIN);
+    style.setTopBorderColor(IndexedColors.WHITE.getIndex());
+    style.setBorderLeft(BorderStyle.THIN);
+    style.setLeftBorderColor(IndexedColors.WHITE.getIndex());
+    style.setBorderRight(BorderStyle.THIN);
+    style.setRightBorderColor(IndexedColors.WHITE.getIndex());
 
     // Ändere die Hintergrundfarbe der Zelle
     style.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
