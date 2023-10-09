@@ -2,9 +2,11 @@ def inputFile = readFile(file: './tagesPlan.json')
 def jsonObject = readJSON text: inputFile
 
 // get all Headline i the json file and write it into a map
-String[] arrayOfKey = "${jsonObject[0].keySet()}"
+def arrayOfKey = "${jsonObject[0].keySet()}"
 
 println "${arrayOfKey}"
+println "${arrayOfKey[0]}"
+println "${arrayOfKey[1]}"
 String[] data = arrayOfKey;
 println "${data[0]}"
 println "${data[1]}"
