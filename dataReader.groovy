@@ -1,7 +1,7 @@
 def inputFile = readFile(file: './tagesPlan.json')
 def jsonObject = readJSON text: inputFile
 
-String[] arrayOfKey = "${jsonObject[0].keySet()}"
+def arrayOfKey = "${jsonObject[0].keySet()}"
 
 println "${arrayOfKey}"
 
