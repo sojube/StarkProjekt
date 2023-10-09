@@ -109,19 +109,19 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
 
 
 String[][] data = dataOfEmployees;
-color1 = IndexedColors.LIGHT_BLUE.getIndex();
-color2 = IndexedColors.GREY_25_PERCENT.getIndex();
+int color1 = IndexedColors.LIGHT_BLUE.getIndex();
+int color2 = IndexedColors.GREY_25_PERCENT.getIndex();
 
-rowColors = [color1, color2, color1, color2, color1, color2, color1, color2, color1, color2, color1, color2, color1, color2, color1];
+int[] rowColors = [color1, color2, color1, color2, color1, color2, color1, color2, color1, color2, color1, color2, color1, color2, color1];
 
 
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
 
     XSSFRow dataRow = sheet.createRow(rowNum + 1);
     dataRow.setHeight((short) (45*20));  // Setzen Sie die Zeilenhöhe auf 35
-
+    int colorIndex = (int) rowColors[rowNum]
     // Ändere die Hintergrundfarbe der Zelle
-    style.setFillForegroundColor(rowColors[rowNum]) // Hier kannst du die gewünschte Farbe auswählen
+    style.setFillForegroundColor(colorIndex) // Hier kannst du die gewünschte Farbe auswählen
     style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
     
     for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
