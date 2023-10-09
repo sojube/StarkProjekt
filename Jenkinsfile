@@ -55,44 +55,12 @@ pipeline {
             }
         }
 
-        stage('get json file and read datavalues') {
+        stage('Reading json file and preparing data') {
             steps {
                script {
-                    def inputFile = readFile(file: './tagesPlan.json')
-                    def jsonObject = readJSON text: inputFile
 
-                    def arrayOfKey = "${jsonObject[0].keySet()}"
-
-                    println "${arrayOfKey}"
-
+                def readData = load './jsonReader.groovy'
                     
-                    def listOfEmployees = [];
-
-                        /*
-                    //Array.add(item['kapitana'] )
-                    Array.add(item['Vorname Nachname'] )
-                    Array.add(item['Stand Up Datum'] )
-                    Array.add(item['Intakevorbereitungen'] )
-                    Array.add(item['Intake Übungslaufe mit'] )
-                    Array.add(item['Zerfizierung und Deadline'] )
-                    Array.add(item['Sonnstiges'] ) 
-                     
-                        
-                        
-                    //listOfEmployees.add(Array);
-
-                
-
-                    println " ${listOfEmployees}"
-                    println " ${listOfEmployees[0][2]}"
-                    println " ${listOfEmployees[1][3]} "
-                    println " ${listOfEmployees[2][0]} "
-                    */
-                
-
-                    println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
-                    println " the size of json ist : ${jsonObject.size()}"  // die anzahl der Personnen in dem JSON
-                    //println " ${listOfEmployees}"  // gibt die List der Employees   
                 }    
 
             }
