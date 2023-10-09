@@ -79,6 +79,9 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
 
     // Set vertical alignment to CENTER
     style.setVerticalAlignment(VerticalAlignment.CENTER); 
+    
+    // Zeilen Umbruch
+    style.setWrapText(true);
 
     // Ändere die Hintergrundfarbe der Zelle
     style.setFillForegroundColor(IndexedColors.BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
