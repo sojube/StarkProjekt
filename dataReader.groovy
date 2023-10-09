@@ -6,12 +6,12 @@ import java.util.Collection;
 
 def inputFile = readFile(file: './tagesPlan.json')
 def jsonObject = readJSON text: inputFile
-String[][] data = [];
+def data = [];
 String[] headerData = [];
 
-String[] headersHeadline = ["Data", "Vorname Nachname", "Zeit und Datum", "Intakevorbereitung", "Intake  mit:", "Zerziefizierung und Deadline", "Sonstige" ];
-String[] headersHeadline1 = ["Data1", "Vorname Nachname1", "Zeit und Datum1", "Intakevorbereitung1", "Intake  mit1:", "Zerziefizierung und Deadline1", "Sonstige1" ];
-String[] headersHeadline2 = ["Data2", "Vorname Nachname2", "Zeit und Datum2", "Intakevorbereitung2", "Intake  mit2:", "Zerziefizierung und Deadline2", "Sonstige2" ];
+def headersHeadline = ["Data", "Vorname Nachname", "Zeit und Datum", "Intakevorbereitung", "Intake  mit:", "Zerziefizierung und Deadline", "Sonstige" ];
+def headersHeadline1 = ["Data1", "Vorname Nachname1", "Zeit und Datum1", "Intakevorbereitung1", "Intake  mit1:", "Zerziefizierung und Deadline1", "Sonstige1" ];
+def headersHeadline2 = ["Data2", "Vorname Nachname2", "Zeit und Datum2", "Intakevorbereitung2", "Intake  mit2:", "Zerziefizierung und Deadline2", "Sonstige2" ];
 data.append(headersHeadline);
 data.append(headersHeadline1);
 data.append(headersHeadline2);
