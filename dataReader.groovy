@@ -7,13 +7,15 @@ def arrayOfKey = "${jsonObject[0].keySet()}"
 println "${arrayOfKey}"
 
 
-def listOfEmployees = [];
+String[][] listOfEmployees;
 
 for(item in jsonObject){
     
-    println "${item.values()}"
+    def arrayOfValue = "${item.values()}"
+    println "${arrayOfValue}"
+    //listOfEmployees.add(arrayOfValue);
 }
 
-println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
+//println " Die anzahl der Element für eine Person ist: ${listOfEmployees}" 
 println " the size of json ist : ${jsonObject.size()}"  // die anzahl der Personnen in dem JSON
 //println " ${listOfEmployees}"  // gibt die List der Employees   
