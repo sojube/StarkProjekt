@@ -34,12 +34,11 @@ sheet.setColumnWidth (3, 11000)
 sheet.setColumnWidth (4, 7500)
 sheet.setColumnWidth (5, 11000)
 sheet.setColumnWidth (6, 7500)
+sheet.setColumnWidth (7, 7500)
 
 
-// Ändere die Hintergrundfarbe der Zelle
-CellStyle colorstyle1 = workbook.createCellStyle()
-colorstyle1.setFillForegroundColor(IndexedColors.BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
-colorstyle1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
+
+
 
 
 // create Style for the header cells
@@ -67,6 +66,7 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
             Cell cell = headerRow.createCell(i);
             cell.setCellValue(headersHeadline[i]);
             cell.setCellStyle(headerstyle);
+            
         }
 
 
@@ -78,7 +78,11 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
     style.setAlignment(HorizontalAlignment.CENTER);
 
     // Set vertical alignment to CENTER
-    style.setVerticalAlignment(VerticalAlignment.CENTER);    
+    style.setVerticalAlignment(VerticalAlignment.CENTER); 
+
+    // Ändere die Hintergrundfarbe der Zelle
+    style.setFillForegroundColor(IndexedColors.BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
+    style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
 
 
 String[][] data = dataOfEmployees;
