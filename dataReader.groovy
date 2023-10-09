@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Collection;
-import json
+
 
 def inputFile = readFile(file: './tagesPlan.json')
 def jsonObject = readJSON text: inputFile
