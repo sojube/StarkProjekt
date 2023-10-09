@@ -18,7 +18,7 @@ for(item in jsonObject){
 println "${listOfEmployees}"
 println "${listOfEmployees[2][1]}"
 println "${listOfEmployees[0][2]}"
-println "${listOfEmployees[1][1]}"
+println "${listOfEmployees[1][0]}"
 
 println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
 println " the size of json ist : ${jsonObject.size()}"  // die anzahl der Personnen in dem JSON
