@@ -84,7 +84,7 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
     style.setWrapText(true);
 
     // Ändere die Hintergrundfarbe der Zelle
-    style.setFillForegroundColor(IndexedColors.BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
+    style.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
     //style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
 
 
