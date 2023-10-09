@@ -36,7 +36,7 @@ pipeline {
         }
 
         // adding external Jar dependencies to the pipeline. place the jar in the libs and write thid code
-       stage('Add Jars dependencies to Pipeline') {
+        stage('Add Jars dependencies to Pipeline') {
             steps {
                script {
                     // Add external .jar files to the classpath
@@ -60,47 +60,45 @@ pipeline {
         stage('get json file and read datavalues') {
             steps {
                script {
-                def inputFile = readFile(file: './tagesPlan.json')
-                def jsonObject = readJSON text: inputFile
+                    def inputFile = readFile(file: './tagesPlan.json')
+                    def jsonObject = readJSON text: inputFile
 
-                def arrayOfKey = "${jsonObject[0].keySet()}"
+                    def arrayOfKey = "${jsonObject[0].keySet()}"
 
-                println "${arrayOfKey}"
+                    println "${arrayOfKey}"
 
-                
-                def listOfEmployees = [];
+                    
+                    def listOfEmployees = [];
 
-                 /*
-                //Array.add(item['kapitana'] )
-                Array.add(item['Vorname Nachname'] )
-                Array.add(item['Stand Up Datum'] )
-                Array.add(item['Intakevorbereitungen'] )
-                Array.add(item['Intake Übungslaufe mit'] )
-                Array.add(item['Zerfizierung und Deadline'] )
-                Array.add(item['Sonnstiges'] ) 
-                */ 
-                  
-                   } 
-                   listOfEmployees.add(Array);
-
-                }
-
-                println " ${listOfEmployees}"
-                println " ${listOfEmployees[0][2]}"
-                println " ${listOfEmployees[1][3]} "
-                println " ${listOfEmployees[2][0]} "
-            
-
-                println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
-                println " the size of json ist : ${jsonObject.size()}"  // die anzahl der Personnen in dem JSON
-                //println " ${listOfEmployees}"  // gibt die List der Employees
-                
+                        /*
+                    //Array.add(item['kapitana'] )
+                    Array.add(item['Vorname Nachname'] )
+                    Array.add(item['Stand Up Datum'] )
+                    Array.add(item['Intakevorbereitungen'] )
+                    Array.add(item['Intake Übungslaufe mit'] )
+                    Array.add(item['Zerfizierung und Deadline'] )
+                    Array.add(item['Sonnstiges'] ) 
+                    */ 
+                        
+                        
+                    listOfEmployees.add(Array);
 
                 
 
-                }
-            } 
-        }
+                    println " ${listOfEmployees}"
+                    println " ${listOfEmployees[0][2]}"
+                    println " ${listOfEmployees[1][3]} "
+                    println " ${listOfEmployees[2][0]} "
+                
+
+                    println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
+                    println " the size of json ist : ${jsonObject.size()}"  // die anzahl der Personnen in dem JSON
+                    //println " ${listOfEmployees}"  // gibt die List der Employees   
+                }    
+
+            }
+        } 
+        
           
         stage('Excel erstellen'){
             steps{
@@ -119,7 +117,7 @@ pipeline {
             }
         }
 
-         stage('Test File in Workspace'){
+        stage('Test File in Workspace'){
             steps{
 
                 script {  
@@ -134,4 +132,3 @@ pipeline {
         }
     }
 }
-
