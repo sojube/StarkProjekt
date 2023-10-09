@@ -12,7 +12,7 @@ def listOfEmployees = [];
 for(item in jsonObject){
     
     def arrayOfValue = "${item.values()}"
-    listOfEmployees.add("${arrayOfValue}")
+    listOfEmployees.add(arrayOfValue)
 }
 
 println "${listOfEmployees}"
