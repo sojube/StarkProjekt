@@ -55,7 +55,7 @@ sheet.setColumnWidth (7, 7500)
     headerstyle.setFont(font);
 
     // backgroungcolor of HeaderCell
-    headerstyle.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
+    headerstyle.setFillForegroundColor(IndexedColors.BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
     headerstyle.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
 
     // zellen Rahmen für HeaderCell
@@ -72,7 +72,7 @@ sheet.setColumnWidth (7, 7500)
 XSSFRow headerRow = sheet.createRow(0);
 String[] headersHeadline = headerData;
 
-headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
+headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
 
     for (int i = 0; i < headersHeadline.length; i++) {
             Cell cell = headerRow.createCell(i);
@@ -105,21 +105,36 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
     style.setBorderRight(BorderStyle.THIN);
     style.setRightBorderColor(IndexedColors.BLACK.getIndex());
 
-    // Ändere die Hintergrundfarbe der Zelle
-    style.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
-    style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
+    
 
 
 String[][] data = dataOfEmployees;
+colorIndex = IndexedColors.GREY_25_PERCENT.getIndex();
+b = IndexedColors.BLUE.getIndex();
 
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
+
     XSSFRow dataRow = sheet.createRow(rowNum + 1);
     dataRow.setHeight((short) (45*20));  // Setzen Sie die Zeilenhöhe auf 35
 
+    // Ändere die Hintergrundfarbe der Zellen
+    colorIndex = b;
+    style.setFillForegroundColor(colorIndex) // Hier kannst du die gewünschte Farbe auswählen
+    style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
+    
     for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
         Cell cell = dataRow.createCell(colNum);
         cell.setCellValue(data[rowNum][colNum]);
         cell.setCellStyle(style);
+    }
+
+    if(colorIndex == IndexedColors.BLUE.getIndex() ){
+
+        b = IndexedColors.GREY_25_PERCENT.getIndex()
+
+    }else{
+
+        b = IndexedColors.BLUE.getIndex()
     }
 }
 
