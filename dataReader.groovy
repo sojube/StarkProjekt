@@ -14,6 +14,10 @@ for(item in jsonObject[0].keySet()){
     headerData.add(item);
 }
 println(headerData);
+println(headerData[0]);
+println(headerData[1]);
+println(headerData[2]);
+
 /*
 def headersHeadline = ["Data", "Vorname Nachname", "Zeit und Datum", "Intakevorbereitung", "Intake  mit:", "Zerziefizierung und Deadline", "Sonstige" ];
 def headersHeadline1 = ["Data1", "Vorname Nachname1", "Zeit und Datum1", "Intakevorbereitung1", "Intake  mit1:", "Zerziefizierung und Deadline1", "Sonstige1" ];
