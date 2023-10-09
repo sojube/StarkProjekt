@@ -11,7 +11,7 @@ def listOfEmployees = [];
 
 for(item in jsonObject){
     
-    println "${item}"
+    println "${item.values()}"
 }
 
 println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
