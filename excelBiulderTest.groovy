@@ -57,6 +57,19 @@ colorstyle1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOR
     font.setBold(true);
     headerstyle.setFont(font);
 
+// Erstelle eine Kopfzeile des excel dokument
+XSSFRow headerRow = sheet.createRow(0);
+String[] headersHeadline = {"Kapitän", "Vorname Nachname", "Stand Up Datum", "Intakevorbereitung", "Intake üäöülliktztkz mit:", "Zerziefizierung und Deadline", "Sonstige" };
+
+headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
+
+    for (int i = 0; i < headersHeadline.length; i++) {
+            Cell cell = headerRow.createCell(i);
+            cell.setCellValue(headersHeadline[i]);
+            cell.setCellStyle(headerstyle);
+        }
+
+
 // create Style for the datacells
 
     CellStyle style = workbook.createCellStyle();
@@ -66,44 +79,6 @@ colorstyle1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOR
 
     // Set vertical alignment to CENTER
     style.setVerticalAlignment(VerticalAlignment.CENTER);    
-
-// Erstelle eine Kopfzeile des excel dokument
-XSSFRow headerRow = sheet.createRow(0);
-headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
-    // erste spalte
-    XSSFCell cell0 = headerRow.createCell(0);
-    cell0.setCellValue("Kapitän");
-    cell0.setCellStyle(headerstyle);
-
-    // zweite spalte
-    XSSFCell cell1 = headerRow.createCell(1);
-    cell1.setCellValue("Vorname Nachname");
-    cell1.setCellStyle(headerstyle);
-
-    // dritte spalte
-    XSSFCell cell2 = headerRow.createCell(2);
-    cell2.setCellValue("Stand Up Datum");
-    cell2.setCellStyle(headerstyle);
-
-    // vierte spalte
-    XSSFCell cell3 = headerRow.createCell(3);
-    cell3.setCellValue("Intakevorbereitung");
-    cell3.setCellStyle(headerstyle);
-
-    // fünfte spalte
-    XSSFCell cell4 = headerRow.createCell(4);
-    cell4.setCellValue("Intake üäöülliktztkz mit:");
-    cell4.setCellStyle(headerstyle);
-
-    // sechste spalte
-    XSSFCell cell5 = headerRow.createCell(5);
-    cell5.setCellValue("Zerziefizierung und Deadline");
-    cell5.setCellStyle(headerstyle);
-
-    // siebte spalte
-    XSSFCell cell6 = headerRow.createCell(6);
-    cell6.setCellValue("Sonstige");
-    cell6.setCellStyle(headerstyle);
 
 
 XSSFRow dataRow1 = sheet.createRow(1);
@@ -222,7 +197,7 @@ dataRow3.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
 
 
 // Specify the file path relative to the workspace
-def filePath = "${WORKSPACE}/JulesBeispiel.xlsx"
+def filePath = "${WORKSPACE}/JulesBeispielTest.xlsx"
 
 
 // Speichere die Arbeitsmappe in einer Datei
