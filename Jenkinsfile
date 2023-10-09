@@ -70,16 +70,6 @@ pipeline {
                 
                 def listOfEmployees = [];
 
-                jsonObject.each{ item -> 
-
-                def Array = [];
-
-                   arrayOfKey.each{ elem ->
-
-
-                
-                 Array.add(item.get(${elem}) )
-
                  /*
                 //Array.add(item['kapitana'] )
                 Array.add(item['Vorname Nachname'] )
