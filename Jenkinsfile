@@ -91,10 +91,6 @@ pipeline {
 
                     varriable() 
 
-                    println(data);
-                    println(data[0][0]);
-                    println(data[1][2]);
-                    println(data[2][1]);
                 }
                
             }
