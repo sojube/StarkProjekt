@@ -87,16 +87,16 @@ String[][] data = [
                 ["Bob", "35", "Chicago", "Bob1", "351", "Chicago1", "Bob2"]
             ];
 
-            for (int rowNum = 0; rowNum < data.length; rowNum++) {
-                XSSFRow dataRow = sheet.createRow(rowNum + 1);
-                dataRow.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
+for (int rowNum = 0; rowNum < data.length; rowNum++) {
+    XSSFRow dataRow = sheet.createRow(rowNum + 1);
+    dataRow.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
 
-                for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
-                    Cell cell = dataRow.createCell(colNum);
-                    cell.setCellValue(data[rowNum][colNum]);
-                    cell.setCellStyle(style);
-                }
-            }
+    for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
+        Cell cell = dataRow.createCell(colNum);
+        cell.setCellValue(data[rowNum][colNum]);
+        cell.setCellStyle(style);
+    }
+}
 
   
 
