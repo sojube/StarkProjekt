@@ -59,7 +59,7 @@ colorstyle1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOR
 
 // Erstelle eine Kopfzeile des excel dokument
 XSSFRow headerRow = sheet.createRow(0);
-String[] headersHeadline = ["Kapitän", "Vorname Nachname", "Stand Up Datum", "Intakevorbereitung", "Intake üäöülliktztkz mit:", "Zerziefizierung und Deadline", "Sonstige" ];
+String[] headersHeadline = ["Data", "Vorname Nachname", "Zeit und Datum", "Intakevorbereitung", "Intake  mit:", "Zerziefizierung und Deadline", "Sonstige" ];
 
 headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
 
