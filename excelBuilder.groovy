@@ -113,7 +113,7 @@ color1 = IndexedColors.LIGHT_BLUE.getIndex();
 color2 = IndexedColors.GREY_25_PERCENT.getIndex();
 
 //int rowColors = [color1, color2, color1, color2, color1, color2, color1, color2, color1, color2, color1, color2, color1, color2, color1];
-rowColors = [48, 22, 48, 22, 48, 22, 48 ];
+rowColors = ['48', '22'];
 
 
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
