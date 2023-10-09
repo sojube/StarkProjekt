@@ -76,7 +76,7 @@ pipeline {
                     Array.add(item['Intake Übungslaufe mit'] )
                     Array.add(item['Zerfizierung und Deadline'] )
                     Array.add(item['Sonnstiges'] ) 
-                    */ 
+                     
                         
                         
                     //listOfEmployees.add(Array);
@@ -87,6 +87,7 @@ pipeline {
                     println " ${listOfEmployees[0][2]}"
                     println " ${listOfEmployees[1][3]} "
                     println " ${listOfEmployees[2][0]} "
+                    */
                 
 
                     println " Die anzahl der Element für eine Person ist: ${jsonObject[0].size()}" 
