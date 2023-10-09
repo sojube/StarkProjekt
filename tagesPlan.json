@@ -25,5 +25,23 @@
     "Intake Übungslaufe mit": "N/A",
     "Zerfizierung und Deadline": "N/A",
     "Sonnstiges": "Jira, SoupUI"
+    },
+    {
+    "Kapitän": "",
+    "Vorname Nachname": "Yves2",
+    "Stand Up Datum": "09.10.2023",
+    "Intakevorbereitungen": "JavaScript",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "AWS bis 30.10.2023",
+    "Sonnstiges": "Cypress"
+    },
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "Petru Walter2",
+    "Stand Up Datum": "09.10.2023",
+    "Intakevorbereitungen": "Playwright, Jenkins",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "N/A",
+    "Sonnstiges": "Jira, SoupUI"
     }
     ]
