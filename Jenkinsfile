@@ -59,7 +59,7 @@ pipeline {
             steps {
                script {
 
-                def readData = load './dataPreparer.groovy'
+                def readData = load './dataReader.groovy'
                     
                 }    
 
