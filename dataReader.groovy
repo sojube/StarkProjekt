@@ -5,6 +5,9 @@ def jsonObject = readJSON text: inputFile
 def arrayOfKey = "${jsonObject[0].keySet()}"
 
 println "${arrayOfKey}"
+String[] data = arrayOfKey;
+println "${data[0]}"
+println "${data[1]}"
 
 
 def listOfEmployees = [];
