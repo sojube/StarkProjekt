@@ -112,7 +112,7 @@ String[][] data = dataOfEmployees;
 def color1 = IndexedColors.LIGHT_BLUE.getIndex();
 def color2 = IndexedColors.GREY_25_PERCENT.getIndex();
 
-def rowColors = ["color1", "color2", "acolor1", "color2", "color1", "color2", "color1", "color2", "color1", "color2", "color1", "color2", "color1", "color2", "color1"];
+int rowColors = ["color1", "color2", "acolor1", "color2", "color1", "color2", "color1", "color2", "color1", "color2", "color1", "color2", "color1", "color2", "color1"];
 
 
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
