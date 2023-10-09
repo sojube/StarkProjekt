@@ -57,6 +57,16 @@ sheet.setColumnWidth (7, 7500)
     font.setBold(true);
     headerstyle.setFont(font);
 
+    // zellen Rahmen
+    headerstyle.setBorderBottom(BorderStyle.THIN);
+    headerstyle.setBottomBorderColor(IndexedColors.WHITE.getIndex());
+    headerstyle.setBorderTop(BorderStyle.THIN);
+    headerstyle.setTopBorderColor(IndexedColors.WHITE.getIndex());
+    headerstyle.setBorderLeft(BorderStyle.THIN);
+    headerstyle.setLeftBorderColor(IndexedColors.WHITE.getIndex());
+    headerstyle.setBorderRight(BorderStyle.THIN);
+    headerstyle.setRightBorderColor(IndexedColors.WHITE.getIndex());
+
 // Erstelle eine Kopfzeile des excel dokument
 XSSFRow headerRow = sheet.createRow(0);
 String[] headersHeadline = headerData;
@@ -103,7 +113,7 @@ String[][] data = dataOfEmployees;
 
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
     XSSFRow dataRow = sheet.createRow(rowNum + 1);
-    dataRow.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
+    dataRow.setHeight((short) (45*20));  // Setzen Sie die Zeilenhöhe auf 35
 
     for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
         Cell cell = dataRow.createCell(colNum);
