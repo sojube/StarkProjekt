@@ -9,7 +9,7 @@ def jsonObject = readJSON text: inputFile
 def data = [];
 String[] headerData = [];
 
-println(inputFile[0]);
+println(inputFile[0].keySet());
 
 /*
 def headersHeadline = ["Data", "Vorname Nachname", "Zeit und Datum", "Intakevorbereitung", "Intake  mit:", "Zerziefizierung und Deadline", "Sonstige" ];
