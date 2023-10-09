@@ -16,9 +16,9 @@ for(item in jsonObject[0].keySet()){
 
 String[] test = headerData;
 println(test);
-println(test[0]);
+println(test[6]);
 println(test[1]);
-println(test[2]);
+println(test[5]);
 
 /*
 def headersHeadline = ["Data", "Vorname Nachname", "Zeit und Datum", "Intakevorbereitung", "Intake  mit:", "Zerziefizierung und Deadline", "Sonstige" ];
