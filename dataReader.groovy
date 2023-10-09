@@ -6,8 +6,8 @@ import java.util.Collection;
 
 def inputFile = readFile(file: './tagesPlan.json')
 def jsonObject = readJSON text: inputFile
-def data = [];
-def headerData = [];
+data = [];
+headerData = [];
 
 for(key in jsonObject[0].keySet()){
 
