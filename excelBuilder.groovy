@@ -52,6 +52,7 @@ sheet.setColumnWidth (7, 7500)
     // Create style with bold font text must be bold
     Font font = workbook.createFont();
     font.setBold(true);
+    font.setCharSet(FontCharset.ANSI_CHARSET.getValue());
     headerstyle.setFont(font);
 
     // backgroungcolor of HeaderCell
@@ -113,12 +114,24 @@ color1 = IndexedColors.LIGHT_BLUE.getIndex();
 color2 = IndexedColors.GREY_25_PERCENT.getIndex();
 
 
-
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
 
     XSSFRow dataRow = sheet.createRow(rowNum + 1);
     dataRow.setHeight((short) (45*20));  // Setzen Sie die Zeilenhöhe auf 35
     colorIndex = color2
+
+    while(true){
+
+        colorIndex
+
+        if(colorIndex == IndexedColors.GREY_25_PERCENT.getIndex()){
+
+    }else{
+
+    }
+    }
+
+    
     // Ändere die Hintergrundfarbe der Zelle
     style.setFillForegroundColor(colorIndex) // Hier kannst du die gewünschte Farbe auswählen
     style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
