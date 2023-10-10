@@ -76,8 +76,7 @@ pipeline {
                     // readfile content
                     //def result = load './excelBiulder.groovy'
                     def result = load './excelBiulderTest.groovy'
-                    
-                    
+                       
                 }
                
             }

@@ -1,10 +1,5 @@
 @Library('StarkProjekt') _ 
 
- /*
-@Grab(group='org.apache.poi', module='poi', version='5.0.0')
-@Grab(group='org.apache.poi', module='poi-ooxml', version='5.0.0')
-@Grab(group='builders.dsl', module='spreadsheet-builder-poi', version='3.0.1')
-*/
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 import org.apache.poi.ss.usermodel.*
