@@ -155,7 +155,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
 }
 
 // Specify the file path relative to the workspace
-def filePath = "${WORKSPACE}/JulesBeispielTest.xlsx"
+def filePath = "${WORKSPACE}/tagesPlan.xlsx"
 
 
 // Speichere die Arbeitsmappe in einer Datei
