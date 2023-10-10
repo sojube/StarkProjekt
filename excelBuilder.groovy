@@ -19,9 +19,6 @@ import org.apache.poi.xssf.usermodel.*;
 import java.nio.charset.StandardCharsets
 
 
-// Erstelle eine neue Arbeitsmappe (Workbook)
-//Workbook workbook = new ClassCreator()
-
 XSSFWorkbook workbook = new XSSFWorkbook() 
 
 // Erstelle ein neues Arbeitsblatt (Sheet)
@@ -55,7 +52,6 @@ sheet.setColumnWidth (7, 7500)
     font.setBold(true);
     headerstyle.setFont(font);
 
-
     // backgroungcolor of HeaderCell
     headerstyle.setFillForegroundColor(IndexedColors.BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
     headerstyle.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
@@ -77,11 +73,11 @@ String[] headersHeadline = headerData;
 headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
 
     for (int i = 0; i < headersHeadline.length; i++) {
-            Cell cell = headerRow.createCell(i);
-            cell.setCellValue(headersHeadline[i]);
-            cell.setCellStyle(headerstyle);
+        Cell cell = headerRow.createCell(i);
+        cell.setCellValue(headersHeadline[i]);
+        cell.setCellStyle(headerstyle);
             
-        }
+    }
 
 
 // create Style for the datacells
@@ -106,41 +102,65 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
     style.setLeftBorderColor(IndexedColors.BLACK.getIndex());
     style.setBorderRight(BorderStyle.THIN);
     style.setRightBorderColor(IndexedColors.BLACK.getIndex());
+    style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex()) // Hier kannst du die gewünschte Farbe die cell auswählen
+    style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
 
+// create Style1 for the datacells
+
+    CellStyle style1 = workbook.createCellStyle();
+
+    // Set horizontal alignment to CENTER
+    style1.setAlignment(HorizontalAlignment.CENTER);
+
+    // Set vertical alignment to CENTER
+    style1.setVerticalAlignment(VerticalAlignment.CENTER); 
     
+    // Zeilen Umbruch
+    style1.setWrapText(true);
 
+    // zellen Rahmen
+    style1.setBorderBottom(BorderStyle.THIN);
+    style1.setBottomBorderColor(IndexedColors.BLACK.getIndex());
+    style1.setBorderTop(BorderStyle.THIN);
+    style1.setTopBorderColor(IndexedColors.BLACK.getIndex());
+    style1.setBorderLeft(BorderStyle.THIN);
+    style1.setLeftBorderColor(IndexedColors.BLACK.getIndex());
+    style1.setBorderRight(BorderStyle.THIN);
+    style1.setRightBorderColor(IndexedColors.BLACK.getIndex());
+    style1.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()) // Hier kannst du die gewünschte Farbe für die cell auswählen 
+    style1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
 
 String[][] data = dataOfEmployees;
-color1 = IndexedColors.LIGHT_BLUE.getIndex();
-color2 = IndexedColors.GREY_25_PERCENT.getIndex();
-
 
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
-
+    
+    //create a Row
     XSSFRow dataRow = sheet.createRow(rowNum + 1);
-    dataRow.setHeight((short) (45*20));  // Setzen Sie die Zeilenhöhe auf 35
-    colorIndex = color2
+    dataRow.setHeight((short) (40*20));  // Setzen Sie die Zeilenhöhe auf 35
 
-   
+    // create the cells for a Row using style and style1 alternatly
+    if((rowNum + 1)%2 != 0){
+ 
+        for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
+            Cell cell = dataRow.createCell(colNum);
+            cell.setCellValue(data[rowNum][colNum]);
+            cell.setCellStyle(style);
+        }
 
-    
-    // Ändere die Hintergrundfarbe der Zelle
-    style.setFillForegroundColor(colorIndex) // Hier kannst du die gewünschte Farbe auswählen
-    style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
-    
-    for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
-        Cell cell = dataRow.createCell(colNum);
-        cell.setCellValue(data[rowNum][colNum]);
-        cell.setCellStyle(style);
-    }
+    }else{
+           
+        for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
+            Cell cell = dataRow.createCell(colNum);
+            cell.setCellValue(data[rowNum][colNum]);
+            cell.setCellStyle(style1);
+        }
+
+    }  
     
 }
 
-  
-
-
 // Specify the file path relative to the workspace
-def filePath = "${WORKSPACE}/JulesBeispiel.xlsx"
+def filePath = "${WORKSPACE}/JulesBeispielTest.xlsx"
 
 
 // Speichere die Arbeitsmappe in einer Datei
