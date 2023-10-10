@@ -161,11 +161,11 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
     
 }
 
-// Specify the file path relative to the workspace
+// give the name of the file that will be created and the place where to store it as a filepath
 def filePath = "${WORKSPACE}/julesBeispiel10_10_23.xlsx"
 
 
-// Speichere die Arbeitsmappe in einer Datei
+// create a file
 def file = new File(filePath)
 file.createNewFile()
 
