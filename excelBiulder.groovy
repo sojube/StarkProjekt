@@ -89,6 +89,12 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
     // Zeilen Umbruch
     style.setWrapText(true);
 
+    // Create style with bold font text must be bold
+    Font dataFont = workbook.createFont();
+    dataFont.setFontHeightInPoints((short) 11);
+    style.setFont(dataFont);
+
+
     // zellen Rahmen
     style.setBorderBottom(BorderStyle.THIN);
     style.setBottomBorderColor(IndexedColors.BLACK.getIndex());
