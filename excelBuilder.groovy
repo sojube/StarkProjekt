@@ -147,7 +147,7 @@ def filePath = "${WORKSPACE}/JulesBeispielBBBBBBB.xlsx"
 def file = new File(filePath)
 file.createNewFile()
 //FileOutputStream fileOut = new FileOutputStream(file);
-FileOutputStream fileOut = new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8);
+FileOutputStream fileOut = new FileOutputStream(file, StandardCharsets.UTF_8)
 workbook.write(fileOut)
 fileOut.close()
 
