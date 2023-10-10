@@ -14,8 +14,9 @@ import java.io.FileOutputStream
 import org.apache.poi.ss.usermodel.CellBase
 import org.apache.poi.xssf.usermodel.XSSFCell
 import java.io.*;
-import org.apache.poi.ss.usermodel.IndexedColors
+import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.*;
+import java.nio.charset.StandardCharsets
 
 
 // Erstelle eine neue Arbeitsmappe (Workbook)
@@ -35,22 +36,8 @@ sheet.setColumnWidth (3, 11000)
 sheet.setColumnWidth (4, 7500)
 sheet.setColumnWidth (5, 11000)
 sheet.setColumnWidth (6, 7500)
+sheet.setColumnWidth (7, 7500)
 
-// zellen Rahmen
-style.setBorderBottom(BorderStyle.THIN);
-style.setBottomBorderColor(IndexedColors.WHITE.getIndex());
-style.setBorderTop(BorderStyle.THIN);
-style.setTopBorderColor(IndexedColors.WHITE.getIndex());
-style.setBorderLeft(BorderStyle.THIN);
-style.setLeftBorderColor(IndexedColors.WHITE.getIndex());
-style.setBorderRight(BorderStyle.THIN);
-style.setRightBorderColor(IndexedColors.WHITE.getIndex());
-
-
-// Ändere die Hintergrundfarbe der Zelle
-CellStyle colorstyle1 = workbook.createCellStyle()
-colorstyle1.setFillForegroundColor(IndexedColors.BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
-colorstyle1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
 
 
 // create Style for the header cells
@@ -68,16 +55,32 @@ colorstyle1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOR
     font.setBold(true);
     headerstyle.setFont(font);
 
+
+    // backgroungcolor of HeaderCell
+    headerstyle.setFillForegroundColor(IndexedColors.BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
+    headerstyle.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
+
+    // zellen Rahmen für HeaderCell
+    headerstyle.setBorderBottom(BorderStyle.THIN);
+    headerstyle.setBottomBorderColor(IndexedColors.BLACK.getIndex());
+    headerstyle.setBorderTop(BorderStyle.THIN);
+    headerstyle.setTopBorderColor(IndexedColors.BLACK.getIndex());
+    headerstyle.setBorderLeft(BorderStyle.THIN);
+    headerstyle.setLeftBorderColor(IndexedColors.BLACK.getIndex());
+    headerstyle.setBorderRight(BorderStyle.THIN);
+    headerstyle.setRightBorderColor(IndexedColors.BLACK.getIndex());
+
 // Erstelle eine Kopfzeile des excel dokument
 XSSFRow headerRow = sheet.createRow(0);
 String[] headersHeadline = headerData;
 
-headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
+headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
 
     for (int i = 0; i < headersHeadline.length; i++) {
             Cell cell = headerRow.createCell(i);
             cell.setCellValue(headersHeadline[i]);
             cell.setCellStyle(headerstyle);
+            
         }
 
 
@@ -89,22 +92,65 @@ headerRow.setHeight((short) (19*20));  // Setzen Sie die Zeilenhöhe auf 19
     style.setAlignment(HorizontalAlignment.CENTER);
 
     // Set vertical alignment to CENTER
-    style.setVerticalAlignment(VerticalAlignment.CENTER);    
+    style.setVerticalAlignment(VerticalAlignment.CENTER); 
+    
+    // Zeilen Umbruch
+    style.setWrapText(true);
+
+    // zellen Rahmen
+    style.setBorderBottom(BorderStyle.THIN);
+    style.setBottomBorderColor(IndexedColors.BLACK.getIndex());
+    style.setBorderTop(BorderStyle.THIN);
+    style.setTopBorderColor(IndexedColors.BLACK.getIndex());
+    style.setBorderLeft(BorderStyle.THIN);
+    style.setLeftBorderColor(IndexedColors.BLACK.getIndex());
+    style.setBorderRight(BorderStyle.THIN);
+    style.setRightBorderColor(IndexedColors.BLACK.getIndex());
+
+    
 
 
 String[][] data = dataOfEmployees;
+color1 = IndexedColors.LIGHT_BLUE.getIndex();
+color2 = IndexedColors.GREY_25_PERCENT.getIndex();
 
 
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
-    XSSFRow dataRow = sheet.createRow(rowNum + 1);
-    dataRow.setHeight((short) (35*20));  // Setzen Sie die Zeilenhöhe auf 35
 
+    XSSFRow dataRow = sheet.createRow(rowNum + 1);
+    dataRow.setHeight((short) (45*20));  // Setzen Sie die Zeilenhöhe auf 35
+    colorIndex = color2
+
+   
+
+    
+    // Ändere die Hintergrundfarbe der Zelle
+    style.setFillForegroundColor(colorIndex) // Hier kannst du die gewünschte Farbe auswählen
+    style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
+    
     for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
         Cell cell = dataRow.createCell(colNum);
         cell.setCellValue(data[rowNum][colNum]);
         cell.setCellStyle(style);
     }
+    
 }
+
+  
+
+
+// Specify the file path relative to the workspace
+def filePath = "${WORKSPACE}/JulesBeispiel.xlsx"
+
+
+// Speichere die Arbeitsmappe in einer Datei
+def file = new File(filePath)
+file.createNewFile()
+FileOutputStream fileOut = new FileOutputStream(file);
+workbook.write(fileOut)
+fileOut.close()
+
+println("Die Excel-Datei wurde erfolgreich erstellt.")
 
   
 
