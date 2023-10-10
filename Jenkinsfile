@@ -75,8 +75,8 @@ pipeline {
                     varriable()
 
                     // readfile contentehhggh
-                    //def result = load './excelBuilder.groovy'
-                    def result = load './excelBiulderTest.groovy'
+                    def result = load './excelBuilder.groovy'
+                    //def result = load './excelBiulderTest.groovy'
                     
                     
                 }
