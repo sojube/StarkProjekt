@@ -168,8 +168,9 @@ def filePath = "${WORKSPACE}/julesBeispiel10_10_23.xlsx"
 // Speichere die Arbeitsmappe in einer Datei
 def file = new File(filePath)
 file.createNewFile()
-FileOutputStream fileOut = new FileOutputStream(file);
 
+OutputStreamWriter writer = new OutputStreamWriter(file, StandardCharsets.UTF_8)
+FileOutputStream fileOut = new FileOutputStream(writer);
 workbook.write(fileOut) //write workbook to outputstream fileOut
 fileOut.close()
 
