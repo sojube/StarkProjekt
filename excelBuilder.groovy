@@ -147,8 +147,9 @@ def filePath = "${WORKSPACE}/JulesBeispielAAAAA.xlsx"
 def file = new File(filePath)
 file.createNewFile()
 //FileOutputStream fileOut = new FileOutputStream(file);
-Writer fileOut = new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8);
-//workbook.write(fileOut)
+Writer fileOut1 = new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8);
+FileOutputStream fileOut = (FileOutputStream) fileOut1
+workbook.write(fileOut)
 fileOut.close()
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
