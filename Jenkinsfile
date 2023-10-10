@@ -71,12 +71,11 @@ pipeline {
             steps{
 
                 script {                   
-                    //buildExcel()
                     varriable()
 
-                    // readfile contentehhggh
-                    def result = load './excelBuilder.groovy'
-                    //def result = load './excelBiulderTest.groovy'
+                    // readfile content
+                    //def result = load './excelBiulder.groovy'
+                    def result = load './excelBiulderTest.groovy'
                     
                     
                 }
