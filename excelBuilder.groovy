@@ -120,16 +120,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
     dataRow.setHeight((short) (45*20));  // Setzen Sie die Zeilenhöhe auf 35
     colorIndex = color2
 
-    while(true){
-
-        colorIndex
-
-        if(colorIndex == IndexedColors.GREY_25_PERCENT.getIndex()){
-
-    }else{
-
-    }
-    }
+   
 
     
     // Ändere die Hintergrundfarbe der Zelle
