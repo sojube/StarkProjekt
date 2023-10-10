@@ -53,8 +53,9 @@ sheet.setColumnWidth (7, 7500)
     // Create style with bold font text must be bold
     Font font = workbook.createFont();
     font.setBold(true);
-    font.setCharSet(FontCharset.ANSI.getValue());
+    font.setCharSet(StandardCharsets.UTF_8.getValue());
     headerstyle.setFont(font);
+
 
     // backgroungcolor of HeaderCell
     headerstyle.setFillForegroundColor(IndexedColors.BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
@@ -140,15 +141,13 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
 
 
 // Specify the file path relative to the workspace
-def filePath = "${WORKSPACE}/JulesBeispielAAAAA.xlsx"
+def filePath = "${WORKSPACE}/JulesBeispiel.xlsx"
 
 
 // Speichere die Arbeitsmappe in einer Datei
 def file = new File(filePath)
 file.createNewFile()
-//FileOutputStream fileOut = new FileOutputStream(file);
-Writer fileOut1 = new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8);
-FileOutputStream fileOut = (FileOutputStream) fileOut1
+FileOutputStream fileOut = new FileOutputStream(file);
 workbook.write(fileOut)
 fileOut.close()
 
