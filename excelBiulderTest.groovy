@@ -122,17 +122,17 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
 
     if((rowNum + 1)%2 != 0){
 
-       def colorIndex = color2
+       style.setFillForegroundColor(color2) // Hier kannst du die gewünschte Farbe auswählen
 
     }else{
-      
-       def colorIndex = color1   
+       
+       style.setFillForegroundColor(color1) // Hier kannst du die gewünschte Farbe auswählen  
 
     }
     println(" Die aktuelle Farbe ist: ${colorIndex}")
      
     // Ändere die Hintergrundfarbe der Zelle
-    style.setFillForegroundColor(colorIndex) // Hier kannst du die gewünschte Farbe auswählen
+    
     style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
     
     for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
