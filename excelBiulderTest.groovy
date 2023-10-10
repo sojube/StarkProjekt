@@ -122,11 +122,11 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
 
     if((rowNum + 1)%2 != 0){
 
-        colorIndex = color2
+       def colorIndex = color2
 
     }else{
       
-        colorIndex = color1   
+       def colorIndex = color1   
 
     }
     println(" Die aktuelle Farbe ist: ${colorIndex}")
