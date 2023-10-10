@@ -45,11 +45,12 @@ sheet.setColumnWidth (7, 7500)
     // Create style with bold font text must be bold
     Font font = workbook.createFont();
     font.setBold(true);
+    font.setFontHeightInPoints((short) 14);
     headerstyle.setFont(font);
 
     // backgroungcolor of HeaderCell
-    headerstyle.setFillForegroundColor(IndexedColors.BLUE.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
-    headerstyle.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
+    headerstyle.setFillForegroundColor(IndexedColors.GREY_40_PERCENT.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
+    headerstyle.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND);
 
     // zellen Rahmen für HeaderCell
     headerstyle.setBorderBottom(BorderStyle.THIN);
@@ -88,6 +89,12 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
     // Zeilen Umbruch
     style.setWrapText(true);
 
+    // Create style with bold font text must be bold
+    Font dataFont = workbook.createFont();
+    dataFont.setFontHeightInPoints((short) 11);
+    style.setFont(dataFont);
+
+
     // zellen Rahmen
     style.setBorderBottom(BorderStyle.THIN);
     style.setBottomBorderColor(IndexedColors.BLACK.getIndex());
@@ -122,8 +129,8 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
     style1.setLeftBorderColor(IndexedColors.BLACK.getIndex());
     style1.setBorderRight(BorderStyle.THIN);
     style1.setRightBorderColor(IndexedColors.BLACK.getIndex());
-    style1.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()) // Hier kannst du die gewünschte Farbe für die cell auswählen 
-    style1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
+    style1.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()); // Hier kannst du die gewünschte Farbe für die cell auswählen 
+    style1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND);
 
 String[][] data = dataOfEmployees;
 
@@ -155,7 +162,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
 }
 
 // Specify the file path relative to the workspace
-def filePath = "${WORKSPACE}/JulesBeispielTest.xlsx"
+def filePath = "${WORKSPACE}/julesBeispiel10_10_23.xlsx"
 
 
 // Speichere die Arbeitsmappe in einer Datei
