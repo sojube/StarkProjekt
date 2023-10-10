@@ -118,7 +118,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
 
     XSSFRow dataRow = sheet.createRow(rowNum + 1);
     dataRow.setHeight((short) (45*20));  // Setzen Sie die Zeilenhöhe auf 35
-    colorIndex = rowColors[0]
+    colorIndex = color2
     // Ändere die Hintergrundfarbe der Zelle
     style.setFillForegroundColor(colorIndex) // Hier kannst du die gewünschte Farbe auswählen
     style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
