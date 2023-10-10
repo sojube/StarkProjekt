@@ -53,7 +53,6 @@ sheet.setColumnWidth (7, 7500)
     // Create style with bold font text must be bold
     Font font = workbook.createFont();
     font.setBold(true);
-    font.setCharSet(FontCharset.UTF_8.getValue());
     headerstyle.setFont(font);
 
 
@@ -147,7 +146,7 @@ def filePath = "${WORKSPACE}/JulesBeispiel.xlsx"
 // Speichere die Arbeitsmappe in einer Datei
 def file = new File(filePath)
 file.createNewFile()
-FileOutputStream fileOut = new FileOutputStream(file);
+FileOutputStream fileOut = new FileOutputStream(file, true);
 workbook.write(fileOut)
 fileOut.close()
 
