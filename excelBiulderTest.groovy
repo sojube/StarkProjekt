@@ -109,11 +109,7 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
 
     
 
-
 String[][] data = dataOfEmployees;
-color1 = IndexedColors.LIGHT_BLUE.getIndex();
-color2 = IndexedColors.GREY_25_PERCENT.getIndex();
-
 
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
 
@@ -122,17 +118,15 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
 
     if((rowNum + 1)%2 != 0){
 
-       style.setFillForegroundColor(color2) // Hier kannst du die gewünschte Farbe auswählen
+       style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex()) // Hier kannst du die gewünschte Farbe die cell auswählen
 
     }else{
        
-       style.setFillForegroundColor(color1) // Hier kannst du die gewünschte Farbe auswählen  
+       style.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()) // Hier kannst du die gewünschte Farbe für die cell auswählen  
 
     }
-    println(" Die aktuelle Farbe ist: ${colorIndex}")
      
     // Ändere die Hintergrundfarbe der Zelle
-    
     style.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
     
     for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
