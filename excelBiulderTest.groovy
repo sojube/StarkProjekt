@@ -123,10 +123,12 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
     if((rowNum + 1)%2 != 0){
 
         colorIndex = color2
+        println(22)
 
     }else{
       
         colorIndex = color1
+        println(48)
 
     }
      
