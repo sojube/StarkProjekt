@@ -1,52 +1,29 @@
 [
-    {
-    "Kapitän": "X ",
-    "Vorname Nachname": "Jules",
-    "äöüßnmjh": "09.10.2023",
-    "Intakevorbereitungen": " Gespräche mit Partner ",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung voraussichtlich bis 31.12.2023",
-    "Sonnstiges": " CI/CD, Git, GitHub",
-    "Krank": "Nein"
-    },
-    {
-    "Kapitän": "",
-    "Vorname Nachname": "Yves",
-    "äöüßnmjh": "09.10.2023",
-    "Intakevorbereitungen": "JavaScript",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "AWS bis 30.10.2023",
-    "Sonnstiges": "Cypress",
-    "Krank": "Nein"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "Petru Walter",
-    "äöüßnmjh": "09.10.2023",
-    "Intakevorbereitungen": "Playwright, Jenkins",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "N/A",
-    "Sonnstiges": "Jira, SoupUI",
-    "Krank": "Nein"
-    },
-    {
-    "Kapitän": "",
-    "Vorname Nachname": "Yves2",
-    "äöüßnmjh": "09.10.2023",
-    "Intakevorbereitungen": "JavaScript",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "AWS bis 30.10.2023",
-    "Sonnstiges": "Cypress",
-    "Krank": "Nein"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "Petru Walter2",
-    "äöüßnmjh": "09.10.2023",
-    "Intakevorbereitungen": "Playwright, Jenkins",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "N/A",
-    "Sonnstiges": "Jira, SoupUI",
-    "Krank": "Nein"
-    }
-    ]
+{
+"Kapitän": "X ",
+"Vorname Nachname": "Jules",
+"Stand Up Datum": "10.10.2023",
+"Intakevorbereitungen": " N/A",
+"Intake Übungslaufe mit": "N/A",
+"Zerfizierung und Deadline": "Automotive Softwaretest Prüfung voraussichtlich bis 31.12.2023",
+"Sonnstiges": " CI/CD, Git, GitHub"
+},
+{
+"Kapitän": "",
+"Vorname Nachname": "Yves",
+"Stand Up Datum": "10.10.2023",
+"Intakevorbereitungen": "JavaScript",
+"Intake Übungslaufe mit": "N/A",
+"Zerfizierung und Deadline": "AWS bis 30.10.2023",
+"Sonnstiges": "Cypress"
+},
+{
+"Kapitän": " ",
+"Vorname Nachname": "Petru Walter",
+"Stand Up Datum": "10.10.2023",
+"Intakevorbereitungen": "Playwright, Java",
+"Intake Übungslaufe mit": "N/A",
+"Zerfizierung und Deadline": "N/A",
+"Sonnstiges": "SQL"
+}
+]
