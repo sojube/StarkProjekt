@@ -136,7 +136,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
     
     //create a Row
     XSSFRow dataRow = sheet.createRow(rowNum + 1);
-    dataRow.setHeight((short) (45*20));  // Setzen Sie die Zeilenhöhe auf 35
+    dataRow.setHeight((short) (40*20));  // Setzen Sie die Zeilenhöhe auf 35
 
     // create the cells for a Row using style and style1 alternatly
     if((rowNum + 1)%2 != 0){
