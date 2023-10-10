@@ -169,8 +169,8 @@ def filePath = "${WORKSPACE}/julesBeispiel10_10_23.xlsx"
 // create a file
 def file = new File(filePath)
 file.createNewFile()
-
-OutputStreamWriter writer = new OutputStreamWriter(file, StandardCharsets.UTF_8)
+FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8);
+//OutputStreamWriter writer = new OutputStreamWriter(file, StandardCharsets.UTF_8)
 FileOutputStream fileOut = new FileOutputStream(writer);
 workbook.write(fileOut) //write workbook to outputstream fileOut
 fileOut.close()
