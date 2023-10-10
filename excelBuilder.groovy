@@ -127,8 +127,8 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
     style1.setLeftBorderColor(IndexedColors.BLACK.getIndex());
     style1.setBorderRight(BorderStyle.THIN);
     style1.setRightBorderColor(IndexedColors.BLACK.getIndex());
-    style1.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()) // Hier kannst du die gewünschte Farbe für die cell auswählen 
-    style1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND)
+    style1.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()); // Hier kannst du die gewünschte Farbe für die cell auswählen 
+    style1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND);
 
 String[][] data = dataOfEmployees;
 
