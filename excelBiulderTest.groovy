@@ -123,14 +123,13 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
     if((rowNum + 1)%2 != 0){
 
         colorIndex = color2
-        println(22)
 
     }else{
       
-        colorIndex = color1
-        println(48)
+        colorIndex = color1   
 
     }
+    println(" Die aktuelle Farbe ist: ${colorIndex}")
      
     // Ändere die Hintergrundfarbe der Zelle
     style.setFillForegroundColor(colorIndex) // Hier kannst du die gewünschte Farbe auswählen
