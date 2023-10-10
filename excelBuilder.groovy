@@ -52,7 +52,7 @@ sheet.setColumnWidth (7, 7500)
     // Create style with bold font text must be bold
     Font font = workbook.createFont();
     font.setBold(true);
-    font.setCharSet(FontCharset.ANSI_CHARSET.getValue());
+    font.setCharSet(FontCharset.ANSI.getValue());
     headerstyle.setFont(font);
 
     // backgroungcolor of HeaderCell
