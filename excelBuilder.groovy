@@ -140,15 +140,15 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
 
 
 // Specify the file path relative to the workspace
-def filePath = "${WORKSPACE}/JulesBeispielBBBBBBB.xlsx"
+def filePath = "${WORKSPACE}/JulesBeispielAAAAA.xlsx"
 
 
 // Speichere die Arbeitsmappe in einer Datei
 def file = new File(filePath)
 file.createNewFile()
 //FileOutputStream fileOut = new FileOutputStream(file);
-FileOutputStream fileOut = new FileOutputStream(file, StandardCharsets.UTF_8)
-workbook.write(fileOut)
+Writer fileOut = new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8);
+//workbook.write(fileOut)
 fileOut.close()
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
