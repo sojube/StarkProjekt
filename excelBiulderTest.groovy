@@ -13,6 +13,7 @@ import java.io.*;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.*;
 import java.nio.charset.StandardCharsets
+import org.apache.poi.common.usermodel.fonts.FontCharset;
 
 
 XSSFWorkbook workbook = new XSSFWorkbook() 
@@ -47,8 +48,8 @@ sheet.setColumnWidth (7, 7500)
     Font font = workbook.createFont();
     font.setBold(true);
     font.setFontHeightInPoints((short) 14);
-    //font.setCharSet(HSSFFont.ANSI_CHARSET); //Your Character encoding goes in the parameter
-    font.setCharSet(HSSFCell.ENCODING_UTF_16);
+    font.setCharSet(HSSFFont.ANSI_CHARSET); //Your Character encoding goes in the parameter
+    //font.setCharSet(HSSFCell.ENCODING_UTF_16);
     headerstyle.setFont(font);
 
     // backgroungcolor of HeaderCell
@@ -94,8 +95,8 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
     // Create style with bold font text must be bold
     Font dataFont = workbook.createFont();
     dataFont.setFontHeightInPoints((short) 11);
-    //dataFont.setCharSet(HSSFFont.ANSI_CHARSET); //Your Character encoding goes in the parameter
-    dataFont.setCharSet(HSSFCell.ENCODING_UTF_16);
+    dataFont.setCharSet(HSSFFont.ANSI_CHARSET); //Your Character encoding goes in the parameter
+    //dataFont.setCharSet(HSSFCell.ENCODING_UTF_16);
     style.setFont(dataFont);
     
 
