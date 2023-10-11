@@ -45,11 +45,13 @@ sheet.setColumnWidth (7, 7500)
     // Create style with bold font text must be bold
     Font font = workbook.createFont();
     font.setBold(true);
+    // Legen Sie die Schriftfarbe fest 
+    //font.setColor(IndexedColors.WHITE.getIndex());
     font.setFontHeightInPoints((short) 14);
     headerstyle.setFont(font);
 
     // backgroungcolor of HeaderCell
-    headerstyle.setFillForegroundColor(IndexedColors.GREY_40_PERCENT.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
+    headerstyle.setFillForegroundColor(IndexedColors.GREY_50_PERCENT.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
     headerstyle.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND);
 
     // zellen Rahmen für HeaderCell
@@ -91,6 +93,7 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
 
     // Create style with bold font text must be bold
     Font dataFont = workbook.createFont();
+    //dataFont.setColor(IndexedColors.WHITE.getIndex());
     dataFont.setFontHeightInPoints((short) 11);
     style.setFont(dataFont);
 
@@ -119,6 +122,7 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
     
     // Zeilen Umbruch
     style1.setWrapText(true);
+    style1.setFont(dataFont);
 
     // zellen Rahmen
     style1.setBorderBottom(BorderStyle.THIN);
@@ -161,17 +165,15 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
     
 }
 
-// give the name of the file that will be created and the place where to store it as a filepath
-def filePath = "${WORKSPACE}/julesBeispiel10_10_23.xlsx"
+// Specify the file path relative to the workspace
+def filePath = "${WORKSPACE}/tagesPlan10_10_23.xlsx"
 
 
-// create a file
+// Speichere die Arbeitsmappe in einer Datei
 def file = new File(filePath)
 file.createNewFile()
-FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8);
-//OutputStreamWriter writer = new OutputStreamWriter(file, StandardCharsets.UTF_8)
-FileOutputStream fileOut = new FileOutputStream(writer);
-workbook.write(fileOut) //write workbook to outputstream fileOut
+FileOutputStream fileOut = new FileOutputStream(file);
+workbook.write(fileOut)
 fileOut.close()
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
