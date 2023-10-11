@@ -45,8 +45,8 @@ sheet.setColumnWidth (7, 7500)
     // Create style with bold font text must be bold
     Font font = workbook.createFont();
     font.setBold(true);
-    // Legen Sie die Schriftfarbe fest (z.B. Rot)
-    font.setColor(IndexedColors.WHITE.getIndex());
+    // Legen Sie die Schriftfarbe fest 
+    //font.setColor(IndexedColors.WHITE.getIndex());
     font.setFontHeightInPoints((short) 14);
     headerstyle.setFont(font);
 
@@ -93,7 +93,7 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
 
     // Create style with bold font text must be bold
     Font dataFont = workbook.createFont();
-    dataFont.setColor(IndexedColors.WHITE.getIndex());
+    //dataFont.setColor(IndexedColors.WHITE.getIndex());
     dataFont.setFontHeightInPoints((short) 11);
     style.setFont(dataFont);
 
@@ -133,7 +133,7 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
     style1.setLeftBorderColor(IndexedColors.BLACK.getIndex());
     style1.setBorderRight(BorderStyle.THIN);
     style1.setRightBorderColor(IndexedColors.BLACK.getIndex());
-    style1.setFillForegroundColor(IndexedColors.DARK_BLUE.getIndex()); // Hier kannst du die gewünschte Farbe für die cell auswählen 
+    style1.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex()); // Hier kannst du die gewünschte Farbe für die cell auswählen 
     style1.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND);
 
 String[][] data = dataOfEmployees;
