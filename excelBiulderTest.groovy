@@ -8,6 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet
 import java.io.FileOutputStream
 import org.apache.poi.ss.usermodel.CellBase
 import org.apache.poi.xssf.usermodel.XSSFCell
+import org.apache.poi.hssf.usermodel.HSSFCell
 import java.io.*;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.*;
