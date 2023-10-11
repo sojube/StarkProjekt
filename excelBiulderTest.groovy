@@ -72,7 +72,7 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
         Cell cell = headerRow.createCell(i);
         cell.setCellValue(headersHeadline[i]);
         cell.setCellStyle(headerstyle);
-        cell.setEncoding((short) HSSFCell.ENCODING_UTF_8);
+        cell.setEncoding((short) HSSFCell.ENCODING_UTF_16);
             
     }
 
@@ -148,7 +148,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
             Cell cell = dataRow.createCell(colNum);
             cell.setCellValue(data[rowNum][colNum]);
             cell.setCellStyle(style);
-            cell.setEncoding((short) HSSFCell.ENCODING_UTF_8);
+            cell.setEncoding((short) HSSFCell.ENCODING_UTF_16);
         }
 
     }else{
@@ -157,7 +157,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
             Cell cell = dataRow.createCell(colNum);
             cell.setCellValue(data[rowNum][colNum]);
             cell.setCellStyle(style1);
-            cell.setEncoding((short) HSSFCell.ENCODING_UTF_8);
+            cell.setEncoding((short) HSSFCell.ENCODING_UTF_16);
         }
 
     }  
