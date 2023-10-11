@@ -174,10 +174,10 @@ public class AbsRelFile  extends FileWriter {
 // create a file
 def file = new File(filePath)
 file.createNewFile()
-AbsRelFile writer = new AbsRelFile(file, StandardCharsets.UTF_8);
 //OutputStreamWriter writer = new OutputStreamWriter(file, StandardCharsets.UTF_8)
-FileOutputStream fileOut = new FileOutputStream(writer);
-workbook.write(fileOut) //write workbook to outputstream fileOut
+FileOutputStream fileOut = new FileOutputStream(file);
+//workbook.write(fileOut) //write workbook to outputstream fileOut
+workbook.write(fileOut, "UTF-8")
 fileOut.close()
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
