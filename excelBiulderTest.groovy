@@ -49,7 +49,6 @@ sheet.setColumnWidth (7, 7500)
     Font font = workbook.createFont();
     font.setBold(true);
     font.setFontHeightInPoints((short) 14);
-    font.setCharSet(FontCharset.ANSI.getValue());
     headerstyle.setFont(font);
 
     // backgroungcolor of HeaderCell
@@ -95,7 +94,6 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
     // Create style with bold font text must be bold
     Font dataFont = workbook.createFont();
     dataFont.setFontHeightInPoints((short) 11);
-    dataFont.setCharSet(FontCharset.ANSI.getValue());
     style.setFont(dataFont);
     
 
@@ -170,10 +168,11 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
 def filePath = "${WORKSPACE}/julesBeispiel10_10_23.xlsx"
 
 // create a file
-def file = new File(filePath)
-file.createNewFile()
+def file = new File(filePath);
+file.createNewFile();
 FileOutputStream fileOut = new FileOutputStream(file);
-workbook.write(fileOut) //write workbook to outputstream fileOut
-fileOut.close()
+workbook.write(fileOut); //write workbook to outputstream fileOut
+fileOut.close();
+workbook.close();
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
