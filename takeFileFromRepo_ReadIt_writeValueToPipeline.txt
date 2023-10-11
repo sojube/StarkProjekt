@@ -256,4 +256,30 @@ def inputFile = readFile(file: './tagesPlan.json')
                 println " the size of json ist : ${dataJson.size()}"  // die anzahl der Personnen in dem JSON
                 //println " ${listOfEmployees}"  // gibt die List der Employees
 
-            
+        -----------------------------------------
+
+HSSFCell cell = row.createCell((short) 2);
+cell.setCellValue(user.getLastName());
+cell.setCellStyle(style);
+cell.setEncoding((short) HSSFCell.ENCODING_UTF_16);  
+----------------------------------------
+HSSFCell cell = row.createCell((short) 0);
+cell.setEncoding(HSSFCell.ENCODING_UTF_16);
+cell.setCellStyle(style);
+--------------------------------------
+//Create the workbook, and the font
+HSSFWorkbook wb;
+HSSFFont wbFont;
+wbFont=wb.createFont();
+wbFont.setCharSet(HSSFFont.ANSI_CHARSET); //Your Character encoding goes in the parameter
+//Establish cell styles
+HSSFCellStyle cellStyle =wb.createCellStyle();
+cellStyle.setFont(wbFont);
+//We create our cells with our data and with our specified format
+HSSFCell cell =null;
+cell = row.createCell(1);
+cell.setCellStyle(cellStyle);
+cell.setCellValue("MY DATA");
+----------------------------------------------
+
+
