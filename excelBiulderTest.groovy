@@ -8,17 +8,17 @@ import org.apache.poi.xssf.usermodel.XSSFSheet
 import java.io.FileOutputStream
 import org.apache.poi.ss.usermodel.CellBase
 import org.apache.poi.xssf.usermodel.XSSFCell
-import org.apache.poi.hssf.usermodel
+import org.apache.poi.hssf.usermodel.HSSFCell
 import java.io.*;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.*;
 import java.nio.charset.StandardCharsets
 
 
-HSSFWorkbook workbook = new HSSFWorkbook() 
+XSSFWorkbook workbook = new XSSFWorkbook() 
 
 // Erstelle ein neues Arbeitsblatt (Sheet)
-HSSFSheet sheet = workbook.createSheet("Tabelle1")
+XSSFSheet sheet = workbook.createSheet("Tabelle1")
 
 
 // set the columnWidth
@@ -64,13 +64,13 @@ sheet.setColumnWidth (7, 7500)
     headerstyle.setRightBorderColor(IndexedColors.BLACK.getIndex());
 
 // Erstelle eine Kopfzeile des excel dokument
-HSSFRow headerRow = sheet.createRow(0);
+XSSFRow headerRow = sheet.createRow(0);
 String[] headersHeadline = headerData;
 
 headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
 
     for (int i = 0; i < headersHeadline.length; i++) {
-        HSSFCell cell = headerRow.createCell(i);
+        XSSFCell cell = headerRow.createCell(i);
         cell.setCellValue(headersHeadline[i]);
         cell.setCellStyle(headerstyle);
         cell.setEncoding((short) HSSFCell.ENCODING_UTF_16);
@@ -139,14 +139,14 @@ String[][] data = dataOfEmployees;
 for (int rowNum = 0; rowNum < data.length; rowNum++) {
     
     //create a Row
-    HSSFRow dataRow = sheet.createRow(rowNum + 1);
+    XSSFRow dataRow = sheet.createRow(rowNum + 1);
     dataRow.setHeight((short) (40*20));  // Setzen Sie die Zeilenhöhe auf 35
 
     // create the cells for a Row using style and style1 alternatly
     if((rowNum + 1)%2 != 0){
  
         for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
-            HSSFCell cell = dataRow.createCell(colNum);
+            XSSFCell cell = dataRow.createCell(colNum);
             cell.setCellValue(data[rowNum][colNum]);
             cell.setCellStyle(style);
             cell.setEncoding((short) HSSFCell.ENCODING_UTF_16);
@@ -155,7 +155,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
     }else{
            
         for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
-            HSSFCell cell = dataRow.createCell(colNum);
+            XSSFCell cell = dataRow.createCell(colNum);
             cell.setCellValue(data[rowNum][colNum]);
             cell.setCellStyle(style1);
             cell.setEncoding((short) HSSFCell.ENCODING_UTF_16);
