@@ -10,6 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.hssf.usermodel
 import builders.dsl.spreadsheet.builder.poi.PoiSpreadsheetBuilder;
 import java.io.*;
 import org.apache.poi.ss.usermodel.CellBase;
