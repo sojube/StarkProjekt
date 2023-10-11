@@ -69,7 +69,7 @@ String[] headersHeadline = headerData;
 headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
 
     for (int i = 0; i < headersHeadline.length; i++) {
-        Cell cell = headerRow.createCell(i);
+        XSSFCell cell = headerRow.createCell(i);
         cell.setCellValue(headersHeadline[i]);
         cell.setCellStyle(headerstyle);
         cell.setEncoding((short) HSSFCell.ENCODING_UTF_16);
@@ -145,7 +145,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
     if((rowNum + 1)%2 != 0){
  
         for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
-            Cell cell = dataRow.createCell(colNum);
+            XSSFCell cell = dataRow.createCell(colNum);
             cell.setCellValue(data[rowNum][colNum]);
             cell.setCellStyle(style);
             cell.setEncoding((short) HSSFCell.ENCODING_UTF_16);
@@ -154,7 +154,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
     }else{
            
         for (int colNum = 0; colNum < data[rowNum].length; colNum++) {
-            Cell cell = dataRow.createCell(colNum);
+            XSSFCell cell = dataRow.createCell(colNum);
             cell.setCellValue(data[rowNum][colNum]);
             cell.setCellStyle(style1);
             cell.setEncoding((short) HSSFCell.ENCODING_UTF_16);
