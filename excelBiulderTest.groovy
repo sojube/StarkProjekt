@@ -72,6 +72,7 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
         Cell cell = headerRow.createCell(i);
         cell.setCellValue(headersHeadline[i]);
         cell.setCellStyle(headerstyle);
+        cell.setEncoding((short) HSSFCell.ENCODING_UTF_8);
             
     }
 
@@ -147,6 +148,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
             Cell cell = dataRow.createCell(colNum);
             cell.setCellValue(data[rowNum][colNum]);
             cell.setCellStyle(style);
+            cell.setEncoding((short) HSSFCell.ENCODING_UTF_8);
         }
 
     }else{
@@ -155,6 +157,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
             Cell cell = dataRow.createCell(colNum);
             cell.setCellValue(data[rowNum][colNum]);
             cell.setCellStyle(style1);
+            cell.setEncoding((short) HSSFCell.ENCODING_UTF_8);
         }
 
     }  
@@ -169,8 +172,7 @@ def file = new File(filePath)
 file.createNewFile()
 //OutputStreamWriter writer = new OutputStreamWriter(file, StandardCharsets.UTF_8)
 FileOutputStream fileOut = new FileOutputStream(file);
-//workbook.write(fileOut) //write workbook to outputstream fileOut
-workbook.write(fileOut, "UTF-8")
+workbook.write(fileOut) //write workbook to outputstream fileOut
 fileOut.close()
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
