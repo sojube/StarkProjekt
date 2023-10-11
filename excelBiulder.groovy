@@ -122,6 +122,7 @@ headerRow.setHeight((short) (23*20));  // Setzen Sie die Zeilenhöhe auf 19
     
     // Zeilen Umbruch
     style1.setWrapText(true);
+    style1.setFont(dataFont);
 
     // zellen Rahmen
     style1.setBorderBottom(BorderStyle.THIN);
