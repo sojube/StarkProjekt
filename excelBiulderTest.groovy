@@ -164,11 +164,17 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
 // give the name of the file that will be created and the place where to store it as a filepath
 def filePath = "${WORKSPACE}/julesBeispiel10_10_23.xlsx"
 
+ public class AbsRelFile  extends FileWriter {
+    
+    private AbsRelFile(){
+              super(File file, Charsets ch)
+    }
+}
 
 // create a file
 def file = new File(filePath)
 file.createNewFile()
-FileWriter writer = new FileWriter(file, StandardCharsets.UTF_8);
+AbsRelFile writer = new AbsRelFile(file, StandardCharsets.UTF_8);
 //OutputStreamWriter writer = new OutputStreamWriter(file, StandardCharsets.UTF_8)
 FileOutputStream fileOut = new FileOutputStream(writer);
 workbook.write(fileOut) //write workbook to outputstream fileOut
