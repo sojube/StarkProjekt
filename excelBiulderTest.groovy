@@ -164,10 +164,10 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
 // give the name of the file that will be created and the place where to store it as a filepath
 def filePath = "${WORKSPACE}/julesBeispiel10_10_23.xlsx"
 
- public class AbsRelFile  extends FileWriter {
-    
+public class AbsRelFile  extends FileWriter {
+    File file1;
     private AbsRelFile(){
-              super(File file, StandardCharsets ch)
+              super(file1)
     }
 }
 
