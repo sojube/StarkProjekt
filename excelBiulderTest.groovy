@@ -18,7 +18,6 @@ import org.apache.poi.ooxml.*
 
 
 XSSFWorkbook workbook = new XSSFWorkbook() 
-workbook.getProperties().getCoreProperties().setEncoding("UTF-8");
 
 // Erstelle ein neues Arbeitsblatt (Sheet)
 XSSFSheet sheet = workbook.createSheet("Tabelle1")
