@@ -49,7 +49,7 @@ sheet.setColumnWidth (7, 7500)
     headerstyle.setFont(font);
 
     // backgroungcolor of HeaderCell
-    headerstyle.setFillForegroundColor(IndexedColors.GREY_40_PERCENT.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
+    headerstyle.setFillForegroundColor(IndexedColors.GREY_50_PERCENT.getIndex()) // Hier kannst du die gewünschte Farbe auswählen
     headerstyle.setFillPattern(org.apache.poi.ss.usermodel.FillPatternType.SOLID_FOREGROUND);
 
     // zellen Rahmen für HeaderCell
