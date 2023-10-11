@@ -14,10 +14,11 @@ import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.*;
 import java.nio.charset.StandardCharsets
 import org.apache.poi.common.usermodel.fonts.FontCharset;
-import org.apache.poi.ss.usermodel.FontCharset;
+import org.apache.poi.ooxml.*
 
 
 XSSFWorkbook workbook = new XSSFWorkbook() 
+workbook.getProperties().getCoreProperties().setEncoding("UTF-8");
 
 // Erstelle ein neues Arbeitsblatt (Sheet)
 XSSFSheet sheet = workbook.createSheet("Tabelle1")
