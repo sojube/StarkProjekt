@@ -83,13 +83,12 @@ pipeline {
             }
         }
 
-        stage('Test File in Workspace'){
+        stage('Test'){
             steps{
 
                 script {  
 
-                    varriable() 
-
+                    def testResult = load './testScript.groovy'
                 }
                
             }
