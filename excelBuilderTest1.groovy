@@ -23,7 +23,8 @@ XSSFFont font = workbook.createFont();
 font.setItalic(true);
 font.setCharSet(FontCharset.getCharset());
 
-
+println(FontCharset.getCharset())
+println(FontCharset.getCharset(0))
 
 CellStyle style = workbook.createCellStyle();
 
