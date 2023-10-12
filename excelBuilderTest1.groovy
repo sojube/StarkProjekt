@@ -22,14 +22,13 @@ def sheet = workbook.createSheet("Blatt 1")
 def row = sheet.createRow(0)
 def cell = row.createCell(0)
 cell.setCellValue("ÄÖÜ")
-// Specify the file path relative to the workspace
+
+// Specify the directory where the file will be save in, and the name of the file
 def filePath = "${WORKSPACE}/22222222.xlsx"
 
-
-// Speichere die Arbeitsmappe in einer Datei
-//def file = new File(filePath)
-
+// create the file
 FileOutputStream fileOut = new FileOutputStream(filePath);
 
+// define the structure in the file and also write data in the file
 workbook.write(fileOut)
 fileOut.close()
