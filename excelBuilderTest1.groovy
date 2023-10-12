@@ -19,9 +19,11 @@ import org.apache.poi.ooxml.*
 def workbook = new XSSFWorkbook();
 def sheet = workbook.createSheet("Blatt 1")
 
-Font font = workbook.createFont();
+XSSFFont font = workbook.createFont();
 font.setItalic(true);
-font.setCharSet(FontCharset.ARABIC.getValue());
+font.setCharSet(FontCharset.getCharset(UTF_16));
+
+
 
 CellStyle style = workbook.createCellStyle();
 
