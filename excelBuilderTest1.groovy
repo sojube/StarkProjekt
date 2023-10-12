@@ -29,7 +29,7 @@ style.setFont(font);
 
 def row = sheet.createRow(0)
 def cell = row.createCell(0)
-cell.setCellValue("ÄÖÜghthurtr")
+cell.setCellValue("ÄÖÜg الْعَرَبِيَّة")
 cell.setCellStyle(style)
 
 // Specify the directory where the file will be save in, and the name of the file
