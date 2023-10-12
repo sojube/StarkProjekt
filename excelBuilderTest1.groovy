@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets
 import org.apache.poi.common.usermodel.fonts.FontCharset;
 import org.apache.poi.ooxml.*
 
-FileOutputStream fos = new FileOutputStream("G://data//123.txt");
+FileOutputStream fos = new FileOutputStream('testData.txt');
 Writer w = new BufferedWriter(new OutputStreamWriter(fos, StandardCharsets.UTF_8));
 String stringa = "L’uomo più forteäöü";
 w.write(stringa);
