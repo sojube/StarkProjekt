@@ -18,5 +18,5 @@ import org.apache.poi.ooxml.*
 
 FileOutputStream fos = new FileOutputStream('testData.txt');
 Writer w = new BufferedWriter(new OutputStreamWriter(fos, StandardCharsets.UTF_8));
-String stringa = "L’uomo più forteäöü";
+String stringa = "Luomo più forteäöü";
 w.write(stringa);
