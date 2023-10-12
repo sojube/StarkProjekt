@@ -15,8 +15,8 @@ import org.apache.poi.xssf.usermodel.*;
 import java.nio.charset.StandardCharsets
 import org.apache.poi.common.usermodel.fonts.FontCharset;
 import org.apache.poi.ooxml.*
-/*
-def workbook = new XSSFWorkbook();
+
+def workbook = new XSSFWorkbook(inputStream);
 def sheet = workbook.createSheet("Blatt 1")
 FontCharset fontCharset = FontCharset.ARABIC;
 XSSFFont font = workbook.createFont();
@@ -44,17 +44,3 @@ FileOutputStream fileOut = new FileOutputStream(filePath);
 // define the structure in the file and also write data in the file
 workbook.write(fileOut)
 fileOut.close()
-*/
-
-String line = "שלום, hello, привет äöüöäß";
-
-OutputStream os = new FileOutputStream("${WORKSPACE}/22222222.csv");
-os.write(239);
-os.write(187);
-os.write(191);
-
-PrintWriter w = new PrintWriter(new OutputStreamWriter(os, "UTF-8"));
-
-w.print(line);
-w.flush();
-w.close();
