@@ -150,6 +150,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
             XSSFCell cell = dataRow.createCell(colNum);
             cell.setCellValue(data[rowNum][colNum]);
             cell.setCellStyle(style);
+            cell.setEncoding(XSSFCell.ENCODING_UTF_16);
         }
 
     }else{
@@ -158,6 +159,7 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
             XSSFCell cell = dataRow.createCell(colNum);
             cell.setCellValue(data[rowNum][colNum]);
             cell.setCellStyle(style1);
+            cell.setEncoding(XSSFCell.ENCODING_UTF_16);
         }
 
     }  
