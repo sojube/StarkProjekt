@@ -18,7 +18,7 @@ import org.apache.poi.ooxml.*
 
 def workbook = new XSSFWorkbook();
 // Specify the file path relative to the workspace
-def filePath = "${WORKSPACE}/tagesPlan10_10_23.xlsx"
+def filePath = "${WORKSPACE}/aaaaaaaaaaaaaaa.xlsx"
 
 
 // Speichere die Arbeitsmappe in einer Datei
