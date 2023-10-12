@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets
 import org.apache.poi.common.usermodel.fonts.FontCharset;
 import org.apache.poi.ooxml.*
 
-def workbook = new XSSFWorkbook(inputStream);
+def workbook = new XSSFWorkbook();
 def sheet = workbook.createSheet("Blatt 1")
 FontCharset fontCharset = FontCharset.ARABIC;
 XSSFFont font = workbook.createFont();
