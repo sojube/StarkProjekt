@@ -16,7 +16,14 @@ import java.nio.charset.StandardCharsets
 import org.apache.poi.common.usermodel.fonts.FontCharset;
 import org.apache.poi.ooxml.*
 
-FileOutputStream fos = new FileOutputStream('testData.txt');
-Writer w = new BufferedWriter(new OutputStreamWriter(fos, StandardCharsets.UTF_8));
-String stringa = "Luomo più forteäöü";
-w.write(stringa);
+def workbook = new XSSFWorkbook();
+// Specify the file path relative to the workspace
+def filePath = "${WORKSPACE}/tagesPlan10_10_23.xlsx"
+
+
+// Speichere die Arbeitsmappe in einer Datei
+def file = new File(filePath)
+file.createNewFile()
+FileOutputStream fileOut = new FileOutputStream(file);
+workbook.write(fileOut)
+fileOut.close()
