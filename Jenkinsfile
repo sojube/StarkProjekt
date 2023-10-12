@@ -104,5 +104,15 @@ pipeline {
                
             }
         }
+
+        stage('Push Image to DockerHub'){
+            steps{
+
+                script {  
+
+                    echo "Hier  die Image zu DockerHub"
+                }
+               
+            }
     }
 }
