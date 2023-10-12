@@ -44,3 +44,17 @@ FileOutputStream fileOut = new FileOutputStream(filePath);
 // define the structure in the file and also write data in the file
 workbook.write(fileOut)
 fileOut.close()
+
+/*
+String line = "שלום, hello, привет";
+OutputStream os = new FileOutputStream("c:/temp/j.csv");
+os.write(239);
+os.write(187);
+os.write(191);
+*/
+
+PrintWriter w = new PrintWriter(new OutputStreamWriter(fileOut, "UTF-8"));
+
+w.print(line);
+w.flush();
+w.close();
