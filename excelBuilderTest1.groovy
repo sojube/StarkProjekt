@@ -48,7 +48,7 @@ fileOut.close()
 
 String line = "שלום, hello, привет äöüöäß";
 
-OutputStream os = new FileOutputStream("${WORKSPACE}/22222222.xlsx");
+OutputStream os = new FileOutputStream("${WORKSPACE}/22222222.csv");
 os.write(239);
 os.write(187);
 os.write(191);
