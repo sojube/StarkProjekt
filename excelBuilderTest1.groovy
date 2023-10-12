@@ -32,7 +32,7 @@ style.setFont(font);
 
 def row = sheet.createRow(0)
 def cell = row.createCell(0)
-cell.setCellValue("ÄÖÜghhjgg الْعَرَبِيَّة").get
+cell.setCellValue("ÄÖÜghhjgg الْعَرَبِيَّة")
 cell.setCellStyle(style)
 
 // Specify the directory where the file will be save in, and the name of the file
