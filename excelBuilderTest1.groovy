@@ -16,13 +16,7 @@ import java.nio.charset.StandardCharsets
 import org.apache.poi.common.usermodel.fonts.FontCharset;
 import org.apache.poi.ooxml.*
 
-def fileOut = new FileOutputStream("deine_datei.xlsx")
-def workbook = new XSSFWorkbook()
-def sheet = workbook.createSheet("Blatt 1")
-
-def row = sheet.createRow(0)
-def cell = row.createCell(0)
-cell.setCellValue("ÄÖÜ")
-
-workbook.write(fileOut)
-fileOut.close()
+FileOutputStream fos = new FileOutputStream("G://data//123.txt");
+Writer w = new BufferedWriter(new OutputStreamWriter(fos, StandardCharsets.UTF_8));
+String stringa = "L’uomo più forteäöü";
+w.write(stringa);
