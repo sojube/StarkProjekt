@@ -45,8 +45,9 @@ FileOutputStream fileOut = new FileOutputStream(filePath);
 workbook.write(fileOut)
 fileOut.close()
 
+
+String line = "שלום, hello, привет äöüöäß";
 /*
-String line = "שלום, hello, привет";
 OutputStream os = new FileOutputStream("c:/temp/j.csv");
 os.write(239);
 os.write(187);
