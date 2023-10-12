@@ -165,14 +165,13 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
     
 }
 
-// Specify the file path relative to the workspace
-def filePath = "${WORKSPACE}/tagesPlan10_10_23.xlsx"
+// Specify the directory where the file will be save in, and the name of the file
+def filePath = "${WORKSPACE}/22222222.xlsx"
 
+// create the file
+FileOutputStream fileOut = new FileOutputStream(filePath);
 
-// Speichere die Arbeitsmappe in einer Datei
-def file = new File(filePath)
-file.createNewFile()
-FileOutputStream fileOut = new FileOutputStream(file);
+// define the structure in the file and also write data in the file
 workbook.write(fileOut)
 fileOut.close()
 

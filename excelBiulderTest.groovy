@@ -164,16 +164,14 @@ for (int rowNum = 0; rowNum < data.length; rowNum++) {
     
 }
 
-// give the name of the file that will be created and the place where to store it as a filepath
-def filePath = "${WORKSPACE}/tagesPlan12_10_23.xlsx"
-//def filePath = './excelOutput/tagesPlan12_10_23.xlsx'
+// Specify the directory where the file will be save in, and the name of the file
+def filePath = "${WORKSPACE}/22222222.xlsx"
 
-// create a file
-def file = new File(filePath);
-file.createNewFile();
-FileOutputStream fileOut = new FileOutputStream(file);
-workbook.write(fileOut); //write workbook to outputstream fileOut
-fileOut.close();
-workbook.close();
+// create the file
+FileOutputStream fileOut = new FileOutputStream(filePath);
+
+// define the structure in the file and also write data in the file
+workbook.write(fileOut)
+fileOut.close()
 
 println("Die Excel-Datei wurde erfolgreich erstellt.")
