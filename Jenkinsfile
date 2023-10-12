@@ -93,5 +93,16 @@ pipeline {
                
             }
         }
+
+         stage('Build Docker Image'){
+            steps{
+
+                script {  
+
+                    echo "Hier kommt das Build zu docker"
+                }
+               
+            }
+        }
     }
 }
