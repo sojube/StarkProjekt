@@ -17,6 +17,11 @@ import org.apache.poi.common.usermodel.fonts.FontCharset;
 import org.apache.poi.ooxml.*
 
 def workbook = new XSSFWorkbook();
+def sheet = workbook.createSheet("Blatt 1")
+
+def row = sheet.createRow(0)
+def cell = row.createCell(0)
+cell.setCellValue("ÄÖÜ")
 // Specify the file path relative to the workspace
 def filePath = "${WORKSPACE}/aaaaaaaaaaaaaaa.xlsx"
 
