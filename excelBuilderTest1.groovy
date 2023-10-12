@@ -21,7 +21,7 @@ def sheet = workbook.createSheet("Blatt 1")
 FontCharset fontCharset = FontCharset.ARABIC;
 XSSFFont font = workbook.createFont();
 font.setItalic(true);
-//font.setCharSet(FontCharset.getCharset());
+font.setCharSet(fontCharset);
 
 println(fontCharset)
 
