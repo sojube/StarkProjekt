@@ -23,9 +23,14 @@ Font font = workbook.createFont();
 font.setItalic(true);
 //font.setCharSet(FontCharset.ARABIC.getValue());
 
+CellStyle style = workbook.createCellStyle();
+
+style.setFont(font);
+
 def row = sheet.createRow(0)
 def cell = row.createCell(0)
 cell.setCellValue("ÄÖÜghthurtr")
+cell.setCellStyle(style)
 
 // Specify the directory where the file will be save in, and the name of the file
 def filePath = "${WORKSPACE}/22222222.xlsx"
