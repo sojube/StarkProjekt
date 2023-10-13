@@ -15,8 +15,12 @@ import org.apache.poi.xssf.usermodel.*;
 import java.nio.charset.StandardCharsets
 import org.apache.poi.common.usermodel.fonts.FontCharset;
 import org.apache.poi.ooxml.*
+import java.io.File;
+import java.io.FileNotFoundException;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-def workbook = new XSSFWorkbook();
+XSSFWorkbook workbook = new XSSFWorkbook(in);
 def sheet = workbook.createSheet("Blatt 1")
 FontCharset fontCharset = FontCharset.ARABIC;
 XSSFFont font = workbook.createFont();
@@ -38,9 +42,20 @@ cell.setCellStyle(style)
 // Specify the directory where the file will be save in, and the name of the file
 def filePath = "${WORKSPACE}/22222222.xlsx"
 
+File f = new File(filePath);
+FileInputStream in = new FileInputStream(f);
+
+workbook.getProperties().getCoreProperties().setCreator(Author);
+
+    try (FileOutputStream out = new FileOutputStream(FileName) ) {
+        workbook.write(out);
+    }
+workbook.close();
+ /*
 // create the file
 FileOutputStream fileOut = new FileOutputStream(filePath);
 
 // define the structure in the file and also write data in the file
 workbook.write(fileOut)
 fileOut.close()
+*/
