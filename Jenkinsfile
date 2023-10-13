@@ -88,7 +88,7 @@ pipeline {
 
                 script {  
 
-                    def testResult = load '../TemplateCreator.groovy'
+                    def testResult = load '../src/org/foo/TemplateCreator.groovy'
                 }
                
             }
