@@ -48,7 +48,7 @@ pipeline {
                     if (fileExists('JulesBeispiel.xlsx')) {
                          new File('JulesBeispiel.xlsx').delete()
                     } else {
-                         println "JulesBeispiel.xlsx file not found"
+                         println " Das file JulesBeispiel.xlsx war nicht dabei und es wurde einen neuen erzeugt"
                     }
 
                 }
