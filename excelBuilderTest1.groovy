@@ -42,20 +42,10 @@ cell.setCellStyle(style)
 // Specify the directory where the file will be save in, and the name of the file
 def filePath = "${WORKSPACE}/22222222.xlsx"
 
-File f = new File(filePath);
-FileInputStream in = new FileInputStream(f);
-
-workbook.getProperties().getCoreProperties().setCreator(Author);
-
-    try (FileOutputStream out = new FileOutputStream(FileName) ) {
-        workbook.write(out);
-    }
-workbook.close();
- /*
 // create the file
 FileOutputStream fileOut = new FileOutputStream(filePath);
 
 // define the structure in the file and also write data in the file
 workbook.write(fileOut)
 fileOut.close()
-*/
+
