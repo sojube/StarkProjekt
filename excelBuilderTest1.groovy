@@ -20,7 +20,7 @@ import java.io.FileNotFoundException;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-XSSFWorkbook workbook = new XSSFWorkbook(in);
+XSSFWorkbook workbook = new XSSFWorkbook();
 def sheet = workbook.createSheet("Blatt 1")
 FontCharset fontCharset = FontCharset.ARABIC;
 XSSFFont font = workbook.createFont();
