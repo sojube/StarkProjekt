@@ -1,4 +1,154 @@
 [
+
+    {
+    "Kapitän": "X ",
+    "Vorname Nachname": "Jules",
+    "Stand Up Datum": "09.10.2023",
+    "Intakevorbereitungen": " Gespräche mit Partner ",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung voraussichtlich bis 31.12.2023",
+    "Sonnstiges": " CI/CD, Git, GitHub"
+    },
+    {
+    "Kapitän": "",
+    "Vorname Nachname": "Yves",
+    "Stand Up Datum": "09.10.2023",
+    "Intakevorbereitungen": "JavaScript",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "AWS bis 30.10.2023",
+    "Sonnstiges": "Cypress"
+    },
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "Petru Walter",
+    "Stand Up Datum": "09.10.2023",
+    "Intakevorbereitungen": "Playwright, Jenkins",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "N/A",
+    "Sonnstiges": "Jira, SoupUI"
+    },
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "",
+    "Stand Up Datum": "",
+    "Intakevorbereitungen": "",
+    "Intake Übungslaufe mit": "",
+    "Zerfizierung und Deadline": "",
+    "Sonnstiges": " "
+    },
+
+    {
+    "Kapitän": "X ",
+    "Vorname Nachname": "Jules",
+    "Stand Up Datum": "10.10.2023",
+    "Intakevorbereitungen": " N/A",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung voraussichtlich bis 31.12.2023",
+    "Sonnstiges": " CI/CD, Git, GitHub"
+    },
+    {
+    "Kapitän": "",
+    "Vorname Nachname": "Yves",
+    "Stand Up Datum": "10.10.2023",
+    "Intakevorbereitungen": "JavaScript",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "AWS bis 30.10.2023",
+    "Sonnstiges": "Cypress"
+    },
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "Petru Walter",
+    "Stand Up Datum": "10.10.2023",
+    "Intakevorbereitungen": "Playwright, Java",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "N/A",
+    "Sonnstiges": "SQL"
+    },
+
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "",
+    "Stand Up Datum": "",
+    "Intakevorbereitungen": "",
+    "Intake Übungslaufe mit": "",
+    "Zerfizierung und Deadline": "",
+    "Sonnstiges": " "
+    },
+    {
+    "Kapitän": "X ",
+    "Vorname Nachname": "Jules",
+    "Stand Up Datum": "11.10.2023",
+    "Intakevorbereitungen": "Robotframework",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung voraussichtlich bis 31.12.2023",
+    "Sonnstiges": " CI/CD, jenkins, GitHub"
+    },
+    {
+    "Kapitän": "",
+    "Vorname Nachname": "Yves",
+    "Stand Up Datum": "11.10.2023",
+    "Intakevorbereitungen": "React Js",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "AWS bis 30.10.2023",
+    "Sonnstiges": "Jmeter"
+    },
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "Petru Walter",
+    "Stand Up Datum": "11.10.2023",
+    "Intakevorbereitungen": "Postman, Jenkins",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "N/A",
+    "Sonnstiges": "SQL"
+    },
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "",
+    "Stand Up Datum": "",
+    "Intakevorbereitungen": "",
+    "Intake Übungslaufe mit": "",
+    "Zerfizierung und Deadline": "",
+    "Sonnstiges": " "
+    },
+
+    {
+    "Kapitän": "X ",
+    "Vorname Nachname": "Jules",
+    "Stand Up Datum": "12.10.2023",
+    "Intakevorbereitungen": "Robotframework, JMeter",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung voraussichtlich bis 31.12.2023",
+    "Sonnstiges": " CI/CD, jenkins, GitHub"
+    },
+    {
+    "Kapitän": "",
+    "Vorname Nachname": "Yves",
+    "Stand Up Datum": "12.10.2023",
+    "Intakevorbereitungen": "SQL",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "AWS bis 30.10.2023",
+    "Sonnstiges": "Jmeter"
+    },
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "Petru Walter",
+    "Stand Up Datum": "12.10.2023",
+    "Intakevorbereitungen": "Playwright, Git, GitHub",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "N/A",
+    "Sonnstiges": "JavaScript"
+    },
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "",
+    "Stand Up Datum": "",
+    "Intakevorbereitungen": "",
+    "Intake Übungslaufe mit": "",
+    "Zerfizierung und Deadline": "",
+    "Sonnstiges": " "
+    },
+
+    
     {
     "Kapitän": "X ",
     "Vorname Nachname": "Jules",
