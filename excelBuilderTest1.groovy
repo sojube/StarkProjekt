@@ -29,7 +29,6 @@ font.setCharSet(fontCharset);
 
 println(fontCharset)
 
-
 CellStyle style = workbook.createCellStyle();
 
 style.setFont(font);
