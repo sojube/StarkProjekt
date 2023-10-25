@@ -1,29 +1,30 @@
+
 [
     {
-    "Kapitän": " ",
+    "Kapitän": "X ",
     "Vorname Nachname": "Jules",
-    "Stand Up Datum": "25.09.2023",
-    "Intakevorbereitungen": "testCases Automation mit C# und C++ ",
+    "Stand Up Datum": "25.10.2023",
+    "Intakevorbereitungen": "N/A ",
     "Intake Übungslaufe mit": "N/A",
     "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung vorausschtlich am 31.12.23",
-    "Sonnstiges": ""
+    "Sonnstiges": "Jenkins, aufbau von Testframework it selenium"
     },
     {
-    "Kapitän": "X",
+    "Kapitän": " ",
     "Vorname Nachname": "Yves",
-    "Stand Up Datum": "25.09.2023",
-    "Intakevorbereitungen": " Jenkins ",
+    "Stand Up Datum": "25.10.2023",
+    "Intakevorbereitungen": "Zertifizierung Prüfungsvorbereitung ",
     "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "AWS bis 30.09.2023",
-    "Sonnstiges": " Git, GitHub"
+    "Zertifizierung und Deadline": "AWS bis 30.10.2023",
+    "Sonstiges": "JavaScript"
     },
     {
     "Kapitän": " ",
     "Vorname Nachname": "Petru Walter",
-    "Stand Up Datum": "25.09.2023",
-    "Intakevorbereitungen": "Jenkins, Git, GitHub",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "N/A",
-    "Sonnstiges": "Docker, Jira,"
+    "Stand Up Datum": "25.10.2023",
+    "Intakevorbereitungen": "Urlaub",
+    "Intake Übungslaufe mit": "Urlaub",
+    "Zerfizierung und Deadline": "Urlaub",
+    "Sonnstiges": "Urlaub"
     }
     ]
