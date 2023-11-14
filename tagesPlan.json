@@ -1,182 +1,29 @@
-
 [
     {
-    "Kapitän": " ",
-    "Vorname Nachname": "Yves",
-    "Stand Up Datum": "23.10.2023",
-    "Intakevorbereitungen": "React js",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "AWS bis 30.10.2023",
-    "Sonnstiges": "N/A"
-    },
-    {
-    "Kapitän": "X ",
+    "Kapitän": "X",
     "Vorname Nachname": "Jules",
-    "Stand Up Datum": "23.10.2023",
+    "Stand Up Datum": "14.11.2023",
     "Intakevorbereitungen": "N/A ",
     "Intake Übungslaufe mit": "N/A",
     "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung vorausschtlich am 31.12.23",
-    "Sonnstiges": "Jenkins"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "Petru Walter",
-    "Stand Up Datum": "23.10.2023",
-    "Intakevorbereitungen": "Urlaub",
-    "Intake Übungslaufe mit": "Urlaub",
-    "Zerfizierung und Deadline": "Urlaub",
-    "Sonnstiges": "Urlaub"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "",
-    "Stand Up Datum": "",
-    "Intakevorbereitungen": "",
-    "Intake Übungslaufe mit": "",
-    "Zerfizierung und Deadline": "",
-    "Sonnstiges": ""
-    },
-
-
-    {
-    "Kapitän": "X ",
-    "Vorname Nachname": "Jules",
-    "Stand Up Datum": "24.10.2023",
-    "Intakevorbereitungen": "N/A ",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung vorausschtlich am 31.12.23",
-    "Sonnstiges": "Jenkins"
+    "Sonnstiges": " HIL und Jenkins"
     },
     {
     "Kapitän": " ",
     "Vorname Nachname": "Yves",
-    "Stand Up Datum": "24.10.2023",
-    "Intakevorbereitungen": "Zertifizierung Prüfungsvorbereitung ",
+    "Stand Up Datum": "14.11.2023",
+    "Intakevorbereitungen": "AWS Cloud Prüfungsvorbereitung",
     "Intake Übungslaufe mit": "N/A",
-    "Zertifizierung und Deadline": "AWS bis 30.10.2023",
-    "Sonstiges": "JavaScript"
+    "Zertifizierung und Deadline": "AWS bis 30.12.2023",
+    "Sonstiges": "Node js"
     },
     {
     "Kapitän": " ",
     "Vorname Nachname": "Petru Walter",
-    "Stand Up Datum": "23.10.2023",
-    "Intakevorbereitungen": "Urlaub",
-    "Intake Übungslaufe mit": "Urlaub",
-    "Zerfizierung und Deadline": "Urlaub",
-    "Sonnstiges": "Urlaub"
-    },
-
-    {
-        "Kapitän": " ",
-        "Vorname Nachname": "",
-        "Stand Up Datum": "",
-        "Intakevorbereitungen": "",
-        "Intake Übungslaufe mit": "",
-        "Zerfizierung und Deadline": "",
-        "Sonnstiges": ""
-        },
-    
-    {
-    "Kapitän": "X ",
-    "Vorname Nachname": "Jules",
-    "Stand Up Datum": "25.10.2023",
-    "Intakevorbereitungen": "N/A ",
+    "Stand Up Datum": "14.11.2023",
+    "Intakevorbereitungen": "Java",
     "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung vorausschtlich am 31.12.23",
-    "Sonnstiges": "Jenkins, aufbau von Testframework it selenium"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "Yves",
-    "Stand Up Datum": "25.10.2023",
-    "Intakevorbereitungen": "Zertifizierung Prüfungsvorbereitung ",
-    "Intake Übungslaufe mit": "N/A",
-    "Zertifizierung und Deadline": "AWS bis 30.10.2023",
-    "Sonstiges": "JavaScript"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "Petru Walter",
-    "Stand Up Datum": "25.10.2023",
-    "Intakevorbereitungen": "Urlaub",
-    "Intake Übungslaufe mit": "Urlaub",
-    "Zerfizierung und Deadline": "Urlaub",
-    "Sonnstiges": "Urlaub"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "",
-    "Stand Up Datum": "",
-    "Intakevorbereitungen": "",
-    "Intake Übungslaufe mit": "",
-    "Zerfizierung und Deadline": "",
-    "Sonnstiges": ""
-    },
-
-    {
-    "Kapitän": "X ",
-    "Vorname Nachname": "Jules",
-    "Stand Up Datum": "26.10.2023",
-    "Intakevorbereitungen": "N/A ",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung vorausschtlich am 31.12.23",
-    "Sonnstiges": "Jenkins, aufbau von Testframework it selenium"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "Yves",
-    "Stand Up Datum": "26.10.2023",
-    "Intakevorbereitungen": "Zertifizierung Prüfungsvorbereitung ",
-    "Intake Übungslaufe mit": "N/A",
-    "Zertifizierung und Deadline": "AWS bis 30.10.2023",
-    "Sonstiges": "JavaScript"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "Petru Walter",
-    "Stand Up Datum": "26.10.2023",
-    "Intakevorbereitungen": "Urlaub",
-    "Intake Übungslaufe mit": "Urlaub",
-    "Zerfizierung und Deadline": "Urlaub",
-    "Sonnstiges": "Urlaub"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "",
-    "Stand Up Datum": "",
-    "Intakevorbereitungen": "",
-    "Intake Übungslaufe mit": "",
-    "Zerfizierung und Deadline": "",
-    "Sonnstiges": ""
-    },
-    {
-    "Kapitän": "X ",
-    "Vorname Nachname": "Jules",
-    "Stand Up Datum": "26.10.2023",
-    "Intakevorbereitungen": "N/A ",
-    "Intake Übungslaufe mit": "N/A",
-    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung vorausschtlich am 31.12.23",
-    "Sonnstiges": "Jenkins, aufbau von Testframework it selenium"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "Yves",
-    "Stand Up Datum": "27.10.2023",
-    "Intakevorbereitungen": "Zertifizierung Prüfungsvorbereitung ",
-    "Intake Übungslaufe mit": "N/A",
-    "Zertifizierung und Deadline": "AWS bis 30.10.2023",
-    "Sonstiges": "JavaScript"
-    },
-    {
-    "Kapitän": " ",
-    "Vorname Nachname": "Petru Walter",
-    "Stand Up Datum": "26.10.2023",
-    "Intakevorbereitungen": "Urlaub",
-    "Intake Übungslaufe mit": "Urlaub",
-    "Zerfizierung und Deadline": "Urlaub",
-    "Sonnstiges": "Urlaub"
+    "Zerfizierung und Deadline": "N/A",
+    "Sonnstiges": "Selenium, GitHub"
     }
-
-    
-
     ]
