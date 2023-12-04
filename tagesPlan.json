@@ -2,28 +2,28 @@
 {
 "Kapitän": "X",
 "Vorname Nachname": "Jules",
-"Stand Up Datum": "17.11.2023",
-"Intakevorbereitungen": "N/A ",
+"Stand Up Datum": "04.12.2023",
+"Intakevorbereitungen": "Mit Bench-Kollegen",
 "Intake Übungslaufe mit": "N/A",
 "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung vorausschtlich am 31.12.23",
-"Sonnstiges": " Selenium Framework"
+"Sonnstiges": " Tricentis tosca, Python"
 },
 {
 "Kapitän": " ",
 "Vorname Nachname": "Yves",
-"Stand Up Datum": "17.11.2023",
-"Intakevorbereitungen": "AWS Cloud Prüfungsvorbereitung",
-"Intake Übungslaufe mit": "N/A",
-"Zertifizierung und Deadline": "AWS bis 30.12.2023",
-"Sonstiges": "JavaScript, Sass"
+"Stand Up Datum": "04.12.2023",
+"Intakevorbereitungen": "Runde Vorbereitung",
+"Intake Übungslaufe mit": "Jules, Petru",
+"Zertifizierung und Deadline": "AWS SAA-C03 bis 30.04.2024",
+"Sonstiges": "Docker, JavaScript"
 },
 {
 "Kapitän": " ",
 "Vorname Nachname": "Petru Walter",
-"Stand Up Datum": "17.11.2023",
-"Intakevorbereitungen": "SQL",
+"Stand Up Datum": "04.12.2023",
+"Intakevorbereitungen": "Confluence, Jira",
 "Intake Übungslaufe mit": "N/A",
 "Zerfizierung und Deadline": "N/A",
-"Sonnstiges": "Selenium, GitHub"
+"Sonnstiges": "JavaScript,GitHub, "
 }
 ]
