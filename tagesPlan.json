@@ -1,29 +1,31 @@
 [
-{
-"Kapitän": "X",
-"Vorname Nachname": "Jules",
-"Stand Up Datum": "04.12.2023",
-"Intakevorbereitungen": "Mit Bench-Kollegen",
-"Intake Übungslaufe mit": "N/A",
-"Zerfizierung und Deadline": "Automotive Softwaretest Prüfung vorausschtlich am 31.12.23",
-"Sonnstiges": " Tricentis tosca, Python"
-},
-{
-"Kapitän": " ",
-"Vorname Nachname": "Yves",
-"Stand Up Datum": "04.12.2023",
-"Intakevorbereitungen": "Runde Vorbereitung",
-"Intake Übungslaufe mit": "Jules, Petru",
-"Zertifizierung und Deadline": "AWS SAA-C03 bis 30.04.2024",
-"Sonstiges": "Docker, JavaScript"
-},
-{
-"Kapitän": " ",
-"Vorname Nachname": "Petru Walter",
-"Stand Up Datum": "04.12.2023",
-"Intakevorbereitungen": "Confluence, Jira",
-"Intake Übungslaufe mit": "N/A",
-"Zerfizierung und Deadline": "N/A",
-"Sonnstiges": "JavaScript,GitHub, "
-}
-]
+
+    {
+    "Kapitän": "X",
+    "Vorname Nachname": "Jules",
+    "Stand Up Datum": "05.12.2023",
+    "Intakevorbereitungen": "Mit Bench-Kollegen",
+    "Intake Übungslaufe mit": "N/A",
+    "Zerfizierung und Deadline": "Automotive Softwaretest Prüfung vorausschtlich am 31.12.23",
+    "Sonnstiges": " Tricentis tosca, Python"
+    },
+    
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "Yves",
+    "Stand Up Datum": "05.12.2023",
+    "Intakevorbereitungen": "Runde Vorbereitung",
+    "Intake Übungslaufe mit": "Jules, Petru",
+    "Zertifizierung und Deadline": "AWS SAA-C03 bis 30.04.2024",
+    "Sonstiges": "Docker, JavaScript"
+    },
+    {
+    "Kapitän": " ",
+    "Vorname Nachname": "Petru Walter",
+    "Stand Up Datum": "05.12.2023",
+    "Intakevorbereitungen": " ",
+    "Intake Übungslaufe mit": "Bench Kollegen",
+    "Zerfizierung und Deadline": "N/A",
+    "Sonnstiges": "Selenium, Java, GitHub, "
+    }
+    ]
